@@ -1,0 +1,426 @@
+\chapterimage{chapter_head_2.pdf} % Chapter heading image
+
+\chapter{Fundamentos de notação musical}
+Nas seguintes sub seções abordaremos os termos compasso, tempo e contratempo,
+num sentido rítmico (distribuição de tempos) e não explicaremos o significado 
+melódico (distribuição de frequências) das 
+figuras musicais na partitura, devido a que as explicações mostradas aqui estão
+orientadas para um público interessado na dança, que precisa numa primeira 
+aproximação à música, conhecer rapidamente a parte rítmica dela. Para aprofundar mais na parte 
+melódica recomendamos acudir a materiais, livros ou revistas especializadas \cite{medteoria}
+\cite{azevedocompor} \cite{alves2004teoria} \cite{mascarenhascurso} \cite{adolfo2002musica} \cite{grabner2001teoria}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Compasso}
+\label{sec:compaso}
+
+O dicionário de Harvard de música \cite{randel2003harvard} define compasso (``meter'' em inglês)
+como: ``O padrão em que uma sucessão constante de pulsos rítmicos é organizada'', também comenta que
+``o compasso de uma obra ou uma porção dela é indicado geralmente por uma fração'', como por exemplo:
+$2/2$ , $3/4$ , $4/4$, etc; em português é chamada a esta fração como a formula do compasso. 
+
+ 
+O denominador da formula do compasso indica o valor da pulsação básica (tempo) do padrão (compasso), 
+e o numerador indica o número dessas pulsações que compõem o compasso. Assim, com a ajuda da
+Tabela \ref{tab:noteslength}, onde a primeira coluna mostra a formula usando só o denominador do compasso,
+a segunda coluna mostra as figuras musicais que o denominador evoca e a terceira e
+quarta coluna representam a duração em segundos e o nome da figura musical; assim,
+podemos achar equivalências aos exemplos de formula do compasso dados
+anteriormente; onde os compassos com formula $\mathbf{2}/2$ tem cada um duração de $2$\halfnote ~(duas mínimas),  
+compassos com formula $\mathbf{3}/4$ uma duração de $3$\quarternote ~(trés semínimas) 
+e $\mathbf{4}/4$ uma duração de $4$\quarternote ~(quatro semínimas). É importante
+ressaltar que a duração em tempo das figuras musicais é relativa, como pode ser visto
+na terceira coluna da Tabela \ref{tab:noteslength}, onde as durações estão em função
+da duração $S$ da semibreve. 
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+formula & Figura  & Duração & Nome\\ \hline
+\hline
+$1/1$   & \fullnote    & $S$   & Semibreve \\ \hline
+$1/2$ & \halfnote    & $S/2$ & Mínima \\ \hline
+$1/4$ & \quarternote & $S/4$ & Semínima \\ \hline
+$1/8$ & \eighthnote  & $S/8$ & Colcheia \\ \hline
+\end{tabular}
+\caption{Duração e símbolos de algumas figuras musicais}
+\label{tab:noteslength}
+\end{table}
+
+Se classificamos aos compassos por sua métrica, os três tipos mais conhecidos 
+são os compassos binários, ternários, quaternários \cite[pp. 27]{adolfo2002musica}.
+
+\textbf{Um compasso binário} é uma estrutura rítmica que se carateriza por ter compassos com dois tempos,
+sendo o primeiro pulso forte e o segundo fraco \cite[pp. 66]{adolfo2002musica}\cite[pp. 28]{alves2004teoria}. Em geral podem ser chamados
+de compassos binários quando a formula de compasso tem a forma $2A/B$, 
+onde $A$ pode ser $1$ ou $3$ e $B$ pode ser $2$, $4$, $8$, etc.
+Por exemplo as formulas: $2/8$, $2/4$, $2/2$,  $6/16$, $6/8$ e  $6/4$;
+representam compassos binários.
+Alguns autores consideram aos compassos quaternários (ex: 4/4, 12/4) como um caso de compasso binário,
+chamando eles de compasso binário duplo \cite[pp. 41]{grabner2001teoria}.
+A Figura \ref{compasso:binario}, representa um exemplo de compasso binário, com 
+formula de compasso $2/2 \equiv 2$\halfnote, onde o primeiro e segundo
+compasso tem uma duração de $S$ (uma semibreve), o primeiro compasso contem $2$\halfnote~e
+o segundo contem $4$\quarternote.
+\begin{figure}[H]
+\centering
+\begin{abc}[name=compasso1]
+X: 1 % start of header
+K: C % scale: C major
+M: 2/2 %meter - compasso
+"Primeiro compasso" G4 F4 |"Segundo compasso" G2 D2 F2 D2  |
+\end{abc}
+\caption{Exemplo de compasso binário}
+\label{compasso:binario}
+\end{figure}
+
+\textbf{Um compasso ternário} 
+é uma estrutura rítmica que se carateriza por ter compassos com trés tempos,
+sendo o primeiro pulso forte e os outros dois fracos 
+\cite[pp. 67]{adolfo2002musica}\cite[pp. 30]{alves2004teoria}. Em geral podem ser chamados
+de compassos ternários quando a formula de compasso tem a forma $3^A/B$, 
+onde $A$ pode ser $1$ ou $2$ e $B$ pode ser $2$, $4$, $8$, etc.
+Por exemplo as formulas: $3/8$, $3/4$, $3/2$,  $9/16$, $9/8$ e $9/4$;
+representam compassos ternários (com denominador múltiplo de 3 exclusivamente) 
+A Figura \ref{compasso:ternario}, representa um exemplo de compasso ternário, com 
+formula de compasso $3/4 \equiv 3$\quarternote, onde o primeiro e segundo
+compasso tem uma duração de $0.75S$, o primeiro compasso contem $3$\quarternote~e
+o segundo contem $6$\eighthnote.
+\begin{figure}[H]
+\centering
+\begin{abc}[name=compasso2]
+X: 1 % start of header
+K: C % scale: C major
+M: 3/4 %meter - compasso
+"Primeiro compasso" G2 F2 F2 |"Segundo compasso" G1 F1 E1 D1 D1  D1  |
+\end{abc}
+\caption{Exemplo de compasso ternário}
+\label{compasso:ternario}
+\end{figure}
+
+
+\textbf{Um compasso quaternário}  
+é uma estrutura rítmica que se carateriza por ter compassos com quatro tempos,
+sendo o primeiro pulso forte o segundo fraco o terceiro semiforte e o ultimo fraco 
+\cite[pp. 67]{adolfo2002musica}\cite[pp. 32]{alves2004teoria}. 
+Em geral podem ser chamados
+de compassos quaternários quando a formula de compasso tem a forma $4A/B$, 
+onde $A$ pode ser $1$ ou $3$ e $B$ pode ser $2$, $4$, $8$, etc.
+Por exemplo as formulas: $4/8$, $4/4$, $4/2$,  $12/16$, $12/8$ e $12/4$;
+representam compassos quaternários 
+A Figura \ref{compasso:quaternario}, representa um exemplo de compassos quaternário, com 
+formula de compasso $4/4 \equiv 4$\quarternote, onde o primeiro e segundo
+compasso tem uma duração de $S$, o primeiro compasso contem $4$\quarternote~e
+o segundo contem $8$\eighthnote.
+\begin{figure}[H]
+\centering
+\begin{abc}[name=compasso3]
+X: 1 % start of header
+K: C % scale: C major
+M: 4/4 %meter - compasso
+"Primeiro compasso" G2 D2 F2 D2|"Segundo compasso" G1 F1 D1 C1 F1 E1 D1 C1 |
+\end{abc}
+\caption{Exemplo de compasso quaternário}
+\label{compasso:quaternario}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Tempo}
+
+Como já foi sugerido na Seção \ref{sec:compaso}, é chamado de "tempo" 
+à pulsação básica e unidade de medida dos compassos nas composições musicais;
+assim, temos que compassos binários, ternários e quaternários tem uma duração 2 tempos, 
+3 tempos e 4 tempos, respetivamente. Por comodidade chamaremos $T$ à duração em segundos de cada tempo,
+sendo que o valor de $T$ variará dependendo da formula de compasso usada.
+
+
+É importante
+ressaltar que os compassos que usem a mesma formula de compasso terão sempre a mesma duração em segundos;
+por outro lado, podem ser achados casos onde compassos com diferente formula podem ter a mesma duração;
+por exemplo: compassos binários com formula $\mathbf{2}/2$, como na Figura \ref{fig:tempo1}, 
+\begin{figure}[H]
+\centering
+\begin{abc}[name=tempo1]
+X: 1 % start of header
+K: C % scale: C major
+M: 2/2 %meter - compasso
+G2 D2 F2 D2 | G4 F4 |
+w: T/2 T/2 T/2 T/2  Tempo Tempo
+\end{abc}
+\caption{Exemplo de dois compassos com 2 tempos de duração T}
+\label{fig:tempo1}
+\end{figure}
+terão uma duração de dois tempos ($2T$) \cite[pp. 25]{azevedocompor} onde cada tempo ($T$) tem uma duração 
+de uma mínima (\halfnote), ver Tabela \ref{tab:noteslength}.
+
+Por outro lado,
+compassos quaternários com formula $\mathbf{4}/4$, como na Figura \ref{fig:tempo2}, 
+\begin{figure}[H]
+\centering
+\begin{abc}[name=tempo2]
+X: 1 % start of header
+K: C % scale: C major
+M: 4/4 %meter - compasso
+G2 D2 F2 D2| G4 F4|
+w: Tempo Tempo Tempo Tempo 2T 2T
+\end{abc}
+\caption{Exemplo de dois compassos com 4 tempos de duração T}
+\label{fig:tempo2}
+\end{figure} 
+terão uma duração de 4 tempos ($4T$) \cite[pp. 25]{azevedocompor} onde 
+cada tempo ($T$) tem uma duração de uma semínima (\quarternote), ver Tabela \ref{tab:noteslength}.
+Assim, estas duas formulas ($2/2$ e $4/4$) representam compassos 
+com a mesma duração em segundos, uma semibreve (\fullnote),
+porem usam tempos com diferente valor $T$ em segundos.
+
+\begin{lattention}
+Se interpretamos a música mostrada nas Figuras \ref{fig:tempo1} e \ref{fig:tempo2},
+podemos perceber que ambas descrevem o mesmo sonido; assim, não é factível
+distinguir só escutando se o sonido provem de um compasso com formula $2/2$ ou $4/4$.
+Em estos casos e similares o mais factível é afirmar que pertencem a alguma sub categoria da família dos
+compassos binários, seguindo o critério de alguns autores \cite[pp. 41]{grabner2001teoria} que afirmam 
+ que os compassos
+quaternários são uma sub categoria de compassos binários.
+\end{lattention}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Contratempo}
+Um contratempo acontece quando as notas (representadas por figuras musicais na partitura) 
+são executadas em tempos fracos do compasso
+ou nas partes fracas dos tempos, e estas são intercaladas por pausas nos tempos
+fortes ou partes fortes dos tempos \cite[pp. 16]{mascarenhascurso} 
+\cite[pp. 36]{azevedocompor}, neste sentido o contratempo pode ser visto como a 
+omissão de notas nos tempos fortes ou nas partes fortes dos tempos \cite[pp. 146]{medteoria}.
+Ou ``num sentido mais amplo, o contratempo é a acentuação de um tempo fraco em vez de um tempo forte'' \cite[pp. 147]{medteoria}. 
+
+Assim é fácil de perceber que a palavra ``contratempo'' na música, 
+é um adjetivo que faz referencia a como estão configuradas ou acentuadas 
+as notas no compasso. Por exemplo:
+A Figura \ref{fig:contratempoa} mostra 
+quatro compassos (binários) com formula $2/4$, em cada compasso existem 
+contratempos nos tempos fracos ou nas partes fracas dos tempos, sendo que cada tempo
+tem uma duração de uma semínima (\quarternote) e cada compasso uma duração 
+de uma mínima (\halfnote), ou seja duas semínimas (2\quarternote). 
+\begin{itemize}
+\item ``F''  indica que é o tempo é forte, 
+\item ``f''  indica que é o tempo é fraco,
+\item ``FF'' indica que é a parte forte de um tempo forte,
+\item ``Ff'' indica que é a parte fraca de um tempo forte,
+\item ``fF'' indica que é a parte forte de um tempo fraco,
+\item ``ff'' indica que é a parte fraca de um tempo fraco, 
+\end{itemize} 
+
+finalmente
+a figura musical \ViPa~ indica um silencio da mesma duração que uma semínima (\quarternote)
+e a figura musical \AcPa~ indica um silencio da mesma duração que uma colcheia (\eighthnote).
+\begin{figure}[H]
+\centering
+\begin{abc}[name=contratempoa]
+X: 1 % start of header
+K: C % scale: C major
+M:2/4
+%T: Contratempo num compasso binário
+V:1 clef=treble name="A" sname="A"
+[V:1] "F"z2 "f"G2 | "FF"z1 "Ff"G1  "fF"z1 "ff"G1 | "FF"z1 "Ff"G1  "f"G2 |  "F"z2 "fF"z1 "ff"G1  |
+w:          Tempo          T/2            T/2             T/2     Tempo                 T/2
+\end{abc}
+\caption{Contratempos no tempos fracos ou nas partes fracas dos tempos}
+\label{fig:contratempoa}
+\end{figure}
+Na Figura \ref{fig:contratempoa}, existem contratempos em todos os compassos porem estes estão
+configurados de distintas formas;
+no primeiro compasso acontece um contratempo dado que a única nota é executada 
+no tempo fraco do compasso, no segundo compasso acontecem contratempos pois as 
+notas são executadas nas partes fracas de cada tempo,
+no terceiro compasso acontece um contratempo pela execução de uma nota na parte 
+fraca do tempo forte, sendo o resto do tempo preenchido com um silencio, e 
+finalmente no quarto compasso acontece um contratempo pela execução de uma nota
+na parte fraca do tempo fraco, sendo o resto do compasso preenchido com silêncios.
+
+
+Por outro, A Figura \ref{fig:contratempob} mostra como o contratempo pode ser 
+expressado como a acentuação de um tempo fraco em vez de um tempo forte \cite[pp. 147]{medteoria}. 
+\begin{figure}[H]
+\centering
+\begin{abc}[name=contratempob]
+X: 1 % start of header
+K: C % scale: C major
+M:2/4
+%T: Contratempo num compasso binário
+V:1 clef=treble name="A" sname="A"
+[V:1] "F"G2 "f"+accent+G2 | "FF"G1 "Ff"+accent+G1  "fF"G1 "ff"+accent+G1 | "FF"G1 "Ff"+accent+G1  "f"G2  | 
+w:    Tempo Tempo           T/2    T/2             T/2    T/2              T/2    T/2             Tempo   
+\end{abc}
+\caption{Contratempos pela acentuação dos tempos fracos ou nas partes fracas dos tempos}
+\label{fig:contratempob}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Contagem dos tempos musicais desde o ponto de vista do ouvinte}
+Antes de iniciar esta seção é importante mencionar uma
+problemática que é vista com muita frequência nas escolas de dança; esta é gerada devido a que: A forma em que os tempos são contados 
+nos compassos, é
+diferente à realizada entre profissionais da música e da dança. 
+Sendo que a contagem dos profissionais da música segue as normas
+e notações indicadas na partitura, e no caso de profissionais da dança segue geralmente um enfoque 
+particular a cada escola de dança, visando só em muitos casos o fácil entendimento do aluno da
+execução dos movimentos, e não uma rigorosidade teórica no uso de termos e 
+expressões musicais.
+
+Conhecido Tudo isto,
+quando escutamos uma música na qual é tipicamente dançado samba de gafieira,
+podemos distinguir que a soma dos sonidos produzidos pelos instrumentos realizam 
+um padrão de repetição muito particular, geralmente ligado à onomatopeia ``Chic Chic Tum''.
+Este padrão está constituído de dois sons ``Chic'' da mesma duração em tempo, 
+e um sonido ``Tum'' que ocupa o mesmo tempo que a duração de dois ``Chic''.
+
+
+A Figura \ref{fig:caquarela} representa os compassos 18, 19 e 20 da  
+composição musical ``Aquarela do Brasil'' escrita
+por Ary Barroso em 1939 \cite{AquarelaDoBrasil}; 
+a versão mostrada na figura teve arranjos por Irineu Krüger \cite{Irineu}. 
+Nesta versão, a música está representada com 1 voz ou coro de voces (``Voice Choir'') e 4 
+instrumentos (``Eb'',``Bb'',``Strings'' e ``D. Bass''), que usam uma 
+formula de compasso $2/4$, de modo que cada compasso
+é binário e
+pode ser preenchido usando duas semínimas (2\quarternote).
+
+\begin{figure}[H]
+\centering
+%\includegraphics[width=\textwidth]{chapters/cap-fundamentos/aquarela.png}
+\begin{abc}[name=caquarela]
+% abcm2ps aquarela.abc  -O aquarela.ps
+% ps2epsi aquarela.ps aquarela.eps
+%
+X: 1 % start of header
+T: Brazil - Aquarela do Brasil
+C: Music: Ary Barroso, 1939
+C: Arranged by: Irineu Krüger
+K: C % scale: C major
+M: 2/4 % formula do compasso
+%
+V:1 clef=treble name="Voice Choir" sname="Voice Choir"
+V:2 clef=treble name="Eb" sname="Eb"
+V:3 clef=treble name="Bb" sname="Bb"
+V:4 clef=treble name="Strings" sname="Strings"
+V:5 clef=bass   name="D. Bass" sname=""D. Bass"
+%
+%
+[V:1] "18" C'3/2A/2C2  |"19" A3/2(G/2 G/2)E1E/2  |"20" z/2 C'1A/2 C'1C'1  |
+w:    Ó Bras-sil        sam-ba_ que dá       bam-bo-leio_ 
+w:    Ó Bras-sil        ver-de que dá_       pa-ra~o mun-do 
+%
+%
+[V:2] G1z/2G1z/2G1  | G1z/2G1z/2G1  | G1z/2G1z/2G1  |
+%
+%
+[V:3] z4  | z4  | z4  |
+%
+%
+[V:4] G1z/2G1z/2G1  | G1z/2G1z/2G1  | G1z/2G1z/2G1  |
+%
+%
+[V:5] C,2 G,,2  | C,1 z1 G,,2  | C,2 G,,2  |
+\end{abc}
+\caption{3 compassos da partitura da composição ``Aquarela do brasil''}
+\label{fig:caquarela}
+\end{figure}
+Analisando esta partitura \cite{Irineu} e escutando a música produzida, podemos perceber facilmente
+que os instrumentos executados geram um sonido
+com a onomatopeia ``e Chic Chic Tum'' ou ``Chic Chic Tum'' dependendo da percepção do ouvinte. 
+Assim, como pode ser escutado, o inicio de cada compasso coincide com o ``Tum''; 
+sendo que este é o momento em que a maioria dos instrumentos produzem um sonido, de modo que a sensação para o 
+ouvinte é de uma potencia de som maior. Cada instrumento prolongará seu sonido de
+forma diferente, porem na percepção final podemos dizer que o ``Tum'' ocupa 1 
+tempo (\quarternote) se percebemos ``Chic Chic Tum'' (ver ``D. Bass'') ou 3/4 de tempo se percebemos
+``e Chic Chic Tum''. Imediatamente depois do ``Tum'', a 3/4 do primeiro tempo do compasso,
+na parte fraca do tempo fraco, 
+acontece um sonido de onomatopeia ``e'' que se prolonga ate a parte forte do tempo fraco, 
+este sonido é executado pelos instrumentos ``Eb'' e ``Strings'' constituindo assim uma sincopada\cite[pp. 143]{medteoria}.
+%%Esta é uma sincopa
+O segundo tempo (tempo fraco) inicía com o instrumento ``D. Bass'' que produz o primeiro ``Chic''
+e finalmente os instrumentos ``Eb'' e ``Strings'' executam o segundo ``Chic''
+na parte fraca do tempo fraco, preenchendo o resto do tempo com silêncios, é dizer
+fazem contratempos.
+
+Pelo exposto anteriormente, agora podemos simplificar a partitura para gerar um sonido com onomatopeia
+``Chic Chic Tum'', como é mostrado na Figura \ref{fig:contratempo1}.
+Assim,
+o instrumento 1 executa dois sonidos, de modo que o primeiro contribui ao sonido 
+``Tum'' e o segundo sonido gera o segundo ``Chic'' do compasso; por outro lado,
+o instrumento 2 executa um ritmo com um padrão
+de repetição de dois sonidos ``Tum'' e ``Chic'', nesse ordem;
+sendo que a nota executada no tempo forte produz um sonido mais agudo que a 
+executada no tempo fraco.
+\begin{figure}[H]
+\centering
+\begin{abc}[name=contratempo1]
+X: 1 % start of header
+K: C % scale: C major
+M:2/4
+%T: Contratempo num compasso binário
+V:1 clef=treble name="Instrumento 1" sname="Inst. 1"
+V:2 clef=bass   name="Instrumento 2" sname="Inst. 2"
+[V:1] " ""T/2"G1 " ""T/2"z1 " ""T/2"z1 " ""T/2"G1 | " ""T/2"G1 " ""T/2"z1 " ""T/2"z1 " ""T/2"G1  :|
+w:    Tum                     Chic                  Tum                   Chic           
+[V:2] "Tempo"C,2 "Tempo"G,,2  | "Tempo"C,2 "Tempo"G,,2  :|
+w:    Tum       Chic         Tum       Chic            
+\end{abc}
+\caption{Padrão de repetição para gerar um sonido de onomatopeia ``Chic Chic Tum''.}
+\label{fig:contratempo1}
+\end{figure}
+
+Pelo exposto anteriormente é fácil perceber, como existe uma diference entre 
+o que percebemos ao escutar uma música e a forma como esta é escrita na partitura;
+pois como é visto na Figura \ref{fig:contratempo1}, quando escrevemos
+um sonido com o padrão de repetição ``Tum Chic Chic'', para o ouvinte é mais natural associar
+este sonido com o padrão ``Chic Chic Tum'', devido a que \textbf{ao falar o ser humano usa a pausa
+para denotar o final de uma palavra}, da mesma forma, ao escutar uma música, traduzimos
+que o sonido que tem um silencio maior apos ser executado marca o final do ciclo
+do padrão de repetição. Assim, o que um músico vê ao ler uma partitura
+é um padrão de repetição ``Tum Chic Chic'', sendo que  um
+ouvinte interpretará de forma instintiva que o padrão é ``Chic Chic Tum ''.
+
+Esta diferença na contagem leva a um problema, sim se quer ser rigoroso na 
+forma de contar os tempos nos compassos; por exemplo, na Tabela \ref{tab:ritmo1} 
+podemos ver 4 formas distintas de contar os tempos nos compassos indicando a 
+distribuição de tempos, onde ``A'' representa uma porção de tempo.
+\begin{table}[ht]
+  \centering
+  \begin{tabular}    {c|ccc|c}
+    \hline
+    Tipos de contagem       & A/2 & A/2   & A & Recomendável?\\
+    \hline
+    Contagem 1: & Chic  & Chic  & Tum   & Sim\\
+    Contagem 2: & Con   & -tra  & Tempo & Não\\
+    Contagem 3: & 1     & e     & 2     & Não\\
+    Contagem 4: & 1     & 2     & 3     & Não\\
+    \hline
+  \end{tabular}
+  \caption{Tipos de contagem na samba de gafieira.}
+\label{tab:ritmo1}
+\end{table}
+A contagem 1 é a que recomendo, devido a que pode ser usada sem aprofundar demasiado 
+na notação musical, de modo que só precisa ser explicado que a duração de um 
+``Tum'' é o dobro que um ``Chic'', e anexado que geralmente veremos que o ``Tum''
+acontece no tempo 1 da música, de modo que outra contagem valida seria ``Tum Chic Chic''; 
+porem a contagem 1 não está restrita ao uso destas silabas (``Chic'' e ``Tum''), em geral esta
+contagem representa a quase qualquer padrão de repetição
+que use duas silabas diferentes como os padrões: ``Ta Ta Kum'', ``Tic Tic Pa'', etc. Sendo
+que o padrão que não recomendo é o visto na contagem 2 (``Con-tra Tempo''), devido
+a que o uso deste padrão pode confundir às pessoas que desconhecem a definição formal
+do termo contratempo, e levar a confusão de achar que um contratempo é só uma 
+distribuição de 3 sonidos sendo um o dobro do outros dois, em termos de tempos execução.
+Outra forma que não recomendo é a contagem 3, devido a como é visto nas Figuras 
+\ref{fig:caquarela} e \ref{fig:contratempo1}, é muito comum que o ``Tum'' 
+inicie no tempo 1, de modo que uma correta contagem neste formato seria ``2 e 1'',
+mesmo assim, esta distribuição de tempos dependerá da forma em que a partitura for
+escrita, inclusive pode-se dar o caso que a partitura não tenha compassos binários 
+e sim quaternários, criando assim este tipo de contagem mais caminhos onde podemos errar.
+Consequentemente, e por motivos similares aos presentados para a contagem 3, 
+não recomendo a contagem 4, e derivados. Em geral as contagens 3 e 4, só deveriam 
+ser usadas se a pessoa está segura da forma em que a música está escrita na partitura.
+
+
+
+
