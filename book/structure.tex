@@ -61,9 +61,19 @@
 %	BIBLIOGRAPHY AND INDEX
 %----------------------------------------------------------------------------------------
 
-\usepackage[style=numeric,citestyle=numeric,sorting=nyt,sortcites=true,autopunct=true,babel=hyphen,hyperref=true,abbreviate=false,backref=true,backend=biber]{biblatex}
+\usepackage[ style=alphabetic,
+             citestyle=alphabetic,
+             sorting=none,
+             sortcites=true,
+             autopunct=true,
+             babel=hyphen,
+             hyperref=true,
+             abbreviate=false,
+             backref=true,
+             backend=biber]{biblatex}
 \addbibresource{bibliography.bib} % BibTeX bibliography file
 \defbibheading{bibempty}{}
+
 
 \usepackage{calc} % For simpler calculation - used for spacing the index letter headings correctly
 \usepackage{makeidx} % Required to make an index
