@@ -206,7 +206,7 @@
 {\;}% Punctuation after theorem head
 {0.25em}% Space after theorem head
 {\small\sffamily\color{ocre}\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
-\thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries\color{black}---\nobreakspace#3.}} % Optional theorem note
+\thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries\color{black}---\nobreakspace#3}} % Optional theorem note
 \renewcommand{\qedsymbol}{$\blacksquare$}% Optional qed square
 
 \newtheoremstyle{blacknumex}% Theorem style name
@@ -218,7 +218,7 @@
 {\;}% Punctuation after theorem head
 {0.25em}% Space after theorem head
 {\small\sffamily{\tiny\ensuremath{\blacksquare}}\nobreakspace\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
-\thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries---\nobreakspace#3.}}% Optional theorem note
+\thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries---\nobreakspace#3}}% Optional theorem note
 
 \newtheoremstyle{blacknumbox} % Theorem style name
 {0pt}% Space above
@@ -229,7 +229,7 @@
 {\;}% Punctuation after theorem head
 {0.25em}% Space after theorem head
 {\small\sffamily\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
-\thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries---\nobreakspace#3.}}% Optional theorem note
+\thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries---\nobreakspace#3}}% Optional theorem note
 
 % Non-boxed/non-framed environments
 \newtheoremstyle{ocrenum}% % Theorem style name
@@ -241,7 +241,7 @@
 {\;}% Punctuation after theorem head
 {0.25em}% Space after theorem head
 {\small\sffamily\color{ocre}\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
-\thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries\color{black}---\nobreakspace#3.}} % Optional theorem note
+\thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries\color{black}---\nobreakspace#3}} % Optional theorem note
 \renewcommand{\qedsymbol}{$\blacksquare$}% Optional qed square
 \makeatother
 
@@ -253,10 +253,10 @@
 \newtheorem{problem}{Problem}[chapter]
 \newtheorem{exerciseT}{Exercise}[chapter]
 \theoremstyle{blacknumex}
-\newtheorem{exampleT}{Example}[chapter]
+\newtheorem{exampleT}{Exemplo}[chapter]
 \theoremstyle{blacknumbox}
 \newtheorem{vocabulary}{Vocabulary}[chapter]
-\newtheorem{definitionT}{Definition}[section]
+\newtheorem{definitionT}{Definição}[chapter]
 \newtheorem{corollaryT}[dummy]{Corollary}
 \theoremstyle{ocrenum}
 \newtheorem{proposition}[dummy]{Proposition}
@@ -500,3 +500,22 @@ addtohook={%
 \fi
 }
 }
+
+
+%----------------------------------------------------------------------------------------
+%	Horizontal separator line
+%   \PRLsep{Text}
+%----------------------------------------------------------------------------------------
+%% ejemplo: \PRLsep
+%\newcommand{\PRLsep}{\noindent\makebox[\linewidth]{\resizebox{0.3333\linewidth}{1pt}{$\bullet$}}\bigskip}
+
+\newlength{\PRLlen}
+\newcommand*\PRLsep[1]{\settowidth{\PRLlen}{#1}\advance\PRLlen by -\textwidth\divide\PRLlen by -2\noindent\makebox[\the\PRLlen]{\resizebox{\the\PRLlen}{1pt}{$\blacktriangleleft$}}\raisebox{-.5ex}{#1}\makebox[\the\PRLlen]{\resizebox{\the\PRLlen}{1pt}{$\blacktriangleright$}}\bigskip}
+
+%----------------------------------------------------------------------------------------
+% MUISCAL NOTATION
+%----------------------------------------------------------------------------------------
+\usepackage[generate,ps2eps]{abc}%%sudo apt-get install abcm2ps
+
+\usepackage[nointegrals]{wasysym}
+\usepackage{harmony}
