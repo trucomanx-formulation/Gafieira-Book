@@ -44,63 +44,40 @@
 \documentclass[11pt,fleqn]{book} % Default font size and left-justified equations
 \usepackage{float}% para ter [H]
 
-
-\usepackage[dvipsnames*,svgnames]{xcolor}
-\definecolor{lowgray}{RGB}{240,240,240}
-
-\usepackage[most]{tcolorbox}
-\newtcolorbox{lattention}{breakable,
-enhanced,
-arc=0mm,
-colback=gray!5,
-colframe=gray,
-leftrule=12mm,%
-overlay={\node[anchor=north west,outer sep=2pt] at (frame.north west) {\includegraphics[width=8mm]{Pictures/attention2.png}}; }}
-
-
 \usepackage{fancyvrb}
 
 %----------------------------------------------------------------------------------------
+%	DATOS DEL LIBRO
+%----------------------------------------------------------------------------------------
+\newcommand{\mytitle}[0]{ Samba de Gafieira }
+\newcommand{\mysubtitle}[0]{ Dan{\c{c}}a e Partitura de Movimento}
+\newcommand{\myauthor}[0]{ Fernando Pujaico Rivera}
+%----------------------------------------------------------------------------------------
+\newcommand{\imprimirlocal}[0]{Brasil}
+\newcommand{\imprimiryear}[0]{XXXXXXXXXXX}
+\newcommand{\imprimirdata}[0]{9 de abril do \imprimiryear}
+\newcommand{\imprimirtipotrabalho}[0]{Bibliografia}
+\newcommand{\imprimirsize}[0]{16x30cm}
+\newcommand{\imprimirisbn}[0]{XXXXXXXXXXX}
+\newcommand{\imprimireditora}[0]{Editora XXXXXXXXXXX}
+%----------------------------------------------------------------------------------------
+\newcommand{\ImprimirLinkDescargaLivro}[0]{\url{http://XXXXXXXXXXX.com}}
+\newcommand{\ImprimirLinkCompraLivroImpresso}[0]{\url{http://XXXXXXXXXXX.com}}
+\newcommand{\ImprimirLinkCompraLivroDigital}[0]{\url{http://XXXXXXXXXXX.com}}
+%----------------------------------------------------------------------------------------
+\newcommand{\ImprimirEmail}[0]{ \href{mailto:fernando.pujaico.rivera@gmail.com}{fernando.pujaico.rivera@gmail.com}}
+%----------------------------------------------------------------------------------------
 
-\input{structure} % Insert the commands.tex file which contains the majority of the structure behind the template
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Modificado por Fernando Pujaico Rivera
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%	XCOLOR
+%----------------------------------------------------------------------------------------
+\usepackage[dvipsnames*,svgnames]{xcolor}
+\definecolor{lowgray}{RGB}{240,240,240}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Para \singlespacing 
-\usepackage{setspace}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Par diferentes modelos de caption.
-\usepackage{caption}
-\usepackage{subcaption}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% glossario
-\usepackage{nomencl}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Link a referencia
-\usepackage{hyperref}
-\hypersetup{
-   bookmarks=true,          % show bookmarks bar?
-   pdftoolbar=true,         % show Acrobat’s toolbar?
-   pdfmenubar=true,         % show Acrobat’s menu?
-   pdffitwindow=false,      % window fit to page when opened
-   pdfstartview={FitH},     % fits the width of the page to the window
-   colorlinks=true,         % false: boxed links; true: colored links
-   linkcolor=black,         % color of internal links (change box color with linkbordercolor)
-   %citecolor=green,        % color of links to bibliography
-   %filecolor=magenta,      % color of file links
-   %urlcolor=cyan           % color of external links
-}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Defino algunos colores.
+%----------------------------------------------------------------------------------------
+%	COLOR
+%----------------------------------------------------------------------------------------
 \usepackage{color}
 \definecolor{dkred}{rgb}{0.6,0,0}
 \definecolor{dkgreen}{rgb}{0,0.6,0}
@@ -109,9 +86,21 @@ overlay={\node[anchor=north west,outer sep=2pt] at (frame.north west) {\includeg
 \definecolor{mylowgray}{rgb}{0.9,0.9,0.9}
 \definecolor{myverylowgray}{rgb}{0.95,0.95,0.95}
 \definecolor{mymauve}{rgb}{0.58,0,0.82}
+\definecolor{mycolor}{rgb}{0.98,0.88,0.82}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%----------------------------------------------------------------------------------------
+
+\input{structure} % Insert the commands.tex file which contains the majority of the structure behind the template
+
+
+
+\begin{comment}
+%----------------------------------------------------------------------------------------
 % Para \lstset e insertar codigo
+%----------------------------------------------------------------------------------------
+
 \usepackage{listings}
 \lstset{%% configuro listings
   frame=tb,
@@ -172,9 +161,11 @@ overlay={\node[anchor=north west,outer sep=2pt] at (frame.north west) {\includeg
 %%%%  cd directory
 %%%%  ls
 %%%% \end{lstlisting}
+\end{comment}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Para a criação do Glossário
+%----------------------------------------------------------------------------------------
+% Para a criação do Glossário
+%----------------------------------------------------------------------------------------
 \makenomenclature
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -187,60 +178,32 @@ overlay={\node[anchor=north west,outer sep=2pt] at (frame.north west) {\includeg
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
-
-\begingroup
-\thispagestyle{empty}
-\begin{tikzpicture}[remember picture,overlay]
-\coordinate [below=12cm] (midpoint) at (current page.north);
-\node at (current page.north west)
-{\begin{tikzpicture}[remember picture,overlay]
-\node[anchor=north west,inner sep=0pt] at (0,0) {\includegraphics[width=\paperwidth]{background}}; % Background image
-\draw[anchor=north] (midpoint) node [fill=ocre!30!white,fill opacity=0.6,text opacity=1,inner sep=1cm]
-{\Huge\centering\bfseries\sffamily\parbox[c][][t]{\paperwidth}{\centering Partitura de movimento para samba de gafieira\\[15pt] % Book title
-{\Large Uma visão particular para um público em geral}\\[20pt] % Subtitle
-{\huge Fernando Pujaico Rivera}}}; % Author name
-\end{tikzpicture}};
-\end{tikzpicture}
-\vfill
-\endgroup
+\input{preliminares/titlepage}
 
 %----------------------------------------------------------------------------------------
 %	COPYRIGHT PAGE
 %----------------------------------------------------------------------------------------
+\input{preliminares/copyright}
 
-\newpage
-~\vfill
-\thispagestyle{empty}
+%----------------------------------------------------------------------------------------
+%	DEDICATORIA
+%----------------------------------------------------------------------------------------
+\include{preliminares/dedicatoria} 
 
-\noindent Copyright \copyright\ 2018 Fernando Pujaico Rivera\\ % Copyright notice
+%----------------------------------------------------------------------------------------
+%	Acknowledgements
+%----------------------------------------------------------------------------------------
+\include{preliminares/acknowledgements} 
 
-\noindent \textsc{Published by Publisher}\\ % Publisher
 
-\noindent \textsc{book-website.com}\\ % URL
-
-\noindent Licensed under the Creative Commons Attribution-NonCommercial 3.0 
-Unported License (the ``License''). You may not use this file except in 
-compliance with the License. You may obtain a copy of the License at 
-\url{http://creativecommons.org/licenses/by-nc/3.0}. Unless required by 
-applicable law or agreed to in writing, software distributed under the License 
-is distributed on an \textsc{``as is'' basis, without warranties or conditions 
-of any kind}, either express or implied. See the License for the specific 
-language governing permissions and limitations under the License.\\ % License information
-
-\noindent \textit{First printing, March 2013} % Printing/edition date
 
 %----------------------------------------------------------------------------------------
 %	TABLE OF CONTENTS
 %----------------------------------------------------------------------------------------
-
 \chapterimage{chapter_head_1.pdf} % Table of contents heading image
-
 \pagestyle{empty} % No headers
-
 \tableofcontents % Print the table of contents itself
-
 \cleardoublepage % Forces the first chapter to start on an odd page so it's on the right
-
 \pagestyle{fancy} % Print headers again
 
 %----------------------------------------------------------------------------------------
@@ -250,9 +213,7 @@ language governing permissions and limitations under the License.\\ % License in
 %----------------------------------------------------------------------------------------
 \part{Introdução}
 
-
-\include{chapters/cap-intro/intro}
-
+\include{chapters/cap-historia/historia}
 \include{chapters/cap-normas/normas}
 
 %----------------------------------------------------------------------------------------
@@ -262,7 +223,7 @@ language governing permissions and limitations under the License.\\ % License in
 %----------------------------------------------------------------------------------------
 \part{Música e Musicalidade}
 
-\include{chapters/cap-fundamentos/fundamentos}
+\include{chapters/cap-musicabasica/musicabasica}
 \include{chapters/cap-musicalidade/musicalidade}
 
 %----------------------------------------------------------------------------------------
@@ -270,19 +231,21 @@ language governing permissions and limitations under the License.\\ % License in
 %----------------------------------------------------------------------------------------
 %	PART
 %----------------------------------------------------------------------------------------
-\part{Partitura de movimiento}
+\part{Notação da partitura de movimento}
 
-\include{chapters/cap-partitura/partitura}
+\include{chapters/cap-posturasmov/posturasmov}
+\include{chapters/cap-partituramov/partituramov}
 
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
 %	PART
 %----------------------------------------------------------------------------------------
-\part{Movimentos básicos}
+\part{Movimentos e passos na samba de Gafieira}
 
 \include{chapters/cap-passos-basicos/passos-basicos}
-
+\include{chapters/cap-passos-tradicional/passos-tradicional}
+\include{chapters/cap-passos-footwork/passos-footwork}
 
 
 

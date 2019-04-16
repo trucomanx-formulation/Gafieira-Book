@@ -22,7 +22,7 @@
 \usepackage[top=3cm,bottom=3cm,left=3cm,right=3cm,headsep=10pt,a4paper]{geometry} % Page margins
 
 \usepackage{graphicx} % Required for including pictures
-\graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
+\graphicspath{{pictures/}} % Specifies the directory where pictures are stored
 
 \usepackage{lipsum} % Inserts dummy text
 
@@ -186,9 +186,8 @@
 \fi}
 
 %----------------------------------------------------------------------------------------
-%	THEOREM STYLES
+%	DEFINITION OF THEOREM BOXES
 %----------------------------------------------------------------------------------------
-
 \usepackage{amsmath,amsfonts,amssymb,amsthm} % For math equations, theorems, symbols, etc
 
 \newcommand{\intoo}[2]{\mathopen{]}#1\,;#2\mathclose{[}}
@@ -262,7 +261,7 @@
 \newtheorem{proposition}[dummy]{Proposition}
 
 %----------------------------------------------------------------------------------------
-%	DEFINITION OF COLORED BOXES
+%	DEFINITION OF COLORED THEOREM BOXES
 %----------------------------------------------------------------------------------------
 
 \RequirePackage[framemethod=default]{mdframed} % Required for creating the theorem, definition, exercise and corollary boxes
@@ -339,7 +338,6 @@ innerbottommargin=5pt]{cBox}
 %----------------------------------------------------------------------------------------
 %	REMARK ENVIRONMENT
 %----------------------------------------------------------------------------------------
-
 \newenvironment{remark}{\par\vspace{10pt}\small % Vertical white space above the remark and smaller font size
 \begin{list}{}{
 \leftmargin=35pt % Indentation on the left
@@ -351,7 +349,6 @@ innerbottommargin=5pt]{cBox}
 %----------------------------------------------------------------------------------------
 %	SECTION NUMBERING IN THE MARGIN
 %----------------------------------------------------------------------------------------
-
 \makeatletter
 \renewcommand{\@seccntformat}[1]{\llap{\textcolor{ocre}{\csname the#1\endcsname}\hspace{1em}}}                    
 \renewcommand{\section}{\@startsection{section}{1}{\z@}
@@ -441,7 +438,6 @@ innerbottommargin=5pt]{cBox}
 %----------------------------------------------------------------------------------------
 %	CHAPTER HEADINGS
 %----------------------------------------------------------------------------------------
-
 \newcommand{\thechapterimage}{}%
 \newcommand{\chapterimage}[1]{\renewcommand{\thechapterimage}{#1}}%
 \def\@makechapterhead#1{%
@@ -484,7 +480,6 @@ innerbottommargin=5pt]{cBox}
 %----------------------------------------------------------------------------------------
 %	HYPERLINKS IN THE DOCUMENTS
 %----------------------------------------------------------------------------------------
-
 \usepackage{hyperref}
 \hypersetup{hidelinks,backref=true,pagebackref=true,hyperindex=true,colorlinks=false,breaklinks=true,urlcolor= ocre,bookmarks=true,bookmarksopen=false,pdftitle={Title},pdfauthor={Author}}
 \usepackage{bookmark}
@@ -501,14 +496,17 @@ addtohook={%
 }
 }
 
+%----------------------------------------------------------------------------------------
+%	Horizontal separator line
+%   \HRule{2pt}
+%----------------------------------------------------------------------------------------
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}} % creo el comando  \HRule regla horizontal
+
 
 %----------------------------------------------------------------------------------------
 %	Horizontal separator line
 %   \PRLsep{Text}
 %----------------------------------------------------------------------------------------
-%% ejemplo: \PRLsep
-%\newcommand{\PRLsep}{\noindent\makebox[\linewidth]{\resizebox{0.3333\linewidth}{1pt}{$\bullet$}}\bigskip}
-
 \newlength{\PRLlen}
 \newcommand*\PRLsep[1]{\settowidth{\PRLlen}{#1}\advance\PRLlen by -\textwidth\divide\PRLlen by -2\noindent\makebox[\the\PRLlen]{\resizebox{\the\PRLlen}{1pt}{$\blacktriangleleft$}}\raisebox{-.5ex}{#1}\makebox[\the\PRLlen]{\resizebox{\the\PRLlen}{1pt}{$\blacktriangleright$}}\bigskip}
 
@@ -516,6 +514,63 @@ addtohook={%
 % MUISCAL NOTATION
 %----------------------------------------------------------------------------------------
 \usepackage[generate,ps2eps]{abc}%%sudo apt-get install abcm2ps
-
 \usepackage[nointegrals]{wasysym}
 \usepackage{harmony}
+
+
+%----------------------------------------------------------------------------------------
+% ATTENTION MESSAGE BOX
+%----------------------------------------------------------------------------------------
+\usepackage[most]{tcolorbox}
+\newtcolorbox{lattention}{breakable,
+enhanced,
+arc=0mm,
+colback=gray!5,
+colframe=gray,
+leftrule=12mm,%
+overlay={\node[anchor=north west,outer sep=2pt] at (frame.north west) {\includegraphics[width=8mm]{attention2.eps}}; }}
+
+
+
+%----------------------------------------------------------------------------------------
+% Para \singlespacing 
+%----------------------------------------------------------------------------------------
+\usepackage{setspace}
+
+
+%----------------------------------------------------------------------------------------
+% Par diferentes modelos de caption.
+%----------------------------------------------------------------------------------------
+\usepackage{caption}
+\usepackage{subcaption}
+
+
+%----------------------------------------------------------------------------------------
+% GLOSSARIO
+%----------------------------------------------------------------------------------------
+\usepackage{nomencl}
+
+
+%----------------------------------------------------------------------------------------
+% Link a referencia
+%----------------------------------------------------------------------------------------
+\usepackage{hyperref}
+\hypersetup{
+   bookmarks=true,          % show bookmarks bar?
+   pdftoolbar=true,         % show Acrobat’s toolbar?
+   pdfmenubar=true,         % show Acrobat’s menu?
+   pdffitwindow=false,      % window fit to page when opened
+   pdfstartview={FitH},     % fits the width of the page to the window
+   colorlinks=true,         % false: boxed links; true: colored links
+   linkcolor=black,         % color of internal links (change box color with linkbordercolor)
+   %citecolor=green,        % color of links to bibliography
+   %filecolor=magenta,      % color of file links
+   %urlcolor=cyan           % color of external links
+}
+
+
+%----------------------------------------------------------------------------------------
+% Page counter
+%----------------------------------------------------------------------------------------
+\usepackage{lastpage}
+

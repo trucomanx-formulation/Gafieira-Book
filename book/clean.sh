@@ -4,12 +4,8 @@ filename=main
 
 rm -rf $filename
 
-rm -f compasso*.* 
-rm -f contratempo*.* 
-rm -f tempo*.* 
-rm -f chickchicktum*.*
-rm -f ritmo*.*
-rm -f caquarela*.*
+
+rm -f abc-*.*
 
 
 rm -f */*/*converted-to.pdf

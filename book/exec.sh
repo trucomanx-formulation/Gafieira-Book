@@ -1,4 +1,9 @@
 #!/bin/bash
+#pdflatex -interaction=nonstopmode cover.tex
+#pdflatex -interaction=nonstopmode cover.tex
+#pdflatex -interaction=nonstopmode cover.tex
+
+
 
 pdflatex -shell-escape main
 makeindex main.idx -s StyleInd.ist
