@@ -1,0 +1,30 @@
+
+%----------------------------------------------------------------------------------------
+%	Horizontal separator line
+%   \HRule{2pt}
+%----------------------------------------------------------------------------------------
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}} % creo el comando  \HRule regla horizontal
+
+
+
+%----------------------------------------------------------------------------------------
+%	Horizontal separator line
+%   \PRLsep{Text}
+%----------------------------------------------------------------------------------------
+\newlength{\PRLlen}
+\newcommand*\PRLsep[1]{\settowidth{\PRLlen}{#1}\advance\PRLlen by -\textwidth\divide\PRLlen by -2\noindent\makebox[\the\PRLlen]{\resizebox{\the\PRLlen}{1pt}{$\blacktriangleleft$}}\raisebox{-.5ex}{#1}\makebox[\the\PRLlen]{\resizebox{\the\PRLlen}{1pt}{$\blacktriangleright$}}\bigskip}
+
+
+
+%----------------------------------------------------------------------------------------
+% ATTENTION MESSAGE BOX
+%----------------------------------------------------------------------------------------
+\usepackage[most]{tcolorbox}
+\newtcolorbox{lattention}{breakable,
+enhanced,
+arc=0mm,
+colback=gray!5,
+colframe=gray,
+leftrule=12mm,%
+overlay={\node[anchor=north west,outer sep=2pt] at (frame.north west) {\includegraphics[width=8mm]{attention2.eps}}; }}
+

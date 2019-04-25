@@ -73,95 +73,21 @@
 %	XCOLOR
 %----------------------------------------------------------------------------------------
 \usepackage[dvipsnames*,svgnames]{xcolor}
-\definecolor{lowgray}{RGB}{240,240,240}
+\definecolor{colorlowgray}{RGB}{240,240,240}
 
 %----------------------------------------------------------------------------------------
 %	COLOR
 %----------------------------------------------------------------------------------------
 \usepackage{color}
-\definecolor{dkred}{rgb}{0.6,0,0}
-\definecolor{dkgreen}{rgb}{0,0.6,0}
-\definecolor{dkblue}{rgb}{0,0,0.6}
-\definecolor{mygray}{rgb}{0.5,0.5,0.5}
-\definecolor{mylowgray}{rgb}{0.9,0.9,0.9}
-\definecolor{myverylowgray}{rgb}{0.95,0.95,0.95}
-\definecolor{mymauve}{rgb}{0.58,0,0.82}
-\definecolor{mycolor}{rgb}{0.98,0.88,0.82}
-
-
+\definecolor{colorlowred}{rgb}{0.98,0.88,0.82}
+%\definecolor{colordarkgray}{rgb}{0.5,0.5,0.5}
+%\definecolor{colormauve}{rgb}{0.58,0,0.82}
 
 %----------------------------------------------------------------------------------------
+\input{formato-head} % paquetes usados con macros para la escrita
+\input{structure} % el estilo visual do livro
+\input{formato-macros} % las macros compuestas usadas para la escrita
 
-\input{structure} % Insert the commands.tex file which contains the majority of the structure behind the template
-
-
-
-\begin{comment}
-%----------------------------------------------------------------------------------------
-% Para \lstset e insertar codigo
-%----------------------------------------------------------------------------------------
-
-\usepackage{listings}
-\lstset{%% configuro listings
-  frame=tb,
-  language=Octave,%linguagem por defeito
-  captionpos=b,
-  %
-  aboveskip=3mm,
-  belowskip=3mm,
-  %backgroundcolor=\color{myverylowgray},
-  showstringspaces=false,
-  columns=flexible,
-  basicstyle={\small\ttfamily},
-  %
-  numbers=none,
-  numberstyle=\tiny\color{mygray},
-  %
-  breaklines=true,
-  breakatwhitespace=true,
-  tabsize=4
-}
-
-\lstdefinelanguage{OctaveMatlab}{%
-  language=Octave,% Linguagem de base
-  %
-  classoffset=0,
-  otherkeywords={..,;,=,<,>,<=,=>,==},
-  keywordstyle=\color{blue},
-  %  
-  classoffset=1,
-    morekeywords={datapack,datacut,datapack_to_gif,
-		  thsp,thsp_line,thsp_random,thsp_gaussian,
-		  coom,
-		  pmfad,pmfrd,
-		  inertiamoment,
-		  avd,avd_from_data,
-		  rvd,
-		  fujii,gendiff,stdcont,
-		  graphim,graphavd,graphrvd,graphptd,graphkurt,graphskew,
-		  hbpmf,threshold2d,stscorr},
-    keywordstyle=\color{dkred},
-  classoffset=0,
-  %
-  commentstyle=\color{dkgreen},
-  morecomment = [l][\itshape\color{purple!40!black}]{\%},
-  %
-  stringstyle=\color{mymauve},
-}
-
-\lstdefinestyle{definefunc}{%
-  backgroundcolor=\color{mylowgray},
-}
-
-\lstdefinestyle{definecode}{%
-  backgroundcolor=\color{myverylowgray},
-}
-%%%% \lstset{language=OctaveMatlab,style=definecode}%orden importa
-%%%% \begin{lstlisting}
-%%%%  cd directory
-%%%%  ls
-%%%% \end{lstlisting}
-\end{comment}
 
 %----------------------------------------------------------------------------------------
 % Para a criação do Glossário
@@ -221,10 +147,11 @@
 %----------------------------------------------------------------------------------------
 %	PART
 %----------------------------------------------------------------------------------------
-\part{Música e Musicalidade}
+\part{Músicalização para a dansa de salão}
 
-\include{chapters/cap-musicabasica/musicabasica}
-\include{chapters/cap-musicalidade/musicalidade}
+\include{chapters/cap-musica-basica/musica-basica}
+\include{chapters/cap-musica-composer/musica-composer}
+\include{chapters/cap-musica-musicalidade/musica-musicalidade}
 
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
@@ -233,7 +160,7 @@
 %----------------------------------------------------------------------------------------
 \part{Notação da partitura de movimento}
 
-\include{chapters/cap-posturasmov/posturasmov}
+\include{chapters/cap-posturas/posturas}
 \include{chapters/cap-partituramov/partituramov}
 
 %----------------------------------------------------------------------------------------
@@ -241,10 +168,19 @@
 %----------------------------------------------------------------------------------------
 %	PART
 %----------------------------------------------------------------------------------------
-\part{Movimentos e passos na samba de Gafieira}
+\part{O syllabus da samba de gafieira}
+\include{chapters/cap-passos-intro/passos-intro}
+\include{chapters/cap-passos-sobre-basicos/passos-sobre-basicos}
+\include{chapters/cap-passos-nivel-basico/passos-nivel-basico}
+\include{chapters/cap-passos-nivel-intermediario/passos-nivel-intermediario}
+\include{chapters/cap-passos-nivel-avanzado/passos-nivel-avanzado}
 
-\include{chapters/cap-passos-basicos/passos-basicos}
-\include{chapters/cap-passos-tradicional/passos-tradicional}
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	PART
+%----------------------------------------------------------------------------------------
+\part{Trabalhando de forma unipessoal}
 \include{chapters/cap-passos-footwork/passos-footwork}
 
 
