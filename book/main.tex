@@ -42,8 +42,8 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass[11pt,fleqn]{book} % Default font size and left-justified equations
-\usepackage{float}% para ter [H]
 
+\usepackage{float}% para ter [H]
 \usepackage{fancyvrb}
 
 %----------------------------------------------------------------------------------------
@@ -61,9 +61,9 @@
 \newcommand{\imprimirisbn}[0]{XXXXXXXXXXX}
 \newcommand{\imprimireditora}[0]{Editora XXXXXXXXXXX}
 %----------------------------------------------------------------------------------------
-\newcommand{\ImprimirLinkDescargaLivro}[0]{\url{http://XXXXXXXXXXX.com}}
-\newcommand{\ImprimirLinkCompraLivroImpresso}[0]{\url{http://XXXXXXXXXXX.com}}
-\newcommand{\ImprimirLinkCompraLivroDigital}[0]{\url{http://XXXXXXXXXXX.com}}
+\newcommand{\ImprimirLinkHomePageLivro}[0]{\url{http://XXXXXXXXXXX.com}}
+\newcommand{\ImprimirLinkCompraLivroImpresso}[0]{\url{http://XXXXXXXXXXX.com/comprarfisico/}}
+\newcommand{\ImprimirLinkCompraLivroDigital}[0]{\url{http://XXXXXXXXXXX.com/comprardigital/}}
 %----------------------------------------------------------------------------------------
 \newcommand{\ImprimirEmail}[0]{ \href{mailto:fernando.pujaico.rivera@gmail.com}{fernando.pujaico.rivera@gmail.com}}
 %----------------------------------------------------------------------------------------
@@ -74,6 +74,8 @@
 %----------------------------------------------------------------------------------------
 \usepackage[dvipsnames*,svgnames]{xcolor}
 \definecolor{colorlowgray}{RGB}{240,240,240}
+\definecolor{colorsystemdefault}{RGB}{16,81,15} % Define the color used for highlighting throughout the book
+\definecolor{colormylink}{RGB}{16,120,15} % Define the 
 
 %----------------------------------------------------------------------------------------
 %	COLOR
@@ -121,6 +123,10 @@
 %----------------------------------------------------------------------------------------
 \include{preliminares/acknowledgements} 
 
+%----------------------------------------------------------------------------------------
+%	PATROCINIO PAGE
+%----------------------------------------------------------------------------------------
+\input{preliminares/patrocinio}
 
 
 %----------------------------------------------------------------------------------------
@@ -196,7 +202,7 @@
 \part*{Bibliografia}
 
 \chapter*{Bibliografia}
-\addcontentsline{toc}{chapter}{\textcolor{ocre}{Bibliography}}
+\addcontentsline{toc}{chapter}{\textcolor{colorsystemdefault}{Bibliography}}
 \printbibliography[heading=bibempty]
 
 
@@ -207,7 +213,7 @@
 \cleardoublepage
 \phantomsection
 \setlength{\columnsep}{0.75cm}
-\addcontentsline{toc}{chapter}{\textcolor{ocre}{Index}}
+\addcontentsline{toc}{chapter}{\textcolor{colorsystemdefault}{Index}}
 \printindex
 
 %----------------------------------------------------------------------------------------
