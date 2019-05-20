@@ -1,4 +1,6 @@
-\section{Figuras musicais e pausas}\index{Figuras musicais}
+\section{Figuras musicais, pausas e durações}
+\index{Figuras musicais}
+\label{sec:figurasmusicais}
 As figuras musicais são um conjunto de sinais (desenhos), criadas pra indicar a relação 
 entre as \hyperref[sec:pos:Duracion]{\textbf{durações}} dos sons \cite[pp. 20]{medteoria}.
 Assim, podemos ver na coluna dois da Tabela \ref{tab:abc-noteslengthbasic}
@@ -28,17 +30,17 @@ $S/32$ & \Zwdr   & Fusa         & \ZwPa  & Pausa de fusa  \\ \hline
 Se decidimos criar uma sequencia rítmica assoviando um único tom, porem
 distribuindo os tempos de duração como: Longo, curto, curto; 
 repetindo esta sequencia quatro vesses. 
-Poderíamos escrever esta usando figuras musicais numa representação como a mostrada na Figura \ref{fig:abc-figurasexample1}.
+Poderíamos escrever esta sequencia usando figuras musicais numa representação como a mostrada na Figura \ref{fig:abc-figurasexample1}.
 É importante ressaltar que assumimos que  um sonido longo dura no tempo exatamente o dobro que um curto, 
 e que decidimos\footnote{É escolhida uma semínima porem pode ter sido escolhida 
 qualquer outra figura, dado que o valor $S$ não está definido.}
 representar um sonido de longa duração como uma semínima.
 
 Para entender melhor a representação com figuras musicais, 
-podemos ir a uma representação alternativa com um gráfico da potencia do sonido na execução dos sons,
-como é representado na Figura \ref{fig:abc-figurasexample1}.
+podemos ir a uma representação alternativa com um gráfico da potencia sonora na execução dos sons,
+como é representado na Figura \ref{fig:forma-figurasexample1b}.
 É fácil perceber como a potencia do som se mantêm, ate justo antes de iniciar 
-o seguinte sonido, de modo que não existem silêncios na sequencia rítmica.
+o seguinte som, de modo que não existem silêncios na sequencia rítmica.
 \end{example} 
 
 
@@ -68,7 +70,7 @@ V:1 clef=none stem=up %name="Ritmo 1"   sname="Ritmo 1"
     \begin{subfigure}[b]{0.9\textwidth}
         \includegraphics[width=\textwidth]{chapters/cap-musica-basica/forma-figurasexample1.eps}
         \caption{Sequencia rítmica usando um gráfico indicando a potencia do sonido.}
-        \label{fig:forma-figurasexample1}
+        \label{fig:forma-figurasexample1b}
     \end{subfigure}
     \caption{Sequencia rítmica.}\label{fig:total-figurasexample1}
 \end{figure}
@@ -82,13 +84,13 @@ O nome de cada uma destas pausas está descrito na quinta coluna da mesma tabela
 
 \begin{example}
 Similarmente ao exemplo anterior, se decidimos criar uma sequencia rítmica assoviando um único tom, porem
-intercalando sons e silêncios, podemos criar um padrão rítmico como na Figura \ref{fig:total-figurasexample2}.
+intercalando sons e silêncios, criaremos um padrão rítmico como na Figura \ref{fig:total-figurasexample2}.
 
 Podemos entender melhor a representação com figuras musicais, 
-usando a representação com um gráfico da potencia do sonido na execução dos sons,
+usando a representação com um gráfico da potencia sonora na execução dos sons,
 como é representado na Figura \ref{fig:forma-figurasexample2}.
 Nela percebemos como a potencia do som se mantêm durante a longitude de tempo estipulada pela figura musical, 
-ate justo antes de iniciar o silencio, indicado por uma linha reta.
+ate justo antes de iniciar o silencio, indicado por uma linha reta horizontal.
 \end{example} 
 
 \begin{figure}[h]
@@ -122,7 +124,7 @@ V:1 clef=none stem=up %name="Ritmo 1"   sname="Ritmo 1"
 
 
 Ate agora todos os exemplos foram sequencias rítmicas, 
-pois não exploramos a possibilidade de variar a altura dos sonidos;
+pois não exploramos a possibilidade de variar a altura dos sons;
 para poder explorar esta possibilidade devemos ter claro o conceito de pauta,
 para que cada figura musical, 
 além de nos proporcionar uma informação da \hyperref[sec:pos:Duracion]{\textbf{duração}}  dos sons, 
@@ -131,6 +133,36 @@ Tendo estes dois fatores, altura e duração, podemos criar \hyperref[sec:pos:Me
 
 \begin{remark}
 O mistério de como distinguir a pausa de mínima (\HaPa) e a pausa de semibreve (\GaPa),
-será esclarecido quando desenhemos estes na \hyperref[sec:pauta]{\textbf{pauta}}.
+será esclarecido quando desenhemos estes na \hyperref[sec:pauta]{\textbf{pauta}}, ver Seção \ref{sec:tipospauta}.
 \end{remark}
 
+\subsection{Ponto de aumento}
+\index{Ponto de aumento}
+\label{subsec:pontoaumento}
+O ponto de aumento é um simbolo que é colocado ao lado direito de uma figura musical ou pausa, 
+e este indica um aumento do 50\% na duração \cite[pp. 25]{cardoso1973curso}.
+A Tabela \ref{tab:notaspontoadas} mostra esta relação entre as durações.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c||c||c|}
+\hline
+Duração & Figura & Pausa \\ \hline
+\hline
+$\frac{3}{2}S$    & \Ganz. =  \Ganz + \Halb   & \GaPa. = \GaPa + \HaPa\\ \hline
+$\frac{3}{4}S$    & \Halb. =  \Halb + \Vier   & \HaPa. = \HaPa + \ViPa  \\ \hline
+$\frac{3}{8}S$    & \Vier. =  \Vier + \Acht   & \ViPa. = \ViPa + \AcPa  \\ \hline
+$\frac{3}{16}S$   & \Acht. =  \Acht + \Sech   & \AcPa. = \AcPa + \SePa  \\ \hline
+$\frac{3}{32}S$   & \Sech. =  \Sech + \Zwdr   & \SePa. = \SePa + \ZwPa  \\ \hline
+\end{tabular}
+\caption{Duração e símbolos de algumas figuras musicais com ponto de aumento}
+\label{tab:notaspontoadas}
+\end{table}
+
+Da mesma forma que usamos um ponto de aumento, podem ser usados dois ou três pontos de aumento.
+\begin{example}
+Se usamos dois pontos de aumento a duração de uma nota cresce um 75\%, assim: \Halb.. = \Halb + \Vier + \Acht
+\end{example}
+\begin{example}
+Se usamos tres pontos de aumento a duração de uma nota cresce um 87.5\%, assim: \Vier... = \Vier + \Acht + \Sech + \Zwdr
+\end{example}

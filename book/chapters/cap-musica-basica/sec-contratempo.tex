@@ -1,71 +1,65 @@
-\section{\textcolor{green}{Contratempo}}\index{Contratempo}
-Um contratempo acontece quando as notas (representadas por figuras musicais na partitura) 
-são executadas em tempos fracos do compasso
-ou nas partes fracas dos tempos, sendo que estas estão intercaladas por pausas nos tempos
-fortes ou partes fortes dos tempos \cite[pp. 16]{mascarenhascurso} 
-\cite[pp. 36]{azevedocompor}, neste sentido o contratempo pode ser visto como a 
-omissão de notas nos tempos fortes ou nas partes fortes dos tempos \cite[pp. 146]{medteoria}.
-Ou ``num sentido mais amplo, o contratempo é a acentuação de um tempo fraco em vez de um tempo forte'' \cite[pp. 147]{medteoria}. 
-
-Assim, a palavra ``contratempo'', referencia a como estão configuradas ou acentuadas 
-as notas no compasso. Por exemplo:
-A Figura \ref{fig:contratempoa} mostra 
-quatro compassos (binários) com formula $2/4$, em cada compasso existem 
-contratempos nos tempos fracos ou nas partes fracas dos tempos, sendo que cada tempo
-tem uma duração de uma semínima (\quarternote) e cada compasso uma duração 
-de uma mínima (\halfnote), ou seja duas semínimas (2\quarternote). 
+\section{Contratempo}
+\label{sec:contratempo}
+\index{Contratempo}
+Um contratempo acontece quando \cite[pp. 16]{mascarenhascurso} 
+\cite[pp. 36]{azevedocompor}: 
 \begin{itemize}
-\item ``F''  indica que é o tempo é forte, 
-\item ``f''  indica que é o tempo é fraco,
-\item ``FF'' indica que é a parte forte de um tempo forte,
-\item ``Ff'' indica que é a parte fraca de um tempo forte,
-\item ``fF'' indica que é a parte forte de um tempo fraco,
-\item ``ff'' indica que é a parte fraca de um tempo fraco, 
-\end{itemize} 
+\item As notas são executadas em tempos fracos do compasso ou nas partes fracas dos tempos, e 
+\item estas notas estão intercaladas por silencios no seu correspondente tempo forte ou parte forte do tempo.
+\end{itemize}
 
-finalmente
-a figura musical \ViPa~ indica um silencio da mesma duração que uma semínima (\quarternote)
-e a figura musical \AcPa~ indica um silencio da mesma duração que uma colcheia (\eighthnote).
+Neste sentido, 
+o contratempo pode ser visto como a omissão de notas nos tempos fortes ou nas partes fortes dos tempos \cite[pp. 146]{medteoria}.
+
+\begin{example}
+A Figura \ref{fig:abc-contratempoa} mostra quatro compassos binários com formula $2/4$, e
+com tempos de uma duração de uma semínima (\quarternote). 
+\begin{itemize}
+\item No primeiro compasso existe um contratempo na nota a executada no tempo fraco.
+\item No segundo  compasso existem contratempos nas notas executadas em Ff e ff.
+\item No terceiro compasso existe um contratempo na nota a executada em Ff.
+\item No quarto   compasso existe um contratempo na nota a executada em ff.
+\end{itemize}
+\end{example}
 \begin{figure}[H]
 \centering
 \begin{abc}[name=abc-contratempoa]
 X: 1 % start of header
-K: C % scale: C major
+K: none stafflines=0 %K: C %% Escala de C mayor %
 M:2/4
 %T: Contratempo num compasso binário
-V:1 clef=treble name="A" sname="A"
-[V:1] "F"z2 "f"G2 | "FF"z1 "Ff"G1  "fF"z1 "ff"G1 | "FF"z1 "Ff"G1  "f"G2 |  "F"z2 "fF"z1 "ff"G1  |
-w:          T          T/2            T/2             T/2     Tempo                 T/2
+V:1 clef=perc stem=up %name="A" sname="A"
+[V:1] |"F"z2 "f"B2 | "FF"z1 "Ff"B1  "fF"z1 "ff"B1 | "FF"z1 "Ff"B1   "f"z2 |  "F"z2 "fF"z1 "ff"B1  |
+w:          T          T/2            T/2             T/2                      T/2
 \end{abc}
 \caption{Contratempos no tempos fracos ou nas partes fracas dos tempos}
 \label{fig:abc-contratempoa}
 \end{figure}
-Na Figura \ref{fig:abc-contratempoa}, existem contratempos em todos os compassos porem estes estão
-configurados de distintas formas;
-no primeiro compasso acontece um contratempo dado que a única nota é executada 
-no tempo fraco do compasso, no segundo compasso acontecem contratempos pois as 
-notas são executadas nas partes fracas de cada tempo,
-no terceiro compasso acontece um contratempo pela execução de uma nota na parte 
-fraca do tempo forte, sendo o resto do tempo preenchido com um silencio, e 
-finalmente no quarto compasso acontece um contratempo pela execução de uma nota
-na parte fraca do tempo fraco, sendo o resto do compasso preenchido com silêncios.
 
 
-Por outro lado, 
-a Figura \ref{fig:abc-contratempob} mostra um caso similar ao da Figura \ref{fig:abc-contratempoa},
-com contratempos expressados como a acentuação de um tempo fraco em vez de um silencio no tempo forte \cite[pp. 147]{medteoria}. 
+
+Num sentido mais amplo, o contratempo é a acentuação de um tempo fraco em vez de um tempo forte \cite[pp. 147]{medteoria}. 
+Assim, a palavra ``contratempo'', referencia a como estão configuradas ou acentuadas as notas no compasso.
+
+
+\begin{example} 
+A Figura \ref{fig:abc-contratempob} mostra um caso similar ao da Figura \ref{fig:abc-contratempoa};
+porem, os contratempos são  expressados como a acentuação (grafada na pauta) de um tempo fraco, 
+em vez de um silencio no tempo forte \cite[pp. 147]{medteoria}. 
 É usado o símbolo $>$ para indicar esta acentuação na partitura.
+\end{example}
 \begin{figure}[H]
 \centering
 \begin{abc}[name=abc-contratempob]
 X: 1 % start of header
-K: C % scale: C major
+K: none stafflines=0 %K: C %% Escala de C mayor %
 M:2/4
 %T: Contratempo num compasso binário
-V:1 clef=treble name="A" sname="A"
-[V:1] "F"G2 "f"+accent+G2 | "FF"G1 "Ff"+accent+G1  "fF"G1 "ff"+accent+G1 | "FF"G1 "Ff"+accent+G1  "f"G2  | "F"G2 "fF"G1  "ff"+accent+G1  | 
+V:1 clef=perc stem=up %name="A" sname="A"
+[V:1] |"F"B2 "f"+accent+B2 | "FF"B1 "Ff"+accent+B1  "fF"B1 "ff"+accent+B1 | "FF"B1 "Ff"+accent+B1  "f"B2  | "F"B2 "fF"B1  "ff"+accent+B1  | 
 w:    T     T                T/2    T/2             T/2    T/2              T/2    T/2             T       T      T/2             T/2  
 \end{abc}
 \caption{Contratempos pela acentuação dos tempos fracos ou nas partes fracas dos tempos}
 \label{fig:abc-contratempob}
 \end{figure}
+

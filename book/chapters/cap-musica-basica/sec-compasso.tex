@@ -1,29 +1,23 @@
-\section{\textcolor{green}{Compasso}}\index{Compasso}
+\section{Compasso}\index{Compasso}
 \label{sec:compaso}
 
 \begin{description}
-\item[Compasso:] O dicionário de Harvard de música \cite[pp. 513]{apel1969harvard} define compasso (``measure'' em inglês)
-como um grupo de tempos, batimentos ou pulsos (unidade do tempo musical),
-onde o primeiro destes normalmente é acentuado. 
-Este número de tempos no compasso pode ser, dois, trés, quatro, ou ocasionalmente 5 ou mais. 
-Sendo estos compassos separados por barras verticais e as notas do compasso esquematizados baixo uma métrica.
+\item[Compasso:] \label{def:Compasso} Se define compasso (``measure'' em inglês)
+como uma agrupação de \hyperref[sec:Tempo]{\textbf{tempos}} regulares na sua duração (também chamados de batimentos ou pulsos),
+onde o primeiro destes tempos normalmente é o mais acentuado,
+porem a regularidade nesta acentuação pode mudar pela aparição de elementos como \hyperref[sec:contratempo]{\textbf{contratempos}}, 
+\hyperref[sec:sincopa]{\textbf{sincopas}}, ou enfases em algumas notas  \cite[pp. 513]{apel1969harvard}. 
+O número de \hyperref[sec:Tempo]{\textbf{tempos}} no compasso pode ser, dois, trés, quatro, ou ocasionalmente 5 ou mais;
+assim, estes tempos são usados como a unidade de medida (temporal) do compasso.
+Para diferenciar o inicio e o final dos compassos, 
+estes são separados por barras verticais. 
+O esquema básico dos valores das notas dentro de um compasso é chamado de \hyperref[def:Metrica]{\textbf{métrica}}  ou \hyperref[def:Metrica]{\textbf{metro}}.
 \begin{example}
-Figura \ref{fig:abc-exemplocompasso1}
+Na Figura \ref{fig:abc-exemplocompasso1} podemos ver 4 compassos separados por barras verticais.
+A quantidade de figuras musicais dentro do compasso varia, 
+porem todos todos os compassos tem uma duração de  1 \Halb~(uma mínima).
 \end{example}
  
-\item[Métrica:] Sobre a métrica  (``meter'' em inglês) o dicionario \cite[pp. 523]{apel1969harvard} explica que é
-um padrão de unidades temporais fixas, chamados batimentos, 
-pelo qual um período de tempo de uma peça musical ou uma seção dela é medida. 
-Agrega tambem que a métrica é indicado geralmente por uma fração, como por exemplo:
-${2}/{2}$ , ${3}/{4}$ , ${4}/{4}$, etc. Em português esta fração é chamada de formula do compasso. 
-\begin{example}
-Figura \ref{fig:abc-exemplocompasso1}
-\end{example}
-\end{description}
-
-O numerador, da formula do compasso, indica o número de pulsações (tempos) que compõem cada compasso.
-Por outro lado o denominador nos informa al longitude temporal de cada um dos tempos do compasso.
-
 \begin{figure}[h]
 \centering
 \begin{abc}[name=abc-exemplocompasso1]
@@ -39,172 +33,304 @@ V:1 clef=perc stem=up name="Ritmo 1"   sname="Ritmo 1"
 [V:1] | B2 B1 B1| B2 B1 B1 | B2 B1 B1 | B2 z2  |
 %       
 \end{abc}
-\caption{Figuras e pausas}
+\caption{Ritmo usando 4 compassos.}
 \label{fig:abc-exemplocompasso1}
 \end{figure}
 
+\item[Métrica:] \label{def:Metrica} 
+A métrica ou o metro  (``meter'' em inglês) é
+um padrão de unidades temporais regulares (também chamados de \hyperref[sec:Tempo]{\textbf{tempos}}), 
+sobre o qual uma peça musical ou uma seção dela é medida ou organizada;
+uma agrupação métrica completa se denomina \hyperref[def:Compasso]{\textbf{compasso}} \cite[pp. 947]{latham2017diccionario} \cite[pp. 523]{apel1969harvard}.
+A métrica é indicada geralmente por uma fração, por exemplo:
+${2}/{2}$ , ${3}/{4}$ , ${4}/{4}$, etc; 
+em português esta fração é chamada de \hyperref[def:FormulaCompasso]{\textbf{fórmula do compasso}}.
+Assim, a métrica de uma porção de peça musical nos indica como os \hyperref[sec:Tempo]{\textbf{tempos}} são distribuídos nos compassos,
+e consequentemente como serão acentuados cada um destes tempos. Isto será mais evidente, mais adiante, 
+quando sejam explicadas as caraterísticas dos compassos binários, ternários, quaternários, etc.
+\begin{example}
+A Figura \ref{fig:abc-exemplocompasso1} mostra 4 compassos com a mesma métrica;
+é dizer, igual acentuação e igual número de tempos por compasso.
+Neste caso a acentuação é regular dado que todos os compassos usam a mesma formula de compasso, (2/4), 
+e não existe nenhuma grafia especial que tire a regularidade das acentuações;
+de modo que todos os compassos estão acentuados no primeiro \hyperref[sec:Tempo]{\textbf{tempo}}.
+\end{example}
 
+\begin{example}
+A Figura \ref{fig:abc-exemplometrica1} mostra 4 compassos com duas distintas métricas;
+os dois primeiros usam uma métrica (2/4) e os dois últimos uma métrica (3/4).
+\end{example}
 
-A Tabela \ref{tab:abc-noteslength} exemplifica o significado do denominador da formula do compasso; 
+\begin{figure}[h]
+\centering
+\begin{abc}[name=abc-exemplometrica1]
+% abcm2ps exemplometrica1.abc  -O exemplometrica1.ps
+% ps2epsi exemplometrica1.ps exemplometrica1.eps
+%
+X: 1 % start of header
+K: none stafflines=0 %K: C %% Escala de C mayor %
+M: 2/4
+%T: Contratempo num compasso binário
+V:1 clef=perc stem=up name="Ritmo 2"   sname="Ritmo 2"
+%
+[V:1] | B2 B1 B1| B2 B1 B1 |\
+M: 3/4 
+B2 B1 B2 B1 | B2 B1 B1 z2  |
+%       
+\end{abc}
+\caption{Ritmo com mudança de métrica.}
+\label{fig:abc-exemplometrica1}
+\end{figure}
+
+\item[Formula do compasso:] \label{def:FormulaCompasso} 
+A fórmula do compasso  (``time signature'' em inglês), também chamado indicador do compasso ou indicador do tempo,
+é um símbolo que normalmente se representa por uma fração (com ou sem traço), 
+e se escreve ao inicio da peça musical, depois da clave; 
+ou de uma forma geral, 
+ao inicio de algum compasso para indicar a mudança da \hyperref[def:Metrica]{\textbf{métrica}} na música \cite[pp. 760]{latham2017diccionario}  \cite[pp. 852]{apel1969harvard}.
+O numerador, da fórmula do compasso, indica o número de \hyperref[sec:Tempo]{\textbf{tempos}} que compõem cada \hyperref[def:Compasso]{\textbf{compasso}} nessa \hyperref[def:Metrica]{\textbf{métrica}}.
+Por outro lado, 
+o denominador da formula do compasso nos informa a duração de cada um dos \hyperref[sec:Tempo]{\textbf{tempos}}, 
+dos compassos pertencentes a essa \hyperref[def:Metrica]{\textbf{métrica}}.
+A Tabela \ref{tab:abc-noteslength} em conjunto com a Tabela \ref{tab:abc-noteslengthbasic}, 
+indicam o significado do denominador da fórmula do compasso; 
 \begin{table}[h]
 \centering
-\begin{tabular}{|c|c|c|c|}
+\begin{tabular}{|c|c|c|}
 \hline
-denominador & Figura  & Duração & Nome\\ \hline
+denominador & Figura  & Duração\\ \hline
 \hline
-$1$   & \fullnote    & $S$   & Semibreve \\ \hline
-$2$ & \halfnote    & $S/2$ & Mínima \\ \hline
-$4$ & \quarternote & $S/4$ & Semínima \\ \hline
-$8$ & \eighthnote  & $S/8$ & Colcheia \\ \hline
+$1$   & \fullnote    & $S$ \\ \hline
+$2$ & \halfnote    & $S/2$  \\ \hline
+$4$ & \quarternote & $S/4$  \\ \hline
+$8$ & \eighthnote  & $S/8$  \\ \hline
 \end{tabular}
-\caption{Duração e símbolos de algumas figuras musicais}
+\caption{Duração e símbolos de algumas figuras musicais.}
 \label{tab:abc-noteslength}
 \end{table}
-onde a primeira coluna mostra o denominador da formula,
-a segunda coluna mostra as figuras musicais que representam cada um dos tempos do compasso, e 
-a terceira e quarta coluna, indicam a duração em segundos e o nome da figura musical.
-
-podemos achar equivalências aos exemplos da formula do compasso dados
-anteriormente; onde os compassos com formula $\mathbf{2}/2$ tem cada um, uma duração de $\mathbf{2}$\halfnote ~(duas mínimas),  
-compassos com formula $\mathbf{3}/4$ tem uma duração de $\mathbf{3}$\quarternote ~(trés semínimas) 
-e $\mathbf{4}/4$ uma duração de $\mathbf{4}$\quarternote ~(quatro semínimas). É importante
-ressaltar que a duração em tempo das figuras musicais é relativa, como pode ser visto
-na terceira coluna da Tabela \ref{tab:abc-noteslength}, onde as durações estão em função
+onde a primeira coluna mostra o denominador da fórmula,
+a segunda coluna mostra as figuras musicais que representam cada um dos \hyperref[sec:Tempo]{\textbf{tempos}} do compasso, e 
+a terceira indica a duração da figura musical.
+É importante
+ressaltar que a duração das figuras musicais é relativa, como pode ser visto
+na terceira coluna da Tabela \ref{tab:abc-noteslength}, onde estas estão em função
 da duração $S$ da semibreve. 
+\begin{example}
+A Figura \ref{fig:abc-exemplocompasso1} mostra 4 \hyperref[def:Compasso]{\textbf{compassos}} com uma formula de compasso (2/4).
+Isto implica que cada compasso tera 2 tempos, 
+representados por figuras musicais de 1/4 de semibreve;
+é dizer, cada tempo equivale a uma semínima (\Vier). 
+\end{example}
+\begin{example}
+A Figura \ref{fig:abc-exemplometrica1} mostra 4 \hyperref[def:Compasso]{\textbf{compassos}} usando dois diferentes formulas de compasso.
+Sendo que os dois primeiros compassos tem dois tempos cada um, 
+e os dois últimos compassos tem 3 tempos cada um.
+Em todos os casos, os tempos tem durações de figuras musicais de 1/4 de semibreve;
+é dizer, cada tempo equivale a uma semínima (\Vier). 
+\end{example}
+\begin{example}
+Outros exemplos de formula de compasso comumente usadas são:
+\begin{itemize}
+\item A fórmula $\mathbf{2}/2$ com compassos com uma duração de $\mathbf{2}$\halfnote ~(duas mínimas) e
+\item a fórmula $\mathbf{4}/4$ com compassos com uma duração de $\mathbf{4}$\quarternote ~(quatro semínimas). 
+\end{itemize}
+\end{example}
+\end{description}
 
 
-Se classificamos os compassos por sua métrica, os três tipos mais conhecidos 
-são os compassos binários, ternários, quaternários \cite[pp. 27]{adolfo2002musica}.
+Se classificamos os compassos por sua \hyperref[def:Metrica]{\textbf{métrica}}, 
+os três tipos de compassos mais conhecidos são: 
+os \hyperref[subsec:compassobinario]{\textbf{compassos binários}}, 
+\hyperref[subsec:compassoternario]{\textbf{ternários}} e 
+\hyperref[subsec:compassoquaternario]{\textbf{quaternários}} \cite[pp. 27]{adolfo2002musica}.
 
-\subsection{\textcolor{green}{Compasso binário}}\index{Compasso!Compasso Binário} Ou compasso binário simples,
-é uma estrutura rítmica que se carateriza por ter compassos com uma  duração de dois tempos,
+\begin{notation}[]
+Nas seguintes seções,
+serão usadas as seguintes notações de símbolos para designar aos tempos fortes, fracos e semifortes:
+\begin{itemize}
+\item ``F''  indica que é um tempo forte, 
+\item ``sF'' indica que é um tempo semiforte, 
+\item ``f''  indica que é um tempo fraco,
+\end{itemize}
+\end{notation}
+
+
+\begin{description}
+\item[Acentos principais:] \label{def:acentoprincipal} 
+São os acentos dos tempos do compasso  \cite[pp. 142]{medteoria}.
+Todos os compassos tem um acento primario no primeiro tempo \cite[pp. 24]{crowther2003usted}.
+\item[Acentos secundários:] \label{def:acentosecundario} 
+São os acentos das subdivisões dos tempos do compasso \cite[pp. 142]{medteoria}.
+Todos os compassos com mais de 3 tempos tem além do acento primário um ou mais acentos secundários \cite[pp. 25]{crowther2003usted},
+\begin{itemize}
+\item Os compassos quaternários tem um acento secundário no terceiro tempo,
+\item os compassos com formula do compasso com numerador 6  tem um acento secundário na quarta subdivisão do compasso, e
+\item os compassos com formula do compasso com numerador 9  tem    acentos secundários na quarta e sétima subdivisão do compasso.
+\end{itemize} 
+\end{description}
+
+\begin{remark}
+Os termos ``acentuados'' e ``não acentuados'', 
+indicam uma medida relativa da \hyperref[sec:pos:Intensidade]{\textbf{intensidade}} do som, 
+e em nenhum caso indicam intensidade zero. 
+\end{remark}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Compasso binário}
+\label{subsec:compassobinario}
+\index{Compasso!Compasso Binário} O compasso binário ou compasso binário simples,
+é uma estrutura que se carateriza por ter compassos com uma  duração de dois \hyperref[sec:Tempo]{\textbf{tempos}},
 sendo o primeiro tempo forte (acentuado), e o segundo de tempo fraco (não acentuado)
-\cite[pp. 41]{grabner2001teoria} \cite[pp. 66]{adolfo2002musica}\cite[pp. 28]{alves2004teoria}. 
-Os compassos binários (simples) tem uma formula de compasso na forma $2/B$,
+\cite[pp. 41]{grabner2001teoria} \cite[pp. 66]{adolfo2002musica}\cite[pp. 28]{alves2004teoria}.
+Os compassos binários (simples) tem uma fórmula de compasso na forma $2/B$,
 onde $B$ pode ser $2$, $4$, $8$, etc. 
+\begin{example}
+Por exemplo temos, as fórmulas de compassos binários simples: $2/2$, $2/4$, $4/8$,  etc.
+\end{example}
+\begin{example}
 A Figura \ref{compasso:binario}, representa um exemplo de compasso binário simples, 
-com formula de compasso $2/2 \equiv 2$\halfnote, 
-e tempos com uma duração de $S/2$ (uma \halfnote), 
-sendo que o primeiro compasso contem $2$\halfnote~e o segundo contem $4$\quarternote.
-Na Figura \ref{compasso:binario} a sigla ``N.A.'' significa ``Não acentuado'', pelo que é fácil perceber
-que em qualquer caso, só a nota que é executada no tempo 1 é acentuada.
+com fórmula de compasso $2/2$, estes compassos podem ser preenchidos com $2$\halfnote, 
+e tempos com uma duração de $S/2$ (uma \halfnote).
+Neste caso, podemos ver 3 compassos que são preenchidos com $2$ notas representadas por \halfnote.
+Assim, a primeira nota de cada compasso representa um tempo forte (acentuado), e a segunda um tempo fraco (não acentuado).
+\end{example}
 \begin{figure}[H]
 \centering
-\begin{abc}[name=abc-compasso1]
+\begin{abc}[name=abc-compasso1,width=0.70\linewidth]
 X: 1 % start of header
 K: C % scale: C major
 M: 2/2 %meter - compasso
-"Primeiro compasso" G4 F4 |"Segundo compasso" G2 D2 F2 D2  |
-w: Acentuado N.A. Acentuado N.A. N.A. N.A.
+"1ro compasso" G4 F4 |"2do compasso" G4 D4 |"3ro compasso" F4 D4  |
+w: F f F f  F f
 \end{abc}
-\caption{Exemplo de compasso binário (simples)}
+\caption{Exemplo de compasso binário (simples).}
 \label{compasso:binario}
 \end{figure}
 
 Se falamos de forma mais geral, 
 podemos ter dois tipos de compassos binários: os simples e os compostos.
 Assim, 
-para achar a formula de um compasso composto, correspondente a um compasso simples (usando quialteras de três)
+para achar a fórmula de um compasso composto, correspondente a um compasso simples (usando quiálteras de três)
 usamos a seguinte operação \cite[pp. 74]{alves2004teoria}, 
 \begin{equation}\label{eq:comcomposto}
 Compasso~simples\times\frac{3}{2}=Compasso~composto.
 \end{equation}
-De modo que obtemos compassos binários compostos com as seguintes formulas de compasso: 
+De modo que obtemos compassos binários compostos com as seguintes fórmulas de compasso: 
 $6/4$, $6/8$, $6/16$, etc.
-A diferencia do visto nos compassos binários simples, os compassos binários compostos tem 
-um pulso forte (Acentuado) no tempo 1 e um pulso semiforte (Acentuado porem menor) no tempo 4, 
-de modo que os tempos 2,3,5 e 6,
-são classificados como tempos fracos (Não Acentuados)\cite[pp. 41]{grabner2001teoria}.
+Os compassos binários compostos, tem a mesma acentuação métrica que os compassos simples,
+porem os acentos estão sujeitos a subdivisões ao igual que os tempos. Assim, um compasso binário composto 
+tem 2 tempos, um tempo forte (acentuado) no tempo 1 e um tempo fraco (acentuação menor) no tempo 2. 
+As subdifiviçoes destes dois tempos se repartirão o acento de forma proporcional,
+sendo a primeira parte de cada tempo a mais acentuada \cite[pp. 142]{medteoria} \cite[pp. 7-11]{mascarenhascurso} \cite[pp. 41]{grabner2001teoria}.
+
+\begin{example}
 A Figura \ref{compasso:binariocomposto}, representa um exemplo de compasso binário composto, 
-com formula de compasso $6/4 \equiv 6$\quarternote, 
-e tempos com uma duração de $S/4$ (uma \quarternote), 
-sendo que o primeiro compasso contem $6$\quarternote~e o segundo contem dois $2$\quarternote~e dois $2$\halfnote.
-Da Figura \ref{compasso:binariocomposto} é fácil perceber
-que em qualquer caso, só são acentuados as nota que são executadas no tempo 1 e 4; 
-aclarando que as notas executadas no tempo 4 tem uma acentuação menor que as executadas no tempo 1.
+com fórmula de compasso $6/4$, 
+onde cada tempo tem uma duração de $3S/4$ (uma  \halfnote. $\equiv$ \halfnote + \quarternote). 
+No exemplo temos duas linhas, na parte inferior da pauta,  preenchidas com os símbolos ``F'' e ``f'';
+a segunda linha representa aos \hyperref[def:acentoprincipal]{\textbf{acentos principais}} dos tempos do compasso, e
+a primeira linha representa aos \hyperref[def:acentosecundario]{\textbf{acentos secundarios}}.
+
+O primeiro compasso é preenchido com duas figuras \halfnote~pontuadas, 
+representando estas figuras na pauta, um tempo forte (acentuado) e um tempo fraco (menos acentuado),
+respetivamente.
+O segundo  compasso é preenchido com $6$ figuras \quarternote, 
+que representam as subdivisões dos tempos do compasso, de modo que cada tempo é subdividido em 3 partes iguais.
+Podemos ver na primeira linha, inferior à pauta, a relação das acentuações nas subdivisões de cada tempo, isto é F-f-f;
+e  na segunda linha está representado a relação das acentuações nos tempos, isto é F-f. 
+Assim, a primeira subdivisão terá uma acentuação forte (igual a F), 
+a quarta subdivisão uma acentuação menor (igual a f) e  resto serão subdivisões sem acentuação (ou menor a f) \cite[pp. 41]{grabner2001teoria} \cite[pp. 19]{phillips2002sight}.
+\end{example}
 \begin{figure}[H]
 \centering
 \begin{abc}[name=abc-compasso1c]
 X: 1 % start of header
 K: C % scale: C major
 M: 6/4 %meter - compasso
-"Primeiro compasso" G2 D2 D2 F2 D2 D2 |"Segundo compasso" G2 D4 F2 D4  |
-w: Acentuado N.A. N.A. Acentuado N.A N.A. Acentuado N.A. Acentuado N.A. 
+"1er compasso" G6 F6 |"2do compasso" G2 D2 D2 F2 D2 D2 |
+w: ~ ~ F f f F f f 
+w: F f F _ _ f _ _ 
 \end{abc}
-\caption{Exemplo de compasso binário composto}
+\caption{Exemplo de compasso binário composto.}
 \label{compasso:binariocomposto}
 \end{figure}
-
 Alguns autores consideram aos compassos quaternários (ex: 4/4, 4/8) como um caso de compasso binário,
 chamando eles de compasso binário duplo \cite[pp. 41]{grabner2001teoria}.
 
 
 
-
-\subsection{\textcolor{green}{Compasso ternário}}\index{Compasso!Compasso Ternário} Ou compasso ternário simples,
-é uma estrutura rítmica que se carateriza por ter compassos com trés tempos,
-sendo o primeiro pulso forte (acentuado) e os outros dois fracos (não acentuados) 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Compasso ternário}
+\label{subsec:compassoternario}
+\index{Compasso!Compasso Ternário} O compasso ternário ou compasso ternário simples,
+é uma estrutura que se carateriza por ter compassos com trés tempos,
+sendo o primeiro tempo forte (acentuado) e os outros dois fracos (não acentuados) 
 \cite[pp. 67]{adolfo2002musica}\cite[pp. 30]{alves2004teoria}. 
-Os compassos ternários (simples) tem uma formula de compasso da forma $3/B$, 
+Os compassos ternários (simples) tem uma fórmula de compasso da forma $3/B$, 
 onde $B$ pode ser $2$, $4$, $8$, etc.
-Por exemplo temos, as formulas de compassos ternários simples: $3/2$, $3/4$, $3/8$,  etc.
-
-A Figura \ref{compasso:ternario}, representa um exemplo de compasso ternário (simples), com 
-formula de compasso $3/4 \equiv 3$\quarternote, 
-onde os tempos tem uma duração de $S/4$, o primeiro compasso contem $3$\quarternote~e
-o segundo contem $6$\eighthnote.
+\begin{example}
+Por exemplo temos, as fórmulas de compassos ternários simples: $3/2$, $3/4$, $3/8$,  etc.
+\end{example}
+\begin{example}
+A Figura \ref{compasso:ternario}, representa um exemplo com 3 compassos ternários (simples), com 
+fórmula de compasso $3/4$, onde cada tempo tem uma duração de $S/4$, é dizer uma \quarternote.
+Os compassos são preenchidos com $3$ figuras \quarternote, de modo que cada figura musical representa um tempo.
 Na Figura \ref{compasso:ternario}  é fácil perceber
-que em ambos compassos, só a nota que é executada no tempo 1 é acentuada.
+que em todos os compassos, só a nota que é executada no tempo 1 é acentuada.
+\end{example}
 \begin{figure}[H]
 \centering
-\begin{abc}[name=abc-compasso2]
+\begin{abc}[name=abc-compasso2,width=0.75\linewidth]
 X: 1 % start of header
 K: C % scale: C major
 M: 3/4 %meter - compasso
-"Primeiro compasso" G2 F2 F2 |"Segundo compasso" G1 F1 E1 D1 D1  D1  |
-w: Acentuado N.A. N.A. Acentuado N.A N.A.  N.A. N.A. N.A. 
+"1ro compasso" G2 F2 F2 |"2do compasso" G2 F2 E2 | "3ro compasso" D2 D2  D2  |
+w: F f f  F f f   F f f 
 \end{abc}
-\caption{Exemplo de compasso ternário}
+\caption{Exemplo de compasso ternário.}
 \label{compasso:ternario}
 \end{figure}
 
-
 São chamados de compassos ternários compostos,  
-quando estes tem uma formula de compasso como: $9/4$, $9/8$ e $9/16$.
-Para gerar estes compassos compostos a partir de suas versões simples,
+quando estes tem uma fórmula de compasso como: $9/4$, $9/8$ e $9/16$.
+Para gerar estas formulas de compassos compostos a partir de suas versões simples,
 se segue a mesma operação descrita na Equação \ref{eq:comcomposto}.
 
-
-\subsection{\textcolor{green}{Compasso quaternário}}\index{Compasso!Compasso Quaternário} Ou compasso quaternário simples,
-é uma estrutura rítmica que se carateriza por ter compassos com quatro tempos,
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Compasso quaternário}
+\label{subsec:compassoquaternario}
+\index{Compasso!Compasso Quaternário} O compasso quaternário ou compasso quaternário simples,
+é uma estrutura que se carateriza por ter compassos com quatro tempos,
 sendo o primeiro pulso forte (acentuado), o segundo fraco (não acentuado), 
 o terceiro semiforte (acentuado porem menor) e o último fraco (não acentuado) 
 \cite[pp. 67]{adolfo2002musica}\cite[pp. 32]{alves2004teoria}. 
-Os compassos quaternários (simples) tem uma formula de compasso da forma $4/B$, 
+Os compassos quaternários (simples) tem uma fórmula de compasso da forma $4/B$, 
 onde $B$ pode ser $2$, $4$, $8$, etc.
-Por exemplo temos, as formulas de compassos ternários simples: $4/2$, $4/4$, $4/8$,  etc.
-
-A Figura \ref{compasso:quaternario}, representa um exemplo de compassos quaternário, com 
-formula de compasso $4/4 \equiv 4$\quarternote, 
-onde cada tempo tem uma duração de $S/4$, o primeiro compasso contem $4$\quarternote~e
-o segundo contem $8$\eighthnote.
-Na Figura \ref{compasso:ternario}  é fácil perceber
-que em ambos compassos, só as notas que são executadas no tempo 1 e 3 são acentuadas.
+\begin{example}
+Por exemplo temos, as fórmulas de compassos ternários simples: $4/2$, $4/4$, $4/8$,  etc.
+\end{example}
+\begin{example}
+A Figura \ref{compasso:quaternario}, representa um exemplo de 3 compassos quaternários, com 
+fórmula de compasso $4/4$, onde cada tempo tem uma duração de $S/4$, é dizer uma \quarternote.
+Os compassos são preenchidos com $4$ figuras \quarternote, de modo que cada figura representa um tempo.
+Na Figura \ref{compasso:quaternario}  é fácil perceber
+que em todos os compassos, só as notas que são executadas no tempo 1 e 3 são acentuadas.
+\end{example}
 \begin{figure}[H]
 \centering
 \begin{abc}[name=abc-compasso3]
 X: 1 % start of header
 K: C % scale: C major
 M: 4/4 %meter - compasso
-"Primeiro compasso" G2 D2 F2 D2|"Segundo compasso" G1 F1 D1 C1 F1 E1 D1 C1 |
-w: Acentuado N.A. Acentuado N.A. Acentuado N.A N.A. N.A. Acentuado N.A. N.A. N.A. 
+"1ro compasso" G2 D2 F2 D2|"2do compasso" F2 D2 C2 F2 |"3ro compasso"  E2 D2 C2 C2|
+w: F f sF f   F f sF f   F f sF f
 \end{abc}
-\caption{Exemplo de compasso quaternário}
+\caption{Exemplo de compasso quaternário.}
 \label{compasso:quaternario}
 \end{figure}
 
 São chamados de compassos quaternários compostos,  
-quando estes tem uma formula de compasso como: $12/4$, $12/8$ e $12/16$.
+quando estes tem uma fórmula de compasso como: $12/4$, $12/8$ e $12/16$.
 Para gerar estes compassos compostos a partir de suas versões simples,
 se segue a mesma operação descrita na Equação \ref{eq:comcomposto}.
  

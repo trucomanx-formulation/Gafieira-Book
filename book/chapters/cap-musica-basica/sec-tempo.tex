@@ -1,71 +1,243 @@
-\section{\textcolor{blue}{Tempo}}\index{Tempo}
+\section{Tempo}
+\index{Tempo}
+\label{sec:Tempo}
 
 Como já foi sugerido na Seção \ref{sec:compaso}, é chamado de "tempo" 
-à pulsação básica e unidade de medida dos compassos nas composições musicais;
-assim, temos que compassos binários, ternários e quaternários; que tem uma duração de 2 tempos, 
-3 tempos e 4 tempos, respetivamente. Por comodidade designaremos com a variável $T$ à duração em segundos de cada tempo,
-sendo que o valor de $T$ variará dependendo da formula de compasso usada.
+à pulsação básica que é usada como unidade de medida das composições musicais.
+Os tempos ao ser agrupados em compassos podem formar diferentes estruturas como por exemplo: 
+\hyperref[subsec:compassobinario]{\textbf{compassos binários}}, \hyperref[subsec:compassoternario]{\textbf{ternários}} e \hyperref[subsec:compassoquaternario]{\textbf{quaternários}}; que tem uma duração de 2 tempos, 
+3 tempos e 4 tempos, respetivamente. 
 
-\subsection{\textcolor{red}{Tempo forte}}\index{Tempo!Tempo Forte}
+\begin{notation}[] Para o melhor entendimento das seguintes seções usaremos algumas notações.
+\begin{itemize}
+\item A variável $T$ será usada para designar à duração em segundos de cada tempo,
+sendo que o valor de $T$ variará dependendo da formula do compasso usada.
 
-Sobre acentos  \cite[pp. 9]{phillips2002sight}
+\item As subdivisões dos tempos serão designadas com as seguintes variáveis:
+\begin{itemize}
+\item ``FF'' indica que é a parte forte de um tempo forte,
+\item ``Ff'' indica que é a parte fraca de um tempo forte,
+\item ``fF'' indica que é a parte forte de um tempo fraco,
+\item ``ff'' indica que é a parte fraca de um tempo fraco.
+\end{itemize}
+\end{itemize}
 
-\subsection{\textcolor{red}{Tempo fraco}}\index{Tempo!Tempo Fraco}
+\end{notation}
 
-Sobre acentos  \cite[pp. 9]{phillips2002sight}
+\subsection{Tempos fortes e fracos}
+\index{Tempo!Tempo forte}
+\index{Tempo!Tempo fraco}
+
+A formula do compasso de uma peça musical ou uma porção dela, 
+nos indica quantos tempos e que duração terão estes tempos no compasso; 
+porem, além destas informações, 
+a formula do compasso também nos indica o \hyperref[def:acentometrico]{\textbf{acento métrico}} \cite[pp. 70]{cardoso1973curso}; 
+é dizer quias serão os tempos fortes, semifortes e fracos no compasso.
 
 
+\begin{description}
+\item[O acento métrico] \label{def:acentometrico} é constituído pelas acentuações fortes e fracas dos tempos dos compassos, 
+os acentos métricos não precisam ser grafados na pauta \cite[pp. 141]{medteoria}.
+\item[O tempo forte (F)] \label{def:tempoforte} sempre será o primeiro tempo de cada compasso. 
+Um tempo forte não necessita uma grafia especial que indique que este deve ser articulado
+com maior \hyperref[sec:pos:Intensidade]{\textbf{intensidade}}; é dizer, com acentuação.
+\item[O tempo semiforte (sF)] \label{def:temposemiforte} acontece em alguns tipos de compasso, 
+como nos compassos quaternários. 
+Um tempo semiforte terá uma acentuação menor à do tempo forte, porem maior à de um tempo fraco. 
+Este tempo não necessita uma grafia especial que indique que deve ser articulado
+com \hyperref[sec:pos:Intensidade]{\textbf{intensidade}}.
+\item[O tempo fraco (f)] \label{def:tempofraco} corresponde a todos os tempos que não sejam né fortes, né semifortes,
+de modo que estes tempos não tem acentuação. 
+\end{description}~
 
-\subsection{\textcolor{green}{O tempo em diferentes formulas de compasso}}
-É importante ressaltar que os compassos que usem a mesma formula de compasso terão sempre a mesma duração em segundos;
-por outro lado, podem ser achados casos onde compassos com diferente formula podem ter a mesma duração;
-por exemplo: compassos binários com formula $\mathbf{2}/2$, comparados com compassos quaternários com 
-formula $\mathbf{4}/4$; ambos compassos tem a mesma duração uma semibreve (\fullnote).
+Uma versão mais simplificada das informações dadas anteriormente, 
+pode ser vista na seguinte equação que mostra a relação de \hyperref[sec:pos:Intensidade]{\textbf{intensidades}}:
+\begin{equation}
+f ~<~ sF ~<~ F.
+\end{equation}
 
-Na Figura \ref{fig:abc-tempo1} podemos ver compassos binários com formula $\mathbf{2}/2$, 
+Porem, 
+se utilizamos as subdivisões de tempos, 
+a relação de \hyperref[sec:pos:Intensidade]{\textbf{intensidades}} pode ser expressada mediante a seguinte equação:
+\begin{equation}
+\{fF=ff\} ~<~  \{f = fF\} ~<~ sF ~<~ \{F = FF\} 
+\end{equation}
+
+\begin{remark}
+A regularidade na distribuição das acentuações nos tempos, 
+só mudará quando se especifiquem  explicitamente dinâmicas sobre as figuras musicais,
+de modo que estas dinâmicas modificam as acentuações,
+porem não trocam o nome dos tempos, sendo estes sempre chamados de tempos fortes, semifortes e fracos. 
+\end{remark}
+
+
+\begin{example}
+Na Figura \ref{fig:abc-tempo1} podemos ver 2 compassos com a mesma métrica, 
+tendo eles uma formula de compasso 2/2; é dizer, 
+cada compasso tem dois tempos, como uma duração de uma mínima (\halfnote) para cada tempo.
+\begin{itemize}
+\item O primeiro compasso é preenchido com duas notas que usam figuras musicais que duram um tempo cada um;
+de modo que 
+a primeira nota será executada no tempo forte, 
+possuindo esta nota um \hyperref[def:acentoprincipal]{\textbf{acento  principal}}, e 
+a segunda nota é executada no tempo fraco e não leva acento; 
+é dizer tem um menor \hyperref[sec:pos:Intensidade]{\textbf{intensidade}} que a nota do primeiro tempo.
+\item No segundo compasso, este é preenchido com 4 notas que usam figuras musicais que duram 1/2 tempo cada uma;
+Assim, 
+\begin{itemize}
+\item a primeira nota será executada em FF (acentuada como F),
+\item a segunda  nota será executada em Ff (menos acentuada que f),
+\item a terceira nota será executada em fF (acentuada como f), e 
+\item a quarta   nota será executada em ff (menos acentuada que f).
+\end{itemize}
+\end{itemize} 
+\end{example}
 \begin{figure}[H]
 \centering
-\begin{abc}[name=abc-tempo1]
+\begin{abc}[name=abc-tempo1,width=0.6\linewidth]
 X: 1 % start of header
-K: C % scale: C major
+K: none stafflines=0 %K: C %% Escala de C mayor %
 M: 2/2 %meter - compasso
-G2 D2 F2 D2 | G4 F4 |
-w: T/2 T/2 T/2 T/2  T T
+V:1 clef=perc stem=up name="Ritmo"   sname="Ritmo"
+[V:1] | B4 B4 |  B2 B2 B2 B2 |  
+w:  T T    T/2 T/2 T/2 T/2 
+w:  F f FF Ff fF ff
 \end{abc}
-\caption{Exemplo de dois compassos com 2 tempos de duração T}
+\caption{Dois compassos com 2 tempos cada um.}
 \label{fig:abc-tempo1}
 \end{figure}
-onde estos terão uma duração de dois tempos ($2T$) \cite[pp. 25]{azevedocompor} onde cada tempo ($T$) tem uma duração 
-de uma mínima (\halfnote), ver Tabela \ref{tab:abc-noteslength};
-por outro lado,
-compassos quaternários com formula $\mathbf{4}/4$, como na Figura \ref{fig:abc-tempo2}, 
+
+
+\begin{example}
+Na Figura \ref{fig:abc-tempo2} podemos ver 2 compassos com a mesma métrica, 
+tendo eles uma formula de compasso 4/4; é dizer, 
+cada compasso tem quatro tempos, como uma duração de uma semínima (\quarternote) para cada tempo.
+\begin{itemize}
+\item O primeiro compasso é preenchido com duas notas que usam figuras musicais que duram dois tempos cada um;
+de modo que a primeira nota será executada no tempo forte,
+possuindo esta nota um \hyperref[def:acentoprincipal]{\textbf{acento  principal}}, 
+e o som será sustenido ate completar o seguinte tempo fraco, 
+a segunda nota será executada no tempo semiforte,
+possuindo esta nota um \hyperref[def:acentosecundario]{\textbf{acento  secundario}},
+ e o som será sustenido ate completar o seguinte tempo fraco.
+Em ambas figuras não são colocados os símbolos, F e sF, 
+pois as notas ocupam mais de um tempo, porem as acentuações são respeitadas.
+\item O segundo compasso é preenchido com 4 notas que usam figuras musicais que duram 1 tempo cada uma;
+Assim, 
+a primeira nota será executada no tempo forte (F),
+a segunda  nota será executada no tempo fraco (f),
+a terceira nota será executada no tempo semiforte (sF), e 
+a quarta   nota será executada no tempo fraco (f).
+\end{itemize} 
+\end{example}
 \begin{figure}[H]
 \centering
-\begin{abc}[name=abc-tempo2]
+\begin{abc}[name=abc-tempo2,width=0.6\linewidth]
 X: 1 % start of header
-K: C % scale: C major
+K: none stafflines=0 %K: C %% Escala de C mayor %
 M: 4/4 %meter - compasso
-G2 D2 F2 D2| G4 F4|
-w: T T T T 2T 2T
+V:1 clef=perc stem=up name="Ritmo"   sname="Ritmo"
+[V:1] | B4  B4 | B2 B2 B2 B2 | 
+w:  2T 2T      T T T T 
+w:  Acento Acento      F f sF f 
 \end{abc}
-\caption{Exemplo de dois compassos com 4 tempos de duração T}
+\caption{Dois compassos com 4 tempos cada um.}
 \label{fig:abc-tempo2}
 \end{figure} 
-terão uma duração de 4 tempos ($4T$) \cite[pp. 25]{azevedocompor} onde 
-cada tempo ($T$) tem uma duração de uma semínima (\quarternote), ver Tabela \ref{tab:abc-noteslength}.
-Assim, estas duas formulas ($2/2$ e $4/4$) representam compassos 
-com a mesma duração em segundos, uma semibreve (\fullnote),
-porem tem valores diferentes para a variável $T$ em segundos.
 
-\begin{lattention}
-Se interpretamos a música mostrada nas Figuras \ref{fig:abc-tempo1} e \ref{fig:abc-tempo2},
-podemos perceber que ambas descrevem um sonido ligeiramente diferente; assim, não é fácil
-distinguir se o sonido provem de um compasso com formula $2/2$ ou $4/4$.
-Em estes casos a dica é perceber se existem dois tipos de tempos fortes, acentuados
-com diferentes intensidades; se é assim, então estamos ante um compasso quaternário;
-se não, então é um compasso binário.
-\end{lattention}
+\begin{remark}
+As pautas mostradas na Figura \ref{fig:abc-tempo1} e na Figura \ref{fig:abc-tempo2},
+tem a mesma distribuição de figuras musicais, porem usam formulas do compasso distintas;
+Por este pequeno detalhe o som de ambos ritmos será diferente,
+pois as acentuações serão diferentes.
+Por exemplo, 
+na segunda nota do primeiro compasso, na Figura \ref{fig:abc-tempo1}, 
+a nota é acentuada como uma f. Porem, 
+na  Figura \ref{fig:abc-tempo1}, a nota é acentuada como uma sF, tendo esta ultima maior intensidade.
+Existe um caso similar na terça nota do segundo compasso de ambas figuras.
+
+\end{remark}
+
+\subsection{Contagem dos tempos das figuras musicais}
+A contagem dos tempos das figuras musicais dentro do compasso, 
+acompanha a posição das figuras musicais ou notas dentro do compasso. 
+É importante ter em conta a duração das figuras musicais pois a seguinte contagem 
+acontece no inicio da seguinte figura musical;
+assim, dependendo da duração da figura musical, 
+alguns dos tempos do compasso serão contados e outras não \cite[pp. 8]{phillips2002sight}
+
+\begin{example}
+A Figura \ref{fig:abc-contagemtempo44} mostra um ritmo que usa 4 compassos quaternários,
+com tempos com uma duração de um \quarternote;
+assim a contagem dos tempos dentro do compasso vão de 1 ate 4.
+Pela irregularidade na duração das figuras musicais alguns tempos não são contados explicitamente.
+A contagem pode ser visto na parte superior de cada figura musical.
+\end{example}
+\begin{figure}[H]
+\centering
+\begin{abc}[name=abc-contagemtempo1,width=\linewidth]
+X: 1 % start of header
+K: none stafflines=0 %K: C %% Escala de C mayor %
+M: 4/4 %meter - compasso
+V:1 clef=perc stem=up name="Ritmo"   sname="Ritmo"
+[V:1] | "1"B4  "3"B4 | "1"B8 |  "1"B2 "2"B4 "4"B2 |  "1"B2 z2 "3"B2  z2| 
+w:      2T 2T          4T       T 2T T               T T
+\end{abc}
+\caption{Sequencia rítmica usando um compasso quaternário.}
+\label{fig:abc-contagemtempo44}
+\end{figure} 
 
 
-\subsection{\textcolor{red}{Contagem dos tempos no compasso}}
 
+\begin{example}
+A Figura \ref{fig:contartempos24}  mostra um ritmo que usa 6 compassos binários,
+com tempos com uma duração de um \quarternote;
+assim a contagem dos tempos dentro do compasso só pode ser 1 ou 2.
+Na parte superior de cada figura musical pode verse a contagem que deve ser feita no ritmo.
+\end{example}
+\begin{figure}[H]
+    \centering
+ \begin{abc}[name=abc-contartempos24]
+% abcm2ps contartempos24.abc  -O contartempos24.ps
+% ps2epsi contartempos24.ps contartempos24.eps
+%
+X: 1 % start of header
+K: none stafflines=0 %K: C %% Escala de C mayor %
+M:  2/4
+%T: Contratempo num compasso binário
+V:1 clef=perc stem=up name="Ritmo"   sname="Ritmo"
+%
+[V:1] | "1"B2 z2  |"1"B2 "2"B2  | z2 "2"B2  |"1"B4  |"1"B2 "2"B2  |"1"B2 "2"B2  |
+w:         T          T  T        T             2T      T T           T T
+%       
+\end{abc}
+\caption{Sequencia rítmica usando um compasso binário.}
+\label{fig:contartempos24}
+\end{figure}
+
+\begin{comment} 
+\begin{example}
+A Figura \ref{fig:contartempos34}   mostra um ritmo que usa 4 compassos ternários,
+com tempos com uma duração de um \quarternote;
+assim a contagem dos tempos dentro do compasso só pode ser 1, 2 ou 3.
+Na parte superior de cada figura musical pode verse a contagem que deve ser feita no ritmo.
+\end{example}
+\begin{figure}[h]
+    \centering
+ \begin{abc}[name=abc-contartempos34]
+% abcm2ps contartempos34.abc  -O contartempos34.ps
+% ps2epsi contartempos34.ps contartempos34.eps
+%
+X: 1 % start of header
+K: none stafflines=0 %K: C %% Escala de C mayor %
+M:  3/4
+%T: Contratempo num compasso binário
+V:1 clef=perc stem=up name="Ritmo"   sname="Ritmo"
+%
+[V:1] | "1"B4 "3"B2 |"1"B2 "2"B2 "3"B2  | z2 "2"B2 "3"B2  |"1"B2 "2"B4  |
+%       
+\end{abc}
+\caption{Sequencia rítmica usando um compasso ternário.}
+\label{fig:contartempos34}
+\end{figure}
+\end{comment} 

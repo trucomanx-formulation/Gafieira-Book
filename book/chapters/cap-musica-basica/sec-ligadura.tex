@@ -1,0 +1,74 @@
+
+\section{Ligadura}
+\index{Ligadura}
+\label{sec:ligadura}
+
+A ligadura é uma linha curva que se coloca sobre duas ou mais notas da mesma altura, 
+indicando que somente a primeira é articulada, 
+e esta tem uma duração equivalente a soma de todas as notas ligadas \cite[pp. 35]{cardoso1973curso}.
+
+\begin{example}
+A Figura \ref{fig:total-ligadura} descreve 3 casos de uso de ligadura.
+\begin{itemize}
+\item Na Figura \ref{fig:abc-ligadura1} pode-se ver que, no primeiro compasso, 
+tem-se uma ligadura entre a primeira e a segunda figura musical; 
+no segundo compasso tem-se uma representação equivalente ao primeiro compasso; 
+porem, usando ponto de aumento.
+\item Na Figura \ref{fig:abc-ligadura2} pode-se ver que, no primeiro compasso, 
+tem-se ligaduras entre as três primeiras figuras musicais; 
+no segundo compasso tem-se uma representação equivalente ao primeiro compasso; 
+porem, usando dois pontos de aumento.
+\item Na Figura \ref{fig:abc-ligadura3} tem-se um exemplo de uso de ligadura entre figuras musicais de diferentes compassos,
+de modo que a duração da ultima nota, do primeiro compasso, se prolonga ate o segundo compasso.
+\end{itemize}
+\end{example}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.32\textwidth}
+\begin{abc}[name=abc-ligadura1]
+X: 1 % start of header
+K: C %% Escala de C mayor %
+M: 2/4
+%T: Contratempo num compasso binário
+V:1 clef=G  %name="Ritmo 1"   sname="Ritmo 1"
+%
+[V:1] | (B2 B1) C1 | B3 C1   |    
+\end{abc}
+\caption{Uso de ligaduras entre duas notas}
+\label{fig:abc-ligadura1}
+    \end{subfigure}
+    ~%add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.32\textwidth}
+\begin{abc}[name=abc-ligadura2]
+X: 1 % start of header
+K: C %% Escala de C mayor %
+M: 2/4
+%T: Contratempo num compasso binário
+V:1 clef=G  %name="Ritmo 1"   sname="Ritmo 1"
+%
+[V:1] | (A2 (A1) A1/2) C1/2 | A7/2 C1/2  |
+\end{abc}
+\caption{Uso de ligaduras entre três notas.}
+\label{fig:abc-ligadura2}
+    \end{subfigure}
+    ~%add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.32\textwidth}
+\begin{abc}[name=abc-ligadura3]
+X: 1 % start of header
+K: C %% Escala de C mayor %
+M: 2/4
+%T: Contratempo num compasso binário
+V:1 clef=G  %name="Ritmo 1"   sname="Ritmo 1"
+%
+[V:1] | B3  (G1 | G2) B2  |
+\end{abc}
+\caption{Uso de ligaduras em notas de compassos distintos.}
+\label{fig:abc-ligadura3}
+    \end{subfigure}
+    \caption{Distintos usos da ligadura.}\label{fig:total-ligadura}
+\end{figure}
+
+

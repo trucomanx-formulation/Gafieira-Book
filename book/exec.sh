@@ -14,6 +14,6 @@
 	pdflatex -shell-escape main x 2
 #done
 
-#rename main.pdf bsltool-userman.pdf
+mv -f main.pdf samba-gafiera.pdf
 
 ./clean.sh
