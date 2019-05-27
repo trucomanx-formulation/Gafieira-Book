@@ -158,11 +158,66 @@ Existe um caso similar na terça nota do segundo compasso de ambas figuras.
 
 \end{remark}
 
+\subsection{Contagem dos tempos nos compassos}
+A contagens dos tempos no compasso segue a \hyperref[def:Metrica]{\textbf{métrica}}
+do compasso, de modo que estes tempos são contados independentemente da quantidade de notas no compasso.
+De modo que num compasso binário contaremos 1-2, num ternário contaremos 1-2-3, e
+num quaternário 1-2-3-4.
+\begin{example}
+A Figura \ref{fig:contartempocomp1} representa a contagem de um ritmo,
+escrito num compasso binário.
+\end{example}
+\begin{figure}[h]
+    \centering
+ \begin{abc}[name=abc-contartempocomp1]
+% abcm2ps contartempocomp1.abc  -O contartempocomp1.ps
+% ps2epsi contartempocomp1.ps contartempocomp1.eps
+%
+X: 1 % start of header
+K: none stafflines=0 %K: C %% Escala de C mayor %
+M:  2/4
+%T: Contratempo num compasso binário
+V:1 clef=none stem=up name="Ritmo"   sname="Ritmo"
+%
+[V:1] | B2 B1 B1  |B1 B1 B2  | B1/2 B1/2 B1 B1 B1 | B2 B2|
+w:      1  2  _    1  _  2     1  _ _    2  _       1  2
+%       
+\end{abc}
+    \caption{Sequencia rítmica com formula de compasso 2/4.}\label{fig:contartempocomp1}
+\end{figure}
+
+
+\subsection{Contagem dos compassos}
+A contagem dos compassos descreve a quantidade de compassos que tem uma musica ou uma porção dela,
+esta contagem se incrementa ao inicio de cada compasso; é dizer no tempo 1 (tempo forte).
+\begin{example}
+A Figura \ref{fig:contarcompassos2} representa a contagem de compassos num ritmo,
+com compassos binários. 
+\end{example}
+\begin{figure}[h]
+    \centering
+ \begin{abc}[name=abc-contarcompassos2]
+% abcm2ps contarcompassos2.abc  -O contarcompassos2.ps
+% ps2epsi contarcompassos2.ps contarcompassos2.eps
+%
+X: 1 % start of header
+K: none stafflines=0 %K: C %% Escala de C mayor %
+M:  2/4
+%T: Contratempo num compasso binário
+V:1 clef=none stem=up name="Ritmo"   sname="Ritmo"
+%
+[V:1] | B2 B1 B1  |B1 B1 B2  | B1/2 B1/2 B1 B1 B1 | B2 B2|
+w:      1  _  _    2  _  _     3  _ _    _  _       4  _
+%       
+\end{abc}
+    \caption{Sequencia rítmica com formula de compasso 2/4.}\label{fig:contarcompassos2}
+\end{figure}
+
 \subsection{Contagem dos tempos das figuras musicais}
 A contagem dos tempos das figuras musicais dentro do compasso, 
 acompanha a posição das figuras musicais ou notas dentro do compasso. 
-É importante ter em conta a duração das figuras musicais pois a seguinte contagem 
-acontece no inicio da seguinte figura musical;
+É importante ter em conta a duração das figuras musicais pois a contagem só
+continua no inicio da seguinte figura musical;
 assim, dependendo da duração da figura musical, 
 alguns dos tempos do compasso serão contados e outras não \cite[pp. 8]{phillips2002sight}
 
@@ -171,7 +226,7 @@ A Figura \ref{fig:abc-contagemtempo44} mostra um ritmo que usa 4 compassos quate
 com tempos com uma duração de um \quarternote;
 assim a contagem dos tempos dentro do compasso vão de 1 ate 4.
 Pela irregularidade na duração das figuras musicais alguns tempos não são contados explicitamente.
-A contagem pode ser visto na parte superior de cada figura musical.
+A contagem pode ser visto na parte inferior de cada figura musical.
 \end{example}
 \begin{figure}[H]
 \centering
@@ -180,8 +235,9 @@ X: 1 % start of header
 K: none stafflines=0 %K: C %% Escala de C mayor %
 M: 4/4 %meter - compasso
 V:1 clef=perc stem=up name="Ritmo"   sname="Ritmo"
-[V:1] | "1"B4  "3"B4 | "1"B8 |  "1"B2 "2"B4 "4"B2 |  "1"B2 z2 "3"B2  z2| 
-w:      2T 2T          4T       T 2T T               T T
+[V:1] | "2T"B4  "2T"B4 | "4T"B8 |  "T"B2 "2T"B4 "T"B2 |  "T/2"B2 "T/2"z2 "T/2"B2  "T/2"z2| 
+w:       1 3             1          1 2  4               1 3
+%w:      2T 2T            4T         T 2T T               T/2 T/2
 \end{abc}
 \caption{Sequencia rítmica usando um compasso quaternário.}
 \label{fig:abc-contagemtempo44}
@@ -193,7 +249,7 @@ w:      2T 2T          4T       T 2T T               T T
 A Figura \ref{fig:contartempos24}  mostra um ritmo que usa 6 compassos binários,
 com tempos com uma duração de um \quarternote;
 assim a contagem dos tempos dentro do compasso só pode ser 1 ou 2.
-Na parte superior de cada figura musical pode verse a contagem que deve ser feita no ritmo.
+Na parte inferior de cada figura musical pode verse a contagem que deve ser feita no ritmo.
 \end{example}
 \begin{figure}[H]
     \centering
@@ -207,8 +263,9 @@ M:  2/4
 %T: Contratempo num compasso binário
 V:1 clef=perc stem=up name="Ritmo"   sname="Ritmo"
 %
-[V:1] | "1"B2 z2  |"1"B2 "2"B2  | z2 "2"B2  |"1"B4  |"1"B2 "2"B2  |"1"B2 "2"B2  |
-w:         T          T  T        T             2T      T T           T T
+[V:1] | "T"B2 "T"z2  |"T"B2 "T"B2  | "T"z2 "T"B2  |"2T"B4  |"T"B2 "T"B2  |"T"B2 "T"B2  |
+w:       1             1     2           2       1        1     2       1     2
+%w:         T          T     T           T       2T       T T           T T
 %       
 \end{abc}
 \caption{Sequencia rítmica usando um compasso binário.}
