@@ -52,13 +52,11 @@ por outro lado os símbolos que representam que o pé que executa o movimento é
 
 \begin{abc}[name=abc-chicchictumritmo2]
 X: 1 % start of header
-K: C % scale: C major
-M:2/2
-T: Chic-Chic Tum
-V:1 clef=treble name="Instrumento 1" sname="Inst. 1"
-V:2 clef=treble name="Instrumento 2" sname="Inst. 2"
-[V:1] "Chic"G4 "Tum"E4 | "Chic"G4 "Tum"E4 |
-[V:2] z2"Chic"G2 z4 | z2"Chic"G2 z4 |
+K: C stafflines=1 % scale: C major
+M: 2/4 %meter - compasso
+V:1 clef=perc stem=up %name="Pauta com clave de fá"   sname="Pauta com clave de fá"
+[V:1] |: B2 B1 B1| B2 B1 B1 | B2 B1 B1| B2 B1 B1:|
+w: TUM tchic tchic TUM tchic tchic TUM tchic tchic TUM tchic tchic
 \end{abc}
 
 A Tabela \ref{tab:simbolospe}
