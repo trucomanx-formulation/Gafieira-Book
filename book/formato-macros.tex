@@ -1,4 +1,5 @@
 
+
 %----------------------------------------------------------------------------------------
 %	Horizontal separator line
 %   \HRule{2pt}
@@ -12,7 +13,7 @@
 %   \PRLsep{Text}
 %----------------------------------------------------------------------------------------
 \newlength{\PRLlen}
-\newcommand*\PRLsep[1]{\settowidth{\PRLlen}{#1}\advance\PRLlen by -\textwidth\divide\PRLlen by -2\noindent\makebox[\the\PRLlen]{\resizebox{\the\PRLlen}{1pt}{$\blacktriangleleft$}}\raisebox{-.5ex}{#1}\makebox[\the\PRLlen]{\resizebox{\the\PRLlen}{1pt}{$\blacktriangleright$}}\bigskip}
+\newcommand*\PRLsep[1]{\settowidth{\PRLlen}{#1}\advance\PRLlen by -\textwidth\divide\PRLlen by -2\noindent\makebox[\the\PRLlen]{\resizebox{\the\PRLlen}{1pt}{$\blacktriangleleft$}}\raisebox{-.5ex}{\textbf{#1}}\makebox[\the\PRLlen]{\resizebox{\the\PRLlen}{1pt}{$\blacktriangleright$}}\bigskip}
 
 
 %----------------------------------------------------------------------------------------
@@ -25,29 +26,33 @@
 %----------------------------------------------------------------------------------------
 % ATTENTION MESSAGE BOX
 %----------------------------------------------------------------------------------------
-\newtcolorbox{lattention}
-{
-  breakable,
-  enhanced,
-  arc      =1mm,
-  colback  =gray!5,
-  colframe =gray,
-  leftrule =12mm,%
-  overlay  ={\node[anchor=north west,outer sep=2pt] at (frame.north west) {\includegraphics[width=8mm]{attention2.eps}}; }
-}
-
-%----------------------------------------------------------------------------------------
-% ATTENTION MESSAGE BOX
-%----------------------------------------------------------------------------------------
-\newtcolorbox{remarcar}
+\newtcolorbox{tcbattention}
 {
   breakable,
   enhanced,
   arc      =1mm,
   colback  =colorsystemdefault!5,
   colframe =colorsystemdefault,
-  leftrule =12mm,%
-  overlay  ={\node[anchor=north west,outer sep=2pt] at (frame.north west) {\includegraphics[width=8mm]{remarcar.eps}}; }
+  leftrule =14mm,%
+  drop fuzzy shadow=black,
+  overlay  ={\node[anchor=north west,outer sep=4pt] at (frame.north west) {\includegraphics[width=8mm]{attention1.eps}}; }
+}
+
+%----------------------------------------------------------------------------------------
+% ATTENTION MESSAGE BOX
+%----------------------------------------------------------------------------------------
+\newtcolorbox{tcbremarcar}%[1]
+{
+  %title=#1,
+  %fonttitle=\bfseries,
+  breakable,
+  enhanced,
+  arc      =1mm,
+  colback  =colorsystemdefault!5,
+  colframe =colorsystemdefault,
+  leftrule =14mm,%
+  drop fuzzy shadow=black,
+  overlay  ={\node[anchor=north west,outer sep=4pt] at (frame.north west) {\includegraphics[width=8mm]{information1.eps}}; }
 }
 
 
@@ -96,3 +101,8 @@
   colback  = colorlowred,
   colframe = colorlowred
 }
+
+
+
+
+
