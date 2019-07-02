@@ -1,0 +1,13 @@
+Name: footwork-notation
+Version: 0.0.1
+Date: 2017-07-14
+Author: Fernando Pujaico Rivera <fernando.pujaico.rivera@gmail.com>
+Maintainer: Fernando Pujaico Rivera <fernando.pujaico.rivera@gmail.com>
+Title: Dia Shapes - Footwork Notation
+Description: Dia shapes para notação de partitura de movimiento em footwork.
+Categories: dança, partitura, footwork
+Url: https://savannah.nongnu.org/users/trucomanx
+Depends: null
+License: GPLv2+
+SystemRequirements: dia
+BuildRequires: dia (>= 0.97.3), diff (>=3.3), patch (>=2.7.5), make (>=4.1)

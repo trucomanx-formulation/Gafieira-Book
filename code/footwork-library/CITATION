@@ -1,0 +1,18 @@
+Para citar footwork-notation em publicações use:
+
+	Fernando Pujaico Rivera.
+	footwork-Notation (beta): Partitura de movimento para footwork.
+	URL https://savannah.nongnu.org/users/trucomanx
+
+Ou também pode ser usada a entrada BibTeX para usuários LaTeX:
+
+	@misc{BSLTL,
+		author    = {Pujaico Rivera, Fernando },
+		title     = {footwork-Notation (beta): Partitura de movimento para footwork},
+		year      = {2019},
+		url       = {https://savannah.nongnu.org/users/trucomanx}
+	}
+
+Nos temos investido tempo e esforço em criar footwork-notation, por favor
+citar esta quando for usada.
+
