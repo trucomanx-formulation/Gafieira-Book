@@ -23,6 +23,8 @@
 % BOX - TCOLORBOX
 %----------------------------------------------------------------------------------------
 \usepackage[most]{tcolorbox}
+\usetikzlibrary{decorations.pathmorphing}
+\tcbuselibrary{skins}
 %----------------------------------------------------------------------------------------
 % ATTENTION MESSAGE BOX
 %----------------------------------------------------------------------------------------
@@ -102,5 +104,22 @@
   colframe = colorlowred
 }
 
-
+%----------------------------------------------------------------------------------------
+% ELABORACION MESSAGE BOX
+%----------------------------------------------------------------------------------------
+% \begin{elaboracion}[title=título, width= 0.80\linewidth]
+%   texto
+% \end{elaboracion}
+\newtcolorbox{elaboracion}[1][]{
+    tile,
+    colback=fboxbackcolor,
+    coltitle=fboxfrontcolor,
+    colbacktitle=fboxfrontcolor!5,
+    center title,
+    toprule=1.25mm,
+    bottomrule=1.25mm,
+    extras unbroken and first={borderline north={0.25mm}{0.5mm}{fboxfrontcolor,decoration={zigzag,amplitude=0.5mm},decorate}},
+    extras unbroken and last={borderline south={0.25mm}{0.5mm}{fboxfrontcolor,decoration={zigzag,amplitude=0.5mm},decorate}},
+    #1
+}
 

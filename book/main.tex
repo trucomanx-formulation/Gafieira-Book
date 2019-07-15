@@ -41,7 +41,7 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[11pt,fleqn]{book} % Default font size and left-justified equations
+\documentclass[14pt]{extbook} % Default font size and left-justified equations
 
 \usepackage{float}% para ter [H]
 \usepackage{fancyvrb}
@@ -68,6 +68,8 @@
 \newcommand{\ImprimirEmail}[0]{ \href{mailto:fernando.pujaico.rivera@gmail.com}{fernando.pujaico.rivera@gmail.com}}
 %----------------------------------------------------------------------------------------
 
+\newcommand{\AnoLivro}[0]{2019}%% Ano da primeira edição, usado para ser remplazado po ATUALMENTE
+
 %----------------------------------------------------------------------------------------
 
 \newcommand{\footwork}[0]{jogo de p\'{e}s}
@@ -88,6 +90,9 @@
 \definecolor{colorsystemdefault}{RGB}{16,81,15} % Define the color used for highlighting throughout the book
 \definecolor{colormylink}{RGB}{16,120,15} % Define the 
 
+
+\definecolor{fboxbackcolor}{RGB}{249,238,241}
+\definecolor{fboxfrontcolor}{RGB}{36,21,47}
 %----------------------------------------------------------------------------------------
 %	COLOR
 %----------------------------------------------------------------------------------------
@@ -159,12 +164,14 @@
 %----------------------------------------------------------------------------------------
 %	PART
 %----------------------------------------------------------------------------------------
-\part{Introdução}
+\part{Historia}
 \include{chapters/cap-historia-samba/historiasamba}
 \include{chapters/cap-historia-gafieiras/historiagafieira}
 \include{chapters/cap-historia-musicasamba/historiamusicasamba}
 \include{chapters/cap-historia-sambagafieira/historiasambagafieira}
 
+
+\part{O samba e dança de salão}
 \include{chapters/cap-historia-dancasamba/historiadancasamba}
 \include{chapters/cap-normas/normas}
 \include{chapters/cap-historia-passos/historiapassos}
@@ -178,6 +185,13 @@
 
 \include{chapters/cap-musica-basica/musica-basica}
 \include{chapters/cap-musica-composer/musica-composer}
+
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	PART
+%----------------------------------------------------------------------------------------
+\part{Musicalidade na dança de salão}
 \include{chapters/cap-musica-musicalidade/musica-musicalidade}
 
 
