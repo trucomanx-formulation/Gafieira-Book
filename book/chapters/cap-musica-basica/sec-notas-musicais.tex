@@ -1,4 +1,4 @@
-\section{Notas musicais}\index{Música!Notas musicais}
+\section{Notas musicais, tons e escalas}\index{Música!Notas musicais}
 \label{sec:notasmusicais}
 
 O sons musicais que representam as notas são sete, 
@@ -38,18 +38,16 @@ especifica a cada uma destas notas,
 sendo a mais difundida atualmente a afinação (atribuição de alturas) com \hyperref[subsec:tempigual]{\textbf{temperamento igual}}\footnote{O temperamento igual é tratado na Seção \ref{subsec:tempigual}.}.
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Escalas musicais}
 
-
-Conhecida a definição de notas musicais, podemos agora descrever:
-
-
-\begin{description}
-\item [Escala musical:] \label{sec:pos:Escala}
-\index{Música!Escala musical}
-É uma forma de organizar as notas musicais, numa ordem crescente em relação a altura dos sons.
+\label{sec:pos:Escala}
+\index{Música!Escalas musicais}
+As escalas musicais são uma forma de organizar as notas musicais, 
+numa ordem que permitam ser lidas de forma crescente em relação a altura dos sons.
 Existe uma variedade de escalas musicais usadas em distintas épocas ou países, 
 porem a escala básica da música europeia é a escala diatônica. \cite[pp. 753]{apel1969harvard}
-\begin{example}~
+\begin{example}As escalas mais conhecidas são:
 \begin{inparaitem}
 \item Escala diatônica
 \item Escala cromática
@@ -66,7 +64,7 @@ porem a escala básica da música europeia é a escala diatônica. \cite[pp. 753
 \end{inparaitem}
 \end{example}
 
-
+\begin{description}
 
 \item [Escala diatônica:] \label{sec:pos:Diatonica}
 \index{Música!Escala diatônica}
@@ -93,10 +91,53 @@ d\acute{o}
 \end{equation*}
 \end{example}
 
+
+\item [Escala cromática:] \label{sec:pos:Cromatica}
+\index{Música!Escala cromática}
+Também chamada escala dodecafônica ou duodécuple, 
+esta escala está constituída por uma sucessão de 12 sons, separados uma distancia de 1 semitom.
+Os outros tipos de escalas na música moderna podem ser considerados como subconjuntos desta escala \cite[pp. 753]{apel1969harvard}
+\begin{example} 
+Se representamos um semitom por ``$\alpha$'', 
+e definimos o simbolo $\#$ como indicador de uma nota, um semitom acima, 
+então a escala cromática é definida como:\\
+$d\acute{o}\overset{\alpha}{\rightarrow}$
+$\#d\acute{o}\overset{\alpha}{\rightarrow}$
+$r\acute{e}\overset{\alpha}{\rightarrow}$
+$\#r\acute{e}\overset{\alpha}{\rightarrow}$
+$mi\overset{\alpha}{\rightarrow}$
+$f\acute{a}\overset{\alpha}{\rightarrow}$
+$\#f\acute{a}\overset{\alpha}{\rightarrow}$
+$sol\overset{\alpha}{\rightarrow}$
+$\#sol\overset{\alpha}{\rightarrow}$
+$l\acute{a}\overset{\alpha}{\rightarrow}$
+$\#l\acute{a}\overset{\alpha}{\rightarrow}$
+$si$
+\end{example}
+
+\end{description}~\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Tom e Semitom}
+\label{subsec:tomesemitom}
+\index{Música!Tom}
+\index{Música!Semitom}
+
+Os tons e semitons são termos usados para designar aos intervalos entre as alturas das notas utilizados na 
+\hyperref[sec:pos:Diatonica]{\textbf{escala diatônica}}.
+Deve-se ter em conta que quando usamos o nome tom,
+podemos nos referir a \hyperref[sec:pos:Altura]{\textbf{altura}} 
+de uma nota ou ao intervalo entre algumas notas da escala diatônica;
+a continuação usaremos esta última acepção.
+
+\begin{description}
+
 \item [Semitom:] \label{sec:pos:Semitom}
 \index{Música!Semitom}
 É a menor distancia entre duas notas na música tradicional ocidental.
-Na escala diatônica podem se achar distancias de semitons entre mi e fá, e entre si e dó.
+Na \hyperref[sec:pos:Diatonica]{\textbf{escala diatônica}} 
+podem se achar distancias de semitons entre mi e fá, e entre si e dó.
 O valor exato de um semitom varia ligeiramente de acordo com o sistema de afinação \cite[pp. 30]{cardoso1973curso}\cite[pp. 762]{apel1969harvard}, ver afinação com temperamento igual na Seção \ref{subsec:tempigual}. 
 Em algumas bibliografias se define ao semitom como a ``metade'' de um tom, 
 porem esta só é uma forma metafórica de falar, 
@@ -116,7 +157,7 @@ Semitom=\frac{f_{fa}}{f_{mi}}
 \item [Tom:] \label{sec:pos:TomDist}
 \index{Música!Tom}
 É uma distancia, em progressão geométrica, equivalente a duas distancias de semitons colocadas consecutivamente entre duas notas.
-Na escala diatônica podemos achar distancias de um tom entre todas as notas exceto entre mi e fá, e entre si e dó \cite[pp. 30]{cardoso1973curso}\cite[pp. 762]{apel1969harvard}.
+Na \hyperref[sec:pos:Diatonica]{\textbf{escala diatônica}} podemos achar distancias de um tom entre todas as notas exceto entre mi e fá, e entre si e dó \cite[pp. 30]{cardoso1973curso}\cite[pp. 762]{apel1969harvard}.
 O valor exato de um tom varia ligeiramente de acordo com o sistema de afinação, ver afinação com temperamento igual na Seção \ref{subsec:tempigual}. 
 \begin{example}
 Se numa escala diatônica definimos $f_{fa}$ e $f_{sol}$ como as frequências das notas fá e sol respetivamente.
@@ -137,47 +178,47 @@ Correspondente  ao tom com o dobro da frequência do tom escolhido como referenc
 \end{itemize}
 \end{example}
 
+\end{description}~\\
 
-\item [Escala cromática:] \label{sec:pos:Cromatica}
-\index{Música!Escala cromática}
-Também chamada escala dodecafônica ou duodécuple, 
-esta escala está constituída por uma sucessão de 12 sons, separados uma distancia de 1 semitom.
-Os outros tipos de escalas na música moderna podem ser considerados como subconjuntos desta escala \cite[pp. 753]{apel1969harvard}
-\begin{example} 
-Se representamos um semitom por ``$\alpha$'', 
-e definimos o simbolo $\#$ como indicador de uma nota, um semitom acima, 
-então a escala cromática é definida como:
-\begin{equation*} 
-d\acute{o}\overset{\alpha}{\rightarrow}
-\#d\acute{o}\overset{\alpha}{\rightarrow}
-r\acute{e}\overset{\alpha}{\rightarrow}
-\#r\acute{e}\overset{\alpha}{\rightarrow}
-mi\overset{\alpha}{\rightarrow}
-f\acute{a}\overset{\alpha}{\rightarrow}
-\#f\acute{a}\overset{\alpha}{\rightarrow}
-sol\overset{\alpha}{\rightarrow}
-\#sol\overset{\alpha}{\rightarrow}
-l\acute{a}\overset{\alpha}{\rightarrow}
-\#l\acute{a}\overset{\alpha}{\rightarrow}
-si
-\end{equation*}
-\end{example}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Acidentes ou alterações}
+\label{subsec:acidentes}
+\index{Música!Acidentes}
+
+
+Os acidentes ou alterações são símbolos que modificam a altura de uma nota; 
+os mais utilizado são \cite[pp. ]{alves2004teoria}:\\
+
+\begin{description}
 
 \item [Sustenido ($\#$):] \label{sec:pos:Sustenido}
 \index{Música!Sustenido}
-É um simbolo u operador que acompanha a uma nota, e indica um som com uma altura um semitom acima da nota indicada. 
+É um simbolo u operador que acompanha a uma nota, 
+e indica um som com uma altura um semitom acima da nota indicada.
+Uma vez usado o símbolo, o âmbito  do simbolo continua ativo, 
+para notas do mesmo tom, sem a necessidade de grafar novamente com o símbolo $\#$;
+para desabilitar este âmbito, se usa o simbolo $\natural$. 
 \begin{example} $\#$dó : é equivalente a dizer, um som um semitom acima de dó.
 \end{example}
 
 
 \item [Bemol ($\flat$):] \label{sec:pos:Bemol}
 \index{Música!Bemol}
-É um simbolo u operador que acompanha a uma nota, e indica um som com uma altura um semitom abaixo da nota indicada. 
+É um simbolo u operador que acompanha a uma nota, 
+e indica um som com uma altura um semitom abaixo da nota indicada. 
+Uma vez usado o símbolo, o âmbito  do simbolo continua ativo, 
+para notas do mesmo tom, sem a necessidade de grafar novamente com o símbolo $\flat$;
+para desabilitar este âmbito, se usa o simbolo $\natural$. 
 \begin{example} $\flat$ré : é equivalente a dizer, um som um semitom abaixo de ré.
 \end{example}
 
+\item [Bequadro ($\natural$):] \label{sec:pos:Bequadro}
+\index{Música!Bequadro}
+Este símbolo anula o efeito dos símbolos anteriormente mencionados.
+
 \end{description}~\\
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Temperamento igual}
 \label{subsec:tempigual}
 No  temperamento igual se divide uma oitava em doze semitons da mesma distancia.
@@ -187,7 +228,11 @@ Assim, se temos um par de notas lá, a primeira a uma frequência $f_0$,
 e a outra uma oitava acima com uma frequência $2f_0$;
 e sabendo que existem $12$ passos (semitons) em progressão  geométrica para completar uma oitava 
 (como mostra a Tabela \ref{tab:temperamento1} na linha 4),
-\begin{table}[h]
+então a distancia $\alpha$ de cada semitom pode ser calculada como:
+\begin{equation}
+f_0\alpha^{12}\equiv 2 f_0
+\end{equation}
+\begin{sidewaystable}
 \centering
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c||c|}
 \hline
@@ -198,11 +243,7 @@ $f_0$ & $f_0\alpha$ & $f_0\alpha^2$ & $f_0\alpha^3$ & $f_0\alpha^4$ & $f_0\alpha
 \end{tabular}
 \caption{Temperamento igual em todas as notas da escala cromática.}
 \label{tab:temperamento1}
-\end{table}
-então a distancia $\alpha$ de cada semitom pode ser calculada como:
-\begin{equation}
-f_0\alpha^{12}\equiv 2 f_0
-\end{equation}
+\end{sidewaystable}
 de modo que um \hyperref[sec:pos:Semitom]{\textbf{semitom}} ($\alpha$) é igual a,
 \begin{equation}
 \alpha \equiv \sqrt[12]{2} \approx  1.05946309435930,

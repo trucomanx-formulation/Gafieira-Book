@@ -1,12 +1,25 @@
-\section{Tempo}
+\section{Tempo, acentuação e contagem}
 \index{Música!Tempo}
 \label{sec:Tempo}
 
-Como já foi sugerido na Seção \ref{sec:compaso}, é chamado de "tempo" 
+Como já foi sugerido na Seção \ref{sec:compaso}, é chamado de ``tempo''
 à pulsação básica que é usada como unidade de medida das composições musicais.
 Os tempos ao ser agrupados em compassos podem formar diferentes estruturas como por exemplo: 
-\hyperref[subsec:compassobinario]{\textbf{compassos binários}}, \hyperref[subsec:compassoternario]{\textbf{ternários}} e \hyperref[subsec:compassoquaternario]{\textbf{quaternários}}; que tem uma duração de 2 tempos, 
+\hyperref[subsec:compassobinario]{\textbf{compassos binários}}, 
+\hyperref[subsec:compassoternario]{\textbf{ternários}} e 
+\hyperref[subsec:compassoquaternario]{\textbf{quaternários}}; que tem uma duração de 2 tempos, 
 3 tempos e 4 tempos, respetivamente. 
+
+
+
+\subsection{Acentuação dos tempos (parte 2)}
+\label{subsec:acentuacion2}
+\index{Música!Acentuação}
+\index{Música!Tempo!Tempo forte}
+\index{Música!Tempo!Tempo fraco}
+
+
+Mais conceitos sobre a acentuação dos tempos podem ser vistos na Seção \ref{subsec:acentuacion1}.
 
 \begin{notation}[] Para o melhor entendimento das seguintes seções usaremos algumas notações.
 \begin{itemize}
@@ -23,10 +36,6 @@ sendo que o valor de $T$ variará dependendo da formula do compasso usada.
 \end{itemize}
 
 \end{notation}
-
-\subsection{Tempos fortes e fracos}
-\index{Música!Tempo!Tempo forte}
-\index{Música!Tempo!Tempo fraco}
 
 A formula do compasso de uma peça musical ou uma porção dela, 
 nos indica quantos tempos e que duração terão estes tempos no compasso; 
@@ -63,12 +72,12 @@ a relação de \hyperref[sec:pos:Intensidade]{\textbf{intensidades}} pode ser ex
 \{fF=ff\} ~<~  \{f = fF\} ~<~ sF ~<~ \{F = FF\} 
 \end{equation}
 
-\begin{remark}
+\begin{tcbattention}
 A regularidade na distribuição das acentuações nos tempos, 
 só mudará quando se especifiquem  explicitamente dinâmicas sobre as figuras musicais,
 de modo que estas dinâmicas modificam as acentuações,
 porem não trocam o nome dos tempos, sendo estes sempre chamados de tempos fortes, semifortes e fracos. 
-\end{remark}
+\end{tcbattention}
 
 
 \begin{example}
@@ -94,11 +103,11 @@ Assim,
 \end{example}
 \begin{figure}[H]
 \centering
-\begin{abc}[name=abc-tempo1,width=0.6\linewidth]
+\begin{abc}[name=abc-tempo1,width=0.75\linewidth]
 X: 1 % start of header
 K: none stafflines=0 %K: C %% Escala de C mayor %
 M: 2/2 %meter - compasso
-V:1 clef=perc stem=up name="Ritmo"   sname="Ritmo"
+V:1 clef=perc stem=up %name="Ritmo"   sname="Ritmo"
 [V:1] | B4 B4 |  B2 B2 B2 B2 |  
 w:  T T    T/2 T/2 T/2 T/2 
 w:  F f FF Ff fF ff
@@ -132,11 +141,11 @@ a quarta   nota será executada no tempo fraco (f).
 \end{example}
 \begin{figure}[H]
 \centering
-\begin{abc}[name=abc-tempo2,width=0.6\linewidth]
+\begin{abc}[name=abc-tempo2,width=0.75\linewidth]
 X: 1 % start of header
 K: none stafflines=0 %K: C %% Escala de C mayor %
 M: 4/4 %meter - compasso
-V:1 clef=perc stem=up name="Ritmo"   sname="Ritmo"
+V:1 clef=perc stem=up %name="Ritmo"   sname="Ritmo"
 [V:1] | B4  B4 | B2 B2 B2 B2 | 
 w:  2T 2T      T T T T 
 w:  Acento Acento      F f sF f 
@@ -145,7 +154,7 @@ w:  Acento Acento      F f sF f
 \label{fig:abc-tempo2}
 \end{figure} 
 
-\begin{remark}
+\begin{tcbattention}
 As pautas mostradas na Figura \ref{fig:abc-tempo1} e na Figura \ref{fig:abc-tempo2},
 tem a mesma distribuição de figuras musicais, porem usam formulas do compasso distintas;
 Por este pequeno detalhe o som de ambos ritmos será diferente,
@@ -156,7 +165,7 @@ a nota é acentuada como uma f. Porem,
 na  Figura \ref{fig:abc-tempo1}, a nota é acentuada como uma sF, tendo esta ultima maior intensidade.
 Existe um caso similar na terça nota do segundo compasso de ambas figuras.
 
-\end{remark}
+\end{tcbattention}
 
 \subsection{Contagem dos tempos nos compassos}
 A contagens dos tempos no compasso segue a \hyperref[def:Metrica]{\textbf{métrica}}
@@ -169,7 +178,7 @@ escrito num compasso binário.
 \end{example}
 \begin{figure}[h]
     \centering
- \begin{abc}[name=abc-contartempocomp1]
+ \begin{abc}[name=abc-contartempocomp1,width=\linewidth]
 % abcm2ps contartempocomp1.abc  -O contartempocomp1.ps
 % ps2epsi contartempocomp1.ps contartempocomp1.eps
 %
@@ -177,7 +186,7 @@ X: 1 % start of header
 K: none stafflines=0 %K: C %% Escala de C mayor %
 M:  2/4
 %T: Contratempo num compasso binário
-V:1 clef=none stem=up name="Ritmo"   sname="Ritmo"
+V:1 clef=perc stem=up %name="Ritmo"   sname="Ritmo"
 %
 [V:1] | B2 B1 B1  |B1 B1 B2  | B1/2 B1/2 B1 B1 B1 | B2 B2|
 w:      1  2  _    1  _  2     1  _ _    2  _       1  2
@@ -196,7 +205,7 @@ com compassos binários.
 \end{example}
 \begin{figure}[h]
     \centering
- \begin{abc}[name=abc-contarcompassos2]
+ \begin{abc}[name=abc-contarcompassos2,width=\linewidth]
 % abcm2ps contarcompassos2.abc  -O contarcompassos2.ps
 % ps2epsi contarcompassos2.ps contarcompassos2.eps
 %
@@ -204,7 +213,7 @@ X: 1 % start of header
 K: none stafflines=0 %K: C %% Escala de C mayor %
 M:  2/4
 %T: Contratempo num compasso binário
-V:1 clef=none stem=up name="Ritmo"   sname="Ritmo"
+V:1 clef=perc stem=up %name="Ritmo"   sname="Ritmo"
 %
 [V:1] | B2 B1 B1  |B1 B1 B2  | B1/2 B1/2 B1 B1 B1 | B2 B2|
 w:      1  _  _    2  _  _     3  _ _    _  _       4  _
@@ -234,7 +243,7 @@ A contagem pode ser visto na parte inferior de cada figura musical.
 X: 1 % start of header
 K: none stafflines=0 %K: C %% Escala de C mayor %
 M: 4/4 %meter - compasso
-V:1 clef=perc stem=up name="Ritmo"   sname="Ritmo"
+V:1 clef=perc stem=up %name="Ritmo"   sname="Ritmo"
 [V:1] | "2T"B4  "2T"B4 | "4T"B8 |  "T"B2 "2T"B4 "T"B2 |  "T/2"B2 "T/2"z2 "T/2"B2  "T/2"z2| 
 w:       1 3             1          1 2  4               1 3
 %w:      2T 2T            4T         T 2T T               T/2 T/2
@@ -253,7 +262,7 @@ Na parte inferior de cada figura musical pode verse a contagem que deve ser feit
 \end{example}
 \begin{figure}[H]
     \centering
- \begin{abc}[name=abc-contartempos24]
+ \begin{abc}[name=abc-contartempos24,width=\linewidth]
 % abcm2ps contartempos24.abc  -O contartempos24.ps
 % ps2epsi contartempos24.ps contartempos24.eps
 %
@@ -261,7 +270,7 @@ X: 1 % start of header
 K: none stafflines=0 %K: C %% Escala de C mayor %
 M:  2/4
 %T: Contratempo num compasso binário
-V:1 clef=perc stem=up name="Ritmo"   sname="Ritmo"
+V:1 clef=perc stem=up %name="Ritmo"   sname="Ritmo"
 %
 [V:1] | "T"B2 "T"z2  |"T"B2 "T"B2  | "T"z2 "T"B2  |"2T"B4  |"T"B2 "T"B2  |"T"B2 "T"B2  |
 w:       1             1     2           2       1        1     2       1     2

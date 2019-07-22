@@ -1,4 +1,4 @@
-\section{Compasso}
+\section{Compasso e métrica}
 \index{Música!Compasso}
 \label{sec:compaso}
 
@@ -29,7 +29,7 @@ X: 1 % start of header
 K: none stafflines=0 %K: C %% Escala de C mayor %
 M: 2/4
 %T: Contratempo num compasso binário
-V:1 clef=perc stem=up name="Ritmo 1"   sname="Ritmo 1"
+V:1 clef=perc stem=up %name="Ritmo 1"   sname="Ritmo 1"
 %
 [V:1] | B2 B1 B1| B2 B1 B1 | B2 B1 B1 | B2 z2  |
 %       
@@ -72,7 +72,7 @@ X: 1 % start of header
 K: none stafflines=0 %K: C %% Escala de C mayor %
 M: 2/4
 %T: Contratempo num compasso binário
-V:1 clef=perc stem=up name="Ritmo 2"   sname="Ritmo 2"
+V:1 clef=perc stem=up %name="Ritmo 2"   sname="Ritmo 2"
 %
 [V:1] | B2 B1 B1| B2 B1 B1 |\
 M: 3/4 
@@ -95,7 +95,7 @@ o denominador da formula do compasso nos informa a duração de cada um dos \hyp
 dos compassos pertencentes a essa \hyperref[def:Metrica]{\textbf{métrica}}.
 A Tabela \ref{tab:abc-noteslength} em conjunto com a Tabela \ref{tab:abc-noteslengthbasic}, 
 indicam o significado do denominador da fórmula do compasso; 
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \begin{tabular}{|c|c|c|}
 \hline
@@ -136,7 +136,7 @@ Outros exemplos de formula de compasso comumente usadas são:
 \item a fórmula $\mathbf{4}/4$ com compassos com uma duração de $\mathbf{4}$\quarternote ~(quatro semínimas). 
 \end{itemize}
 \end{example}
-\end{description}
+\end{description}~\\
 
 
 Se classificamos os compassos por sua \hyperref[def:Metrica]{\textbf{métrica}}, 
@@ -144,6 +144,15 @@ os três tipos de compassos mais conhecidos são:
 os \hyperref[subsec:compassobinario]{\textbf{compassos binários}}, 
 \hyperref[subsec:compassoternario]{\textbf{ternários}} e 
 \hyperref[subsec:compassoquaternario]{\textbf{quaternários}} \cite[pp. 27]{adolfo2002musica}.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Acentuação dos tempos (parte 1)}
+\label{subsec:acentuacion1}
+\index{Música!Acentuação}
+\index{Música!Tempo!Tempo forte}
+\index{Música!Tempo!Tempo fraco}
 
 \begin{notation}[]
 Nas seguintes seções,
@@ -170,11 +179,14 @@ Todos os compassos com mais de 3 tempos tem além do acento primário um ou mais
 \end{itemize} 
 \end{description}
 
-\begin{remark}
-Os termos ``acentuados'' e ``não acentuados'', 
-indicam uma medida relativa da \hyperref[sec:pos:Intensidade]{\textbf{intensidade}} do som, 
-e em nenhum caso indicam intensidade zero. 
-\end{remark}
+Mais detalhes sobre a acentuação dos tempos podem ser vistos na Seção \ref{subsec:acentuacion2}.
+
+\begin{tcbattention}
+Os termos ``acentuado'' e ``não acentuado'', 
+indicam uma medida relativa das \hyperref[sec:pos:Intensidade]{\textbf{intensidades}} dos sons, 
+e em nenhum caso indicam uma intensidade nula para as notas não acentuadas. 
+\end{tcbattention}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Compasso binário}
@@ -281,7 +293,7 @@ que em todos os compassos, só a nota que é executada no tempo 1 é acentuada.
 \end{example}
 \begin{figure}[H]
 \centering
-\begin{abc}[name=abc-compasso2,width=0.75\linewidth]
+\begin{abc}[name=abc-compasso2,width=1.0\linewidth]
 X: 1 % start of header
 K: C % scale: C major
 M: 3/4 %meter - compasso

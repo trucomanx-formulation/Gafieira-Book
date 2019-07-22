@@ -75,7 +75,7 @@
 \newcommand{\footwork}[0]{jogo de p\'{e}s}
 \newcommand{\Footwork}[0]{Jogo de p\'{e}s}
 \newcommand{\Variante}[0]{Variante}
-\newcommand{\workboxsize}[0]{0.95\textwidth}
+\newcommand{\workboxsize}[0]{1.0\textwidth}
 \newcommand{\bodycontrol}[0]{control corporal}
 \newcommand{\Bodycontrol}[0]{Control corporal}
 \newcommand{\bodyisolation}[0]{dissocia\c{c}\~{a}o corporal}
@@ -91,8 +91,11 @@
 \definecolor{colormylink}{RGB}{16,120,15} % Define the 
 
 
-\definecolor{fboxbackcolor}{RGB}{249,238,241}
-\definecolor{fboxfrontcolor}{RGB}{36,21,47}
+%\definecolor{fboxbackcolor}{RGB}{249,238,241}
+%\definecolor{fboxfrontcolor}{RGB}{36,21,47}
+\colorlet{fboxbackcolor}{colorsystemdefault}
+\colorlet{fboxfrontcolor}{colorsystemdefault}
+
 %----------------------------------------------------------------------------------------
 %	COLOR
 %----------------------------------------------------------------------------------------
@@ -185,6 +188,7 @@
 
 \include{chapters/cap-musica-basica/musica-basica}
 \include{chapters/cap-musica-composer/musica-composer}
+\include{chapters/cap-musica-topicos/musica-topicos-composicion}
 
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
@@ -192,8 +196,9 @@
 %	PART
 %----------------------------------------------------------------------------------------
 \part{Musicalidade na dança de salão}
-\include{chapters/cap-musica-musicalidade/musica-musicalidade}
-
+\include{chapters/cap-musicalidade-percepcion/musicalidade-percepcion}
+\include{chapters/cap-musicalidade/musicalidade}
+\include{chapters/cap-musicalidade-tecnica/musicalidade-tecnica}
 
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
@@ -202,7 +207,9 @@
 %----------------------------------------------------------------------------------------
 \part{Trabalhando de forma unipessoal}
 \include{chapters/cap-passos-footwork/passos-footwork}
+\include{chapters/cap-body/body}
 \include{chapters/cap-body-control/body-control}
+\include{chapters/cap-body-isolation/body-isolation}
 % \include{chapters/cap-elementos-de-musicalidade/elementos-de-musicalidade}
 
 %----------------------------------------------------------------------------------------

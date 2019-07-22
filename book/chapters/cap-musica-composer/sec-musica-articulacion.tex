@@ -1,0 +1,164 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Articulação}
+\index{Música!Articulação}
+
+Nas partituras podemos ver alguns símbolos, 
+que o compositor coloca como indicação ao interprete,
+para informar como as notas musicais devem ser executadas ou 
+articuladas entre sim \cite[pp. 56]{alves2004teoria}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Legato ou ligadura de expressão}
+\label{subsec:Legato}
+\index{Música!Legato}
+O  ``legato'' é um símbolo  que indica uma ligadura de expressão entre as notas,
+neste caso a informação que da o compositor é que as
+notas devem ser executadas sem interrupções,
+criando uma mudança de tons gradual para passar de uma nota musical a outra \cite[pp. 56]{alves2004teoria}.
+
+\begin{example}
+A Figura \ref{fig:legato1} mostra um exemplo de uso do legato. 
+Alguns instrumentos podem facilmente articular um legato, por exemplo o violino.
+\end{example}
+
+\begin{figure}[h!]
+\centering
+\begin{abc}[name=abc-legato1,width=0.80\linewidth]
+X: 1 % start of header
+K: C % scale: C major
+M: 2/4 %meter - compasso
+ (G2 E2 | G1  A1  G1 E1 )|
+\end{abc}
+\caption{Melodia com notas que devem ser executadas de forma ligada.}
+\label{fig:legato1}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Staccato}
+\label{subsec:Staccato}
+\index{Música!Staccato}
+
+O staccato é um símbolo, desenhado com um ponto (.), 
+que indica a diminuição na \hyperref[sec:pos:Duracion]{\textbf{duração}} de uma nota (aproximadamente um 50\%), 
+dando nela um efeito de separação ou destaque \cite[pp. 56]{alves2004teoria}.
+
+\begin{example}
+A Figura \ref{fig:staccato1a} mostra um exemplo de uso do staccato. 
+Na Figura \ref{fig:staccato1b} podemos ver uma escrita equivalente, sem o uso do símbolo de staccato.
+\end{example}
+
+\begin{figure}[h!]
+\centering
+\begin{subfigure}[c]{0.80\textwidth}
+\begin{abc}[name=abc-staccato1a]
+X: 1 % start of header
+K: C % scale: C major
+M: 2/4 %meter - compasso
+ .G2 .E2 | .G1  .A1  .G1 .E1 | 
+\end{abc}
+\caption{Notação de notas musicais em staccato.}
+\label{fig:staccato1a}
+\end{subfigure}
+~ %
+\begin{subfigure}[c]{1.00\textwidth}
+\begin{abc}[name=abc-staccato1b]
+X: 1 % start of header
+K: C % scale: C major
+M: 2/4 %meter - compasso
+ G1 z1 E1 z1 | G1/2 z1/2 A1/2 z1/2 G1/2 z1/2 E1/2 z1/2 | 
+\end{abc}
+\caption{Forma de execução de notas musicais em staccato.}
+\label{fig:staccato1b}
+\end{subfigure}
+\caption{Melodia com notas que devem ser executadas em staccato.}
+\label{fig:staccato1}
+\end{figure}
+
+\subsubsection{Staccatissimo}
+
+O staccatissimo, staccato seco ou martelado é um símbolo, com uma função similar ao staccato;
+porem indica uma diminuição maior na \hyperref[sec:pos:Duracion]{\textbf{duração}} de nota (aproximadamente ao 25\%) \cite[pp. 56]{alves2004teoria}.
+
+\begin{example}
+A Figura \ref{fig:staccatissimo1a} mostra um exemplo de uso do staccatissimo. 
+Na Figura \ref{fig:staccatissimo1b} podemos ver uma escrita equivalente, sem o uso do símbolo de staccatissimo.
+\end{example}
+
+\begin{figure}[h!]
+\centering
+\begin{subfigure}[c]{0.80\textwidth}
+\begin{abc}[name=abc-staccatissimo1a]
+X: 1 % start of header
+K: C % scale: C major
+M: 2/4 %meter - compasso
+ !wedge!G2 !wedge!E2 | !wedge!G1  !wedge!A1  !wedge!G1 !wedge!E1 | 
+\end{abc}
+\caption{Notação de notas musicais em staccatissimo.}
+\label{fig:staccatissimo1a}
+\end{subfigure}
+~ %
+\begin{subfigure}[c]{1.00\textwidth}
+\begin{abc}[name=abc-staccatissimo1b]
+X: 1 % start of header
+K: C % scale: C major
+M: 2/4 %meter - compasso
+ G1/2 z3/2 E1/2 z3/2 | G1/4 z3/4 A1/4 z3/4 G1/4 z3/4 E1/4 z3/4 | 
+\end{abc}
+\caption{Forma de execução de notas musicais em staccatissimo.}
+\label{fig:staccatissimo1b}
+\end{subfigure}
+\caption{Melodia com notas que devem ser executadas em staccato.}
+\label{fig:staccatissimo1}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Tenuto ou sostenuto}
+\label{subsec:Tenuto}
+\index{Música!Tenuto}
+
+O tenuto é um símbolo, desenhado com uma linha reta (-), 
+que indica que deve ser sustentada a 
+\hyperref[sec:pos:Duracion]{\textbf{duração}} e a \hyperref[sec:pos:Intensidade]{\textbf{intensidade}} da nota ao máximo \cite[pp. 56]{alves2004teoria}.
+
+\begin{example}
+A Figura \ref{fig:tenuto1} mostra um exemplo de uso do tenuto. 
+\end{example}
+
+
+\begin{figure}[h!]
+\centering
+\begin{abc}[name=abc-tenuto1,width=0.80\linewidth]
+X: 1 % start of header
+K: C % scale: C major
+M: 2/4 %meter - compasso
+ !tenuto!G2 !tenuto!E2 | !tenuto!G1  !tenuto!A1  !tenuto!G1 !tenuto!E1 |
+\end{abc}
+\caption{Melodia com notas que devem ser executadas de forma sustenido.}
+\label{fig:tenuto1}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Accénto}
+\label{subsec:Accento}
+\index{Música!Accénto}
+
+O accénto é um símbolo, desenhado com  (>), 
+que indica que a nota deve ser acentuada; 
+é dizer, esta deve receber um aumento de \hyperref[sec:pos:Intensidade]{\textbf{intensidade}} \cite[pp. 56]{alves2004teoria}.
+
+\begin{example}
+A Figura \ref{fig:accento1} mostra um exemplo de uso do accénto.
+Onde os tempos fracos tem um aumento de intensidade provocando \hyperref[sec:contratempo]{\textbf{contratempos}}. 
+\end{example}
+
+
+\begin{figure}[h!]
+\centering
+\begin{abc}[name=abc-accento1,width=0.80\linewidth]
+X: 1 % start of header
+K: C % scale: C major
+M: 2/4 %meter - compasso
+ G2 !>!E2 | G1  !>!A1  !>!G1 !>!E1 |
+\end{abc}
+\caption{Melodia com notas que devem ser executadas de forma sostenida.}
+\label{fig:accento1}
+\end{figure}

@@ -1,4 +1,4 @@
-\section{Tipos de pauta}
+\section{Tipos de pautas e claves}
 \label{sec:tipospauta}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -24,7 +24,7 @@ X: 1 % start of header
 K: none stafflines=5 %K: C %% Escala de C mayor %
 M: none % M: 2/4
 %T: Contratempo num compasso binário
-V:1 clef=none stem=up name="Pauta"   sname="Pauta"
+V:1 clef=none stem=up %name="Pauta"   sname="Pauta"
 %
 [V:1] C8 D8 E8 F8 G8 A8 B8 C'8 D'8 E'8 F'8 G'8 A'8
 \end{abc}
@@ -41,10 +41,10 @@ o comportamento do sonido nesses dois âmbitos. Assim, a Figura \ref{fig:abc-pau
 representa um conjunto de 13 sonidos, cada um com a mesma duração; 
 porem, articulado com diferentes alturas e em ordem crescente, 
 desde um sonido grave ate um sonido mais agudo.
-%\begin{remark}
+%\begin{tcbinformation}
 %As linhas da pauta se contam de abaixo para acima.
 %As figuras musicais, se leem de esquerda direita, para que corresponda com o sentido do avanço do tempo.
-%\end{remark}
+%\end{tcbinformation}
 
 
 Por outro lado, se as figuras musicais podem ocupar varias posições entre as linhas da pauta,
@@ -62,7 +62,7 @@ X: 1 % start of header
 K: none stafflines=5 %K: C %% Escala de C mayor %
 M: none % M: 2/4
 %T: Contratempo num compasso binário
-V:1 clef=none name="Pauta"   sname="Pauta"
+V:1 clef=none %name="Pauta"   sname="Pauta"
 %
 [V:1] z8 z4 z2 z1 z/2 z/4 G8 A4 B2 C'1 D'/2 E'/4 
 \end{abc}
@@ -272,7 +272,7 @@ sendo formas equivalentes, as mostradas na Figura \ref{fig:abc-claveperczero} e 
 
 \begin{figure}[h]
     \centering 
-\begin{subfigure}[c]{0.24\textwidth}
+\begin{subfigure}[c]{0.45\textwidth}
 \begin{abc}[name=abc-clavepercusion1]
 % abcm2ps clavepercusion1.abc  -O clavepercusion1.ps
 % ps2epsi clavepercusion1.ps clavepercusion1.eps
@@ -288,8 +288,8 @@ V:1 clef=perc stem=up %name="Pauta com clave de fá"   sname="Pauta com clave de
 \caption{Clave de percussão sem linhas, indicando que só existe um modo de tocar o instrumento.}
 \label{fig:abc-claveperczero}
 \end{subfigure}
-~%
-\begin{subfigure}[c]{0.24\textwidth}
+~~%
+\begin{subfigure}[c]{0.45\textwidth}
 \begin{abc}[name=abc-clavepercusion2a]
 % abcm2ps clavepercusion2a.abc  -O clavepercusion2a.ps
 % ps2epsi clavepercusion2a.ps clavepercusion2a.eps
@@ -306,7 +306,7 @@ V:1 clef=perc stem=up %name="Pauta com clave de fá"   sname="Pauta com clave de
 \label{fig:abc-clavepercuma}
 \end{subfigure}
 ~%
-\begin{subfigure}[c]{0.24\textwidth}
+\begin{subfigure}[c]{0.45\textwidth}
 \begin{abc}[name=abc-clavepercusion2]
 % abcm2ps clavepercusion2.abc  -O clavepercusion2.ps
 % ps2epsi clavepercusion2.ps clavepercusion2.eps
@@ -322,8 +322,8 @@ V:1 clef=perc stem=up %name="Pauta com clave de fá"   sname="Pauta com clave de
 \caption{Clave de percussão com uma linha e dois modos de tocar o instrumento.}
 \label{fig:abc-clavepercum2}
 \end{subfigure}
-~%
-\begin{subfigure}[c]{0.24\textwidth}
+~~%
+\begin{subfigure}[c]{0.45\textwidth}
 \begin{abc}[name=abc-clavepercusion3]
 % abcm2ps clavepercusion3.abc  -O clavepercusion3.ps
 % ps2epsi clavepercusion3.ps clavepercusion3.eps
@@ -390,7 +390,7 @@ Por outro lado agregaremos complexidade à leitura numa representação como na 
 pelo qual se desaconselha seu uso \cite[pp. 289]{gould676behind}.
 \begin{figure}[h]
     \centering 
-\begin{subfigure}[c]{0.45\textwidth}
+\begin{subfigure}[c]{0.75\textwidth}
 \begin{abc}[name=abc-clavepercusiondry1]
 % abcm2ps clavepercusiondry1.abc  -O clavepercusiondry1.ps
 % ps2epsi clavepercusiondry1.ps clavepercusiondry1.eps
@@ -407,7 +407,7 @@ V:1 clef=perc stem=up %name="Pauta com clave de fá"   sname="Pauta com clave de
 \label{fig:abc-clavepercusiondry1}
 \end{subfigure}
 ~%
-\begin{subfigure}[c]{0.45\textwidth}
+\begin{subfigure}[c]{0.70\textwidth}
 \begin{abc}[name=abc-clavepercusiondry2]
 % abcm2ps clavepercusiondry2.abc  -O clavepercusiondry2.ps
 % ps2epsi clavepercusiondry2.ps clavepercusiondry2.eps
@@ -448,7 +448,7 @@ Assim, a representação em grade mostrada na Figura \ref{fig:gridnotation1}
 é equivalente à Figura \ref{fig:abc-clavepercusiondry2}.
 \begin{figure}[h]
     \centering 
-\includegraphics[width=0.7\textwidth]{chapters/cap-musica-basica/gridnotation.eps}
+\includegraphics[width=0.9\textwidth]{chapters/cap-musica-basica/gridnotation.eps}
     \caption{Notação em grade.}\label{fig:gridnotation1}
 \end{figure}
 
@@ -461,13 +461,13 @@ a representação mostrada na Figura \ref{fig:gridnotation2a}, porem usando vár
 
 \begin{figure}[h]
     \centering 
-\begin{subfigure}[c]{0.7\textwidth}
+\begin{subfigure}[c]{0.9\textwidth}
 \includegraphics[width=\textwidth]{chapters/cap-musica-basica/gridnotation2a.eps}
 \caption{Notação usando várias linhas por instrumento.}
 \label{fig:gridnotation2a}
 \end{subfigure}
 ~%
-\begin{subfigure}[c]{0.7\textwidth}
+\begin{subfigure}[c]{0.9\textwidth}
 \includegraphics[width=\textwidth]{chapters/cap-musica-basica/gridnotation2b.eps}
 \caption{Notação usando vários símbolos por elemento em cada instrumento.}
 \label{fig:gridnotation2b}

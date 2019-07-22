@@ -1,4 +1,8 @@
 
+%----------------------------------------------------------------------------------------
+%  footnote font size
+%----------------------------------------------------------------------------------------
+\renewcommand{\footnotesize}{\small}
 
 %----------------------------------------------------------------------------------------
 %	Horizontal separator line
@@ -28,6 +32,9 @@
 %----------------------------------------------------------------------------------------
 % ATTENTION MESSAGE BOX
 %----------------------------------------------------------------------------------------
+% \begin{tcbattention}
+%   text
+% \end{tcbattention}
 \newtcolorbox{tcbattention}
 {
   breakable,
@@ -41,9 +48,9 @@
 }
 
 %----------------------------------------------------------------------------------------
-% ATTENTION MESSAGE BOX
+% INFORMATION MESSAGE BOX
 %----------------------------------------------------------------------------------------
-\newtcolorbox{tcbremarcar}%[1]
+\newtcolorbox{tcbinformation}%[1]
 {
   %title=#1,
   %fonttitle=\bfseries,
@@ -57,6 +64,26 @@
   overlay  ={\node[anchor=north west,outer sep=4pt] at (frame.north west) {\includegraphics[width=8mm]{information1.eps}}; }
 }
 
+
+
+%----------------------------------------------------------------------------------------
+% ELABORACION MESSAGE BOX
+%----------------------------------------------------------------------------------------
+% \begin{elaboracion}[title=título, width= 0.80\linewidth]
+%   texto
+% \end{elaboracion}
+\newtcolorbox{elaboracion}[1][]{
+    tile,
+    colback=fboxbackcolor!5,
+    coltitle=white,
+    colbacktitle=fboxfrontcolor,%fboxfrontcolor!10,
+    center title,
+    toprule=1.25mm,
+    bottomrule=1.25mm,
+    extras unbroken and first={borderline north={0.5mm}{0.5mm}{fboxfrontcolor,decoration={zigzag,amplitude=0.5mm},decorate}},
+    extras unbroken and last={borderline south={0.5mm}{0.5mm}{fboxfrontcolor,decoration={zigzag,amplitude=0.5mm},decorate}},
+    #1
+}
 
 %----------------------------------------------------------------------------------------
 % CITANDO MESSAGE BOX
@@ -74,6 +101,90 @@
   left skip= 0.10 \linewidth,
   width    = 0.90 \linewidth
 }
+
+
+%----------------------------------------------------------------------------------------
+% CARACTERISTICAS MESSAGE BOX
+%----------------------------------------------------------------------------------------
+\usepackage{pifont}
+\newcommand{\CheckedItem}{\rlap{$\square$}{\large\hspace{0pt}\ding{51}}}
+\newcommand{\NoCheckedItem}{\rlap{$\square$}{\large\hspace{13pt}}}
+
+%----------------------------------------------------------------------------------------
+% \caracterpasso{\CheckedItem}{\CheckedItem}{\NoCheckedItem}{\CheckedItem}{4}
+
+\colorlet{fboxbackcolorpasso}{colorsystemdefault!66!blue}
+\colorlet{fboxfrontcolorpasso}{colorsystemdefault!66!blue}
+
+\newtcolorbox{tcbcaracteristicapasso}[1][]{
+    tile,
+    colback=fboxbackcolorpasso!5,
+    coltitle=white,
+    colbacktitle=fboxfrontcolorpasso,%fboxfrontcolor!10,
+    center title,
+    toprule=1.25mm,
+    bottomrule=1.25mm,
+    extras unbroken and first={borderline north={0.5mm}{0.5mm}{fboxfrontcolorpasso,decoration={zigzag,amplitude=0.5mm},decorate}},
+    extras unbroken and last={borderline south={0.5mm}{0.5mm}{fboxfrontcolorpasso,decoration={zigzag,amplitude=0.5mm},decorate}},
+    #1
+}
+
+
+
+\newcommand{\caracterpasso}[5]{
+\begin{wrapfigure}{l}{0.5\textwidth} 
+\begin{tcbcaracteristicapasso}[title=Caraterísticas, width= \linewidth]
+ \begin{itemize}
+\item[#1] \hyperref[def:PassoCiclico]{\textbf{Passo cíclico}}.
+\item[#2] \hyperref[def:PassoSimetrico]{\textbf{Passo simétrico}}.
+\item[#3] \hyperref[def:PassoAContratempo]{\textbf{Passo a contratempo}}.
+\item[#4] \hyperref[def:PassoDeDeslocamento]{\textbf{Passo de deslocamento}}.
+\item     \hyperref[def:DuracaoDoPasso]{\textbf{Duração}}: #5 tempos.
+\end{itemize}
+\end{tcbcaracteristicapasso}
+\end{wrapfigure}
+}
+
+
+%----------------------------------------------------------------------------------------
+% \caracterpostura{\CheckedItem}{{\NoCheckedItem}
+
+\colorlet{fboxbackcolorpostura}{colorsystemdefault!66!red}
+\colorlet{fboxfrontcolorpostura}{colorsystemdefault!66!red}
+
+\newtcolorbox{tcbcaracteristicapostura}[1][]{
+    tile,
+    colback=fboxbackcolorpostura!5,
+    coltitle=white,
+    colbacktitle=fboxfrontcolorpostura,%fboxfrontcolor!10,
+    center title,
+    toprule=1.25mm,
+    bottomrule=1.25mm,
+    extras unbroken and first={borderline north={0.5mm}{0.5mm}{fboxfrontcolorpostura,decoration={zigzag,amplitude=0.5mm},decorate}},
+    extras unbroken and last={borderline south={0.5mm}{0.5mm}{fboxfrontcolorpostura,decoration={zigzag,amplitude=0.5mm},decorate}},
+    #1
+}
+
+
+\newcommand{\caracterpostura}[2]{
+\begin{wrapfigure}{l}{0.5\textwidth} 
+\begin{tcbcaracteristicapostura}[title=Caraterísticas, width= \linewidth]
+ \begin{itemize}
+\item[#1] \hyperref[def:PosturaFinaliza]{\textbf{Postura de finalização}}.
+\item[#2] \hyperref[def:PosturaTransicao]{\textbf{Postura de transição}}.
+\end{itemize}
+\end{tcbcaracteristicapostura}
+\end{wrapfigure}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% UN SOLO USO
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 %----------------------------------------------------------------------------------------
 % CATALOGRAFICA MESSAGE BOX
@@ -104,22 +215,4 @@
   colframe = colorlowred
 }
 
-%----------------------------------------------------------------------------------------
-% ELABORACION MESSAGE BOX
-%----------------------------------------------------------------------------------------
-% \begin{elaboracion}[title=título, width= 0.80\linewidth]
-%   texto
-% \end{elaboracion}
-\newtcolorbox{elaboracion}[1][]{
-    tile,
-    colback=fboxbackcolor,
-    coltitle=fboxfrontcolor,
-    colbacktitle=fboxfrontcolor!5,
-    center title,
-    toprule=1.25mm,
-    bottomrule=1.25mm,
-    extras unbroken and first={borderline north={0.25mm}{0.5mm}{fboxfrontcolor,decoration={zigzag,amplitude=0.5mm},decorate}},
-    extras unbroken and last={borderline south={0.25mm}{0.5mm}{fboxfrontcolor,decoration={zigzag,amplitude=0.5mm},decorate}},
-    #1
-}
 
