@@ -88,6 +88,7 @@
 \usepackage[dvipsnames*,svgnames]{xcolor}
 \definecolor{colorlowgray}{RGB}{240,240,240}
 \definecolor{colorsystemdefault}{RGB}{16,81,15} % Define the color used for highlighting throughout the book
+\definecolor{colorsystemdefaultdkred}{RGB}{98,32,6} % Define the color used for highlighting throughout the book
 \definecolor{colormylink}{RGB}{16,120,15} % Define the 
 \definecolor{dkred}{rgb}{0.6,0,0}
 
@@ -114,7 +115,7 @@
 %-----------------------------------------------------------------------------------------
 
 \hyphenation{sam-ba}
-
+\hyphenation{Har-wood}
 
 %----------------------------------------------------------------------------------------
 % Para a criação do Glossário
@@ -122,6 +123,7 @@
 \makenomenclature
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand*{\bibfont}{\footnotesize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -207,34 +209,33 @@
 %	PART
 %----------------------------------------------------------------------------------------
 \part{Trabalhando de forma unipessoal}
+\include{chapters/cap-learning/aprendizagem}
 \include{chapters/cap-passos-footwork/passos-footwork}
 \include{chapters/cap-body/body}
 \include{chapters/cap-body-control/body-control}
 \include{chapters/cap-body-isolation/body-isolation}
 \include{chapters/cap-body-expression/body-expression}
-% \include{chapters/cap-elementos-de-musicalidade/elementos-de-musicalidade}
 
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
 %	PART
 %----------------------------------------------------------------------------------------
-\part{Notação da partitura de movimento}
-\include{chapters/cap-partituramov-intro/partituramov-intro}
-\include{chapters/cap-partituramov-posturas/posturas}
-\include{chapters/cap-partituramov/partituramov}
+%% \part{Notação da partitura de movimento}
+%% \include{chapters/cap-partituramov-intro/partituramov-intro}
+%% \include{chapters/cap-partituramov-posturas/posturas}
+%% \include{chapters/cap-partituramov/partituramov}
 
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
 %	PART
 %----------------------------------------------------------------------------------------
-\part{O syllabus do samba de gafieira}
-
-\include{chapters/cap-passos-sobre-basicos/passos-sobre-basicos}
-\include{chapters/cap-passos-nivel-basico/passos-nivel-basico}
-\include{chapters/cap-passos-nivel-intermediario/passos-nivel-intermediario}
-\include{chapters/cap-passos-nivel-avanzado/passos-nivel-avanzado}
+%% \part{O syllabus do samba de gafieira}
+%% \include{chapters/cap-passos-sobre-basicos/passos-sobre-basicos}
+%% \include{chapters/cap-passos-nivel-basico/passos-nivel-basico}
+%% \include{chapters/cap-passos-nivel-intermediario/passos-nivel-intermediario}
+%% \include{chapters/cap-passos-nivel-avanzado/passos-nivel-avanzado}
 
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
@@ -257,7 +258,6 @@
 \chapter*{Bibliografia}
 \addcontentsline{toc}{chapter}{\textcolor{colorsystemdefault}{Bibliography}}
 \printbibliography[heading=bibempty]
-
 
 
 
