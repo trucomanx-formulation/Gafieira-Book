@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-FILENAME=( "musicalidade-it" "musicalidade-it1" "musicalidade-it2" "musicalidade-it3" "dinamicas-elementos1b")
+FILENAME=( "musicalidade-it" "musicalidade-it1" "musicalidade-it2" "musicalidade-it3" "dinamicas-elementos1b"  "musicalidade-type3")
 
 for i in ${FILENAME[@]}; 
 do  
