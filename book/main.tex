@@ -41,7 +41,7 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[14pt]{extbook} % Default font size and left-justified equations
+\documentclass[12pt]{extbook} % Default font size and left-justified equations
 
 \usepackage{float}% para ter [H]
 \usepackage{fancyvrb}
@@ -50,7 +50,7 @@
 %	DATOS DEL LIBRO
 %----------------------------------------------------------------------------------------
 \newcommand{\mytitle}[0]{ Samba de Gafieira }
-\newcommand{\mysubtitle}[0]{ Dan{\c{c}}a e Partitura de Movimento}
+\newcommand{\mysubtitle}[0]{ Hist{\'{o}}ria, Teoria e Pr{\'{a}}tica}
 \newcommand{\myauthor}[0]{ Fernando Pujaico Rivera}
 %----------------------------------------------------------------------------------------
 \newcommand{\imprimirlocal}[0]{Brasil}
@@ -106,6 +106,8 @@
 %\definecolor{colordarkgray}{rgb}{0.5,0.5,0.5}
 %\definecolor{colormauve}{rgb}{0.58,0,0.82}
 
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
 \input{formato-head} % paquetes usados con macros para la escrita
 \input{structure} % el estilo visual do livro
@@ -200,8 +202,15 @@
 %----------------------------------------------------------------------------------------
 %	PART
 %----------------------------------------------------------------------------------------
-\part{Dança e musicalidade}
+\part{memoria, aprendizagem e dança}
+\include{chapters/cap-learning/aprendizagem}
 \include{chapters/cap-dance-elements/dance-elements}
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	PART
+%----------------------------------------------------------------------------------------
+\part{Musicalidade}
 \include{chapters/cap-musicalidade-percepcion/musicalidade-percepcion}
 \include{chapters/cap-musicalidade/musicalidade}
 \include{chapters/cap-musicalidade-tecnica/musicalidade-tecnica}
@@ -212,7 +221,7 @@
 %	PART
 %----------------------------------------------------------------------------------------
 \part{Trabalhando de forma unipessoal}
-\include{chapters/cap-learning/aprendizagem}
+
 \include{chapters/cap-passos-footwork/passos-footwork}
 \include{chapters/cap-body/body}
 \include{chapters/cap-body-control/body-control}

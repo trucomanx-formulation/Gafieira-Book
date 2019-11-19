@@ -26,7 +26,7 @@
 %----------------------------------------------------------------------------------------
 % BOX - TCOLORBOX
 %----------------------------------------------------------------------------------------
-\usepackage[most]{tcolorbox}
+\usepackage[most,many]{tcolorbox}
 \usetikzlibrary{decorations.pathmorphing}
 \tcbuselibrary{skins}
 %----------------------------------------------------------------------------------------
@@ -225,6 +225,53 @@
 \end{tabular} 
 \end{tcbcaracterelement}
 \end{wrapfigure}
+}
+
+
+
+
+%----------------------------------------------------------------------------------------
+% FRASES E DITADOS
+%----------------------------------------------------------------------------------------
+% \begin{FraseFernandoPR}{Frase}
+% meu texto
+% \end{FraseFernandoPR}
+
+
+\newtcolorbox[auto counter]{FraseFernandoPR}{
+freelance,
+colback=white,
+frame code={},
+interior titled code={
+  \fill[rounded corners=8pt,colorsystemdefault!30]
+    (title.south west) --
+    (title.south) -- 
+    ([yshift=15pt]title.south) --
+    ([yshift=15pt,xshift=4cm]title.south) --
+    ([xshift=4cm]title.south) --
+    (title.south east) {[sharp corners] --
+    ([yshift=-6pt]title.south east) -- 
+    ([yshift=-6pt]title.south west) } -- cycle;
+  \draw[rounded corners=8pt,colorsystemdefault,line width=1pt]
+    (title.west|-frame.south west) --
+    (title.south west) --
+    (title.south) -- 
+    ([yshift=15pt]title.south) --
+    ([yshift=15pt,xshift=4cm]title.south) --
+    ([xshift=4cm]title.south) --
+    (title.south east) --
+    (title.east|-frame.south east) --
+    cycle;
+  \node at ([xshift=2cm,yshift=4pt,anchor=south]title.south) 
+    { \bfseries  Frase~\thetcbcounter};  
+  },
+title={\mbox{}},
+top=12pt,
+%fontupper=\sffamily\Large,
+oversize=0.0cm,
+after upper={\\{  \mbox{} \hfill Fernando P.R.}\index{Frases e Ditados}},
+before={\vskip 24pt\par\noindent},
+after={\par\vskip 12pt}
 }
 
 

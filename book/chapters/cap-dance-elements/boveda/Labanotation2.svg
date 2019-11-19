@@ -7,8 +7,8 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="287.29999"
-   height="410"
+   width="284.82935"
+   height="289.69275"
    font-size="14"
    version="1.1"
    id="svg43"
@@ -23,7 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -41,8 +41,8 @@
      id="namedview45"
      showgrid="false"
      inkscape:zoom="1.4606319"
-     inkscape:cx="123.92723"
-     inkscape:cy="205.54615"
+     inkscape:cx="-33.062613"
+     inkscape:cy="95.414149"
      inkscape:window-x="1987"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -58,58 +58,58 @@
     </filter>
   </defs>
   <path
-     style="fill:none;stroke:#080808;stroke-width:3.7;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1;"
-     d="m 247.15,149.5 36.5,55.5 -36.5,55.5 z"
+     style="fill:none;fill-opacity:1;stroke:#080808;stroke-width:3.19085813;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 246.12253,103.65245 36.57331,41.19393 -36.57331,41.19393 z"
      id="path883"
      inkscape:connector-curvature="0" />
   <path
-     style="fill:none;stroke:#080808;stroke-width:3.7;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1;"
-     d="M 40.15,149.5 3.6500001,205 40.15,260.5 Z"
+     style="fill:none;fill-opacity:1;stroke:#080808;stroke-width:3.19085813;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 38.706798,103.65245 2.1334928,144.84638 38.706798,186.04031 Z"
      id="path881"
      inkscape:connector-curvature="0" />
   <path
-     style="fill:none;stroke:#080808;stroke-width:3.7;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1;"
-     d="M 149.65,398 V 278 h 31 v 84 h -13 v 36 z"
+     style="fill:none;fill-opacity:1;stroke:#080808;stroke-width:3.19085813;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 148.42671,288.09732 v -89.06794 h 31.06226 v 62.34756 h -13.02611 v 26.72038 z"
      id="path879"
      inkscape:connector-curvature="0" />
   <path
-     style="fill:none;stroke:#080808;stroke-width:3.7;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1;"
-     d="M 137.65,398 V 278 h -31 v 84 h 13 v 36 z"
+     style="fill:none;fill-opacity:1;stroke:#080808;stroke-width:3.19085813;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 136.40261,288.09732 v -89.06794 h -31.06226 v 62.34756 h 13.02611 v 26.72038 z"
      id="path877"
      inkscape:connector-curvature="0" />
   <path
-     style="fill:none;stroke:#080808;stroke-width:3.7;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1;"
-     d="m 228.213,338.5 -30,-25 -0.063,-102 h 30.063 z"
+     style="fill:none;fill-opacity:1;stroke:#080808;stroke-width:3.19085813;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 227.14749,243.93447 -30.06024,-18.55582 -0.0632,-75.70775 h 30.12337 z"
      id="path875"
      inkscape:connector-curvature="0" />
   <path
-     style="fill:none;stroke:#080808;stroke-width:3.7;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1;"
-     d="m 59.15,338.5 30,-25 0.063,-102 H 59.15 Z"
+     style="fill:none;fill-opacity:1;stroke:#080808;stroke-width:3.19085813;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 57.744957,243.93447 30.06025,-18.55582 0.06313,-75.70775 h -30.12338 z"
      id="path873"
      inkscape:connector-curvature="0" />
   <path
-     style="fill:none;stroke:#080808;stroke-width:3.7;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1;"
-     d="m 228.213,71.5 -30,24.999998 L 198.15,198.5 h 30.063 z"
+     style="fill:none;fill-opacity:1;stroke:#080808;stroke-width:3.19085813;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 227.14749,45.758286 -30.06024,18.555821 -0.0632,75.707763 h 30.12337 z"
      id="path871"
      inkscape:connector-curvature="0" />
   <path
-     style="fill:none;stroke:#080808;stroke-width:3.7;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1;"
-     d="m 59.15,71.5 30,24.999998 L 89.213,198.5 H 59.15 Z"
+     style="fill:none;fill-opacity:1;stroke:#080808;stroke-width:3.19085813;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 57.744957,45.758286 30.06025,18.555821 0.06313,75.707763 h -30.12338 z"
      id="path869"
      inkscape:connector-curvature="0" />
   <path
-     style="fill:none;stroke:#080808;stroke-width:3.7;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1;"
-     d="m 128.15,144.5 h 31 v 121 h -31 z"
+     style="fill:none;fill-opacity:1;stroke:#080808;stroke-width:3.19085813;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 126.88353,99.941285 h 31.06226 v 89.810185 h -31.06226 z"
      id="path867"
      inkscape:connector-curvature="0" />
   <path
-     style="fill:none;stroke:#080808;stroke-width:3.7;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1;"
-     d="m 149.65,12 v 120 h 31 V 48 h -13 V 12 Z"
+     style="fill:none;fill-opacity:1;stroke:#080808;stroke-width:3.19085813;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 148.42671,1.5954291 V 90.663375 h 31.06226 V 28.315813 H 166.46286 V 1.5954291 Z"
      id="path865"
      inkscape:connector-curvature="0" />
   <path
-     style="fill:none;stroke:#080808;stroke-width:3.7;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1;"
-     d="m 137.65,12 v 120 h -31 V 48 h 13 V 12 Z"
+     style="fill:none;fill-opacity:1;stroke:#080808;stroke-width:3.19085813;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 136.40261,1.5954291 V 90.663375 H 105.34035 V 28.315813 h 13.02611 V 1.5954291 Z"
      id="path7"
      inkscape:connector-curvature="0" />
 </svg>
