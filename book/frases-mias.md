@@ -23,3 +23,5 @@ Te das cuenta que te has vuelto más materialista cuando percibes que todas tus 
 
 
 Cuando conoces la verdad, ya no puedes vivir la mentira, solo puedes sobrevivir a ella (2019/10/6). 
+
+Assim como algumas coisas nao podem ser compradas com dinheiro, outras não podem ser compradas com esforço (08-12-2019)

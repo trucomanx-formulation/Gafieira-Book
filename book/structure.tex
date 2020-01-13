@@ -163,7 +163,6 @@
 \newcommand{\intoo}[2]{\mathopen{]}#1\,;#2\mathclose{[}}
 \newcommand{\ud}{\mathop{\mathrm{{}d}}\mathopen{}}
 \newcommand{\intff}[2]{\mathopen{[}#1\,;#2\mathclose{]}}
-\newtheorem{notationT}{Notação}[chapter]
 
 % Boxed/framed environments
 \newtheoremstyle{colorsystemdefaultnumbox}% % Theorem style name
@@ -218,8 +217,8 @@
 \newcounter{dummy} 
 \numberwithin{dummy}{section}
 \theoremstyle{colorsystemdefaultnumbox}
-\newtheorem{theoremeT}[dummy]{Theorem}
-\newtheorem{problem}{Problem}[chapter]
+\newtheorem{theoremeT}{Teorema}[chapter]
+\newtheorem{problemT}{Problema}[chapter]
 \newtheorem{exerciseT}{Exercise}[chapter]
 \theoremstyle{blacknumex}
 \newtheorem{exampleT}{Exemplo}[chapter]
@@ -227,8 +226,13 @@
 \newtheorem{vocabulary}{Vocabulary}[chapter]
 \newtheorem{definitionT}{Definição}[chapter]
 \newtheorem{corollaryT}[dummy]{Corollary}
+\newtheorem{myproofT}{Prova} [chapter]
+\newtheorem{SolutionT}{Solução} [chapter]
 \theoremstyle{colorsystemdefaultnum}
-\newtheorem{proposition}[dummy]{Proposition}
+%\newtheorem{proposition}[dummy]{Proposition}
+\newtheorem{propositionT}[dummy]{Proposição}
+\newtheorem{observationT}{Observação}[section]
+\newtheorem{notationT}{Notação}[chapter]
 
 %----------------------------------------------------------------------------------------
 %	DEFINITION OF COLORED THEOREM BOXES
