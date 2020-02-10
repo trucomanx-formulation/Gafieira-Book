@@ -43,6 +43,26 @@
 
 \documentclass[12pt]{extbook} % Default font size and left-justified equations
 
+
+%----------------------------------------------------------------------------------------
+%	GRAYSCALE EM TODAS AS FIGURAS
+%----------------------------------------------------------------------------------------
+%\def\EnableGrayScale{1}
+
+
+
+%----------------------------------------------------------------------------------------
+%% Viuvas e orfas
+%----------------------------------------------------------------------------------------
+\clubpenalty=1000
+\widowpenalty=1000 
+
+%----------------------------------------------------------------------------------------
+%	ROOT PATH
+%----------------------------------------------------------------------------------------
+\def \SourceRootPath{.}
+%----------------------------------------------------------------------------------------
+
 \usepackage{float}% para ter [H]
 \usepackage{fancyvrb}
 
@@ -50,70 +70,106 @@
 %	DATOS DEL LIBRO
 %----------------------------------------------------------------------------------------
 \newcommand{\mytitle}[0]{ Samba de Gafieira }
-\newcommand{\mysubtitle}[0]{ Hist{\'{o}}ria, Teoria e Pr{\'{a}}tica}
-\newcommand{\myauthor}[0]{ Fernando Pujaico Rivera}
+\newcommand{\mysubtitle}[0]{ Hist{\'{o}}ria, Dan{\c{c}}a, Teoria e Pr{\'{a}}tica}
+\newcommand{\myauthor}[0]{Fernando Pujaico Rivera}
 %----------------------------------------------------------------------------------------
-\newcommand{\imprimirlocal}[0]{Brasil}
-\newcommand{\imprimiryear}[0]{XXXXXXXXXXX}
-\newcommand{\imprimirdata}[0]{9 de abril do \imprimiryear}
-\newcommand{\imprimirtipotrabalho}[0]{Bibliografia}
-\newcommand{\imprimirsize}[0]{16x30cm}
-\newcommand{\imprimirisbn}[0]{XXXXXXXXXXX}
-\newcommand{\imprimireditora}[0]{Editora XXXXXXXXXXX}
+
+
+%----------------------------------------------------------------------------------------
+%	DATOS PATROCINIO
 %----------------------------------------------------------------------------------------
 \newcommand{\ImprimirLinkHomePageLivro}[0]{\url{http://XXXXXXXXXXX.com}}
+\newcommand{\ImprimirLinkVerificarLivro}[0]{\url{https://trucomanx.github.io/XXXXXXXXXXX/verificar.html}}
 \newcommand{\ImprimirLinkCompraLivroImpresso}[0]{\url{http://XXXXXXXXXXX.com/comprarfisico/}}
 \newcommand{\ImprimirLinkCompraLivroDigital}[0]{\url{http://XXXXXXXXXXX.com/comprardigital/}}
+\newcommand{\ImprimirLinkMetodoPagoA}[0]{\url{https://apoia.se/XXXXXXXXXXX}}
 %----------------------------------------------------------------------------------------
-\newcommand{\ImprimirEmail}[0]{ \href{mailto:fernando.pujaico.rivera@gmail.com}{fernando.pujaico.rivera@gmail.com}}
-%----------------------------------------------------------------------------------------
-
-\newcommand{\AnoLivro}[0]{2019}%% Ano da primeira edição, usado para ser remplazado po ATUALMENTE
+\newcommand{\ImprimirEmail}[0]{\href{mailto:fernando.pujaico.rivera@gmail.com}{fernando.pujaico.rivera@gmail.com}}
 
 %----------------------------------------------------------------------------------------
+%   DADOS ficha catalográfica
+%----------------------------------------------------------------------------------------
+\def \myauthorname{Fernando}
+\def \myauthorlastname{Pujaico Rivera}
+\def \myauthorborn{1982}
+\def \imprimirlocal{Lavras}%cidade obrigatorio
+\def \imprimiryear{2020}
+\newcommand{\imprimirdata}[0]{\textcolor{red}{XXXXXXXXXXX} \imprimiryear}
+\def \imprimirtipotrabalho{Inclui Bibliografia}
+\def \imprimircuttersanborn{P979m} %% https://www.cuttersonline.com/app/generator/?q=Pujaico&ref=sanborn&add=
+\newcommand{\imprimirpapersize}[0]{\textcolor{red}{XXXxXXXcm}} %21x30cm}
+\def \imprimirCDD{792.62}   %% http://www.isbn.bn.br/website/tabela-de-assuntos
+\def \imprimirCDU{793.3} %% Dança %% https://www.ipleiria.pt/sdoc/wp-content/uploads/sites/10/2016/05/cdu-atualizada.pdf 
+\newcommand{\imprimirisbn}[0]{\textcolor{red}{XXXXXXXXXXX}}
+\def \imprimireditora{Edi\c{c}\~{a}o Independente}
+\def \palavraschavea{Dan\c{c}a}
+\def \palavraschaveb{Samba}
+\def \palavraschavec{Samba de gafieira}
+\def \palavraschavesInglesa{Dance}
+\def \palavraschavesInglesb{Samba}
+\def \palavraschavesInglesc{Samba de gafieira}
+%----------------------------------------------------------------------------------------
 
-\newcommand{\footwork}[0]{jogo de p\'{e}s}
-\newcommand{\Footwork}[0]{Jogo de p\'{e}s}
-\newcommand{\Variante}[0]{Variante}
-\newcommand{\workboxsize}[0]{1.0\textwidth}
-\newcommand{\bodycontrol}[0]{control corporal}
-\newcommand{\Bodycontrol}[0]{Control corporal}
-\newcommand{\bodyisolation}[0]{dissocia\c{c}\~{a}o corporal}
-\newcommand{\Bodyisolation}[0]{Dissocia\c{c}\~{a}o corporal}
-\newcommand{\bodyboxsize}[0]{0.75\textwidth}
+\newcommand{\AnoLivro}[0]{2020}%% Ano da primeira edição, usado para ser trocado por: ATUALMENTE
+
+
 
 %----------------------------------------------------------------------------------------
 %	XCOLOR
 %----------------------------------------------------------------------------------------
 \usepackage[dvipsnames*,svgnames]{xcolor}
+
 \definecolor{colorlowgray}{RGB}{240,240,240}
-\definecolor{colorsystemdefault}{RGB}{16,81,15} % Define the color used for highlighting throughout the book
-\definecolor{colorsystemdefaultdkred}{RGB}{98,32,6} % Define the color used for highlighting throughout the book
-\definecolor{colormylink}{RGB}{16,120,15} % Define the 
-\definecolor{dkred}{rgb}{0.6,0,0}
+\definecolor{colorpartpagebackground}{RGB}{120,120,120} % lowgrayscale
+
+\ifx\EnableGrayScale\undefined
+    \definecolor{colorsystemdefault}{RGB}{16,81,15} % Define the color used for highlighting throughout the book
+    \definecolor{colorsystemdefaultdkred}{RGB}{98,32,6} % Define the color used for highlighting throughout the book
+    \definecolor{colorsystemdefaultdkblue}{RGB}{6,32,98} % Define the color used for highlighting throughout the book
+    \definecolor{colormylink}{RGB}{16,120,15} % Define the 
+    \definecolor{colorPatrocinio}{rgb}{0.98,0.88,0.82}
+    \definecolor{colorAttention}{RGB}{255,249,128}
+\else
+    \definecolor{colorsystemdefault}{RGB}{0,0,0} % Define the color used for highlighting throughout the book
+    \definecolor{colorsystemdefaultdkred}{RGB}{32,32,32} % Define the color used for highlighting throughout the book
+    \definecolor{colorsystemdefaultdkblue}{RGB}{32,32,32} % Define the color used for highlighting throughout the book
+    \definecolor{colormylink}{RGB}{64,64,64} % Define the 
+    \definecolor{colorPatrocinio}{rgb}{0.98,0.98,0.98}
+    \definecolor{colorAttention}{RGB}{255,255,255}
+\fi
 
 
-%\definecolor{fboxbackcolor}{RGB}{249,238,241}
-%\definecolor{fboxfrontcolor}{RGB}{36,21,47}
-\colorlet{fboxbackcolor}{colorsystemdefault!40!dkred}
-\colorlet{fboxfrontcolor}{colorsystemdefault!40!dkred}
 
 %----------------------------------------------------------------------------------------
 %	COLOR
 %----------------------------------------------------------------------------------------
 \usepackage{color}
-\definecolor{colorlowred}{rgb}{0.98,0.88,0.82}
-%\definecolor{colordarkgray}{rgb}{0.5,0.5,0.5}
-%\definecolor{colormauve}{rgb}{0.58,0,0.82}
+
+
+%----------------------------------------------------------------------------------------
+% Habilita o modo impressão em tons de cinza, não todo logicmente
+% Mas a maioria das coisas, as figuras não, isto é para mandar à editora em GRAY SCALE
+%----------------------------------------------------------------------------------------
+%\ifx\EnableGrayScale\undefined
+%    ~
+%\else
+%    \selectcolormodel{gray}
+%\fi
+
+
+
 
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
-\input{formato-head} % paquetes usados con macros para la escrita
-\input{structure} % el estilo visual do livro
-\input{formato-macros} % las macros compuestas usadas para la escrita
+\input{\SourceRootPath/formato-head} % paquetes usados con macros para la escrita
+\input{\SourceRootPath/structure} % el estilo visual do livro
+\input{\SourceRootPath/formato-macros} % las macros compuestas usadas para la escrita
 
-
+%-----------------------------------------------------------------------------------------
+% evitar linhas órfãs e viúvas
+%\clubpenalty=100000 
+%\widowpenalty=100000 
 %-----------------------------------------------------------------------------------------
 
 \hyphenation{sam-ba}
@@ -132,45 +188,49 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
 \begin{document}
 
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
-\input{preliminares/titlepage}
+\input{\SourceRootPath/preliminares/titlepage}
 
 %----------------------------------------------------------------------------------------
 %	COPYRIGHT PAGE
 %----------------------------------------------------------------------------------------
-\input{preliminares/copyright}
+\input{\SourceRootPath/preliminares/copyright}
 
 %----------------------------------------------------------------------------------------
 %	DEDICATORIA
 %----------------------------------------------------------------------------------------
-\include{preliminares/dedicatoria} 
+\input{\SourceRootPath/preliminares/dedicatoria} 
 
 %----------------------------------------------------------------------------------------
 %	Acknowledgements
 %----------------------------------------------------------------------------------------
-\include{preliminares/acknowledgements} 
+\input{\SourceRootPath/preliminares/acknowledgements} 
 
 %----------------------------------------------------------------------------------------
 %	PATROCINIO PAGE
 %----------------------------------------------------------------------------------------
-\input{preliminares/patrocinio}
+\input{\SourceRootPath/preliminares/patrocinio}
 
+%----------------------------------------------------------------------------------------
+%	My macros
+%----------------------------------------------------------------------------------------
+\input{\SourceRootPath/mymacros}
 
 %----------------------------------------------------------------------------------------
 %	TABLE OF CONTENTS
 %----------------------------------------------------------------------------------------
 \chapterimage{chapter_head_1.pdf} % Table of contents heading image
 \pagestyle{empty} % No headers
+%\pagestyle{fancy} % Print headers again
 \tableofcontents % Print the table of contents itself
 \cleardoublepage % Forces the first chapter to start on an odd page so it's on the right
 \pagestyle{fancy} % Print headers again
 
-%----------------------------------------------------------------------------------------
-%----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
 %	PART
 %----------------------------------------------------------------------------------------
@@ -266,10 +326,13 @@
 %----------------------------------------------------------------------------------------
 %	PART
 %----------------------------------------------------------------------------------------
-\part{Referencias}
+\part{Referências}
+
+
+\chapterimage{chapter_head_1.pdf}
 
 \chapter*{Bibliografia}
-\addcontentsline{toc}{chapter}{\textcolor{colorsystemdefault}{Bibliography}}
+\addcontentsline{toc}{chapter}{\textcolor{colorsystemdefault}{Bibliografia}} %% Sale en la pagina part
 \printbibliography[heading=bibempty]
 
 
@@ -282,9 +345,14 @@
 \cleardoublepage
 \phantomsection
 \setlength{\columnsep}{0.75cm}
-\addcontentsline{toc}{chapter}{\textcolor{colorsystemdefault}{Index}}
+\addcontentsline{toc}{chapter}{\textcolor{colorsystemdefault}{Índice}} %% Sale en la pagina part
 \printindex
 
 %----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	COLOFÃO
+%----------------------------------------------------------------------------------------
+\input{\SourceRootPath/preliminares/colofao}
 
 \end{document}
