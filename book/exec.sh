@@ -16,4 +16,5 @@
 
 mv -f main.pdf samba-gafiera.pdf
 
+tput bel #printf '\a' #tput bel
 ./clean.sh
