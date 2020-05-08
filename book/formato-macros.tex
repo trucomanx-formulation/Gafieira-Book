@@ -17,7 +17,7 @@
 %   \PRLsep{Text}
 %----------------------------------------------------------------------------------------
 \newlength{\PRLlen}
-\newcommand*\PRLsep[1]{\settowidth{\PRLlen}{#1}\advance\PRLlen by -\textwidth\divide\PRLlen by -2\noindent\makebox[\the\PRLlen]{\resizebox{\the\PRLlen}{1pt}{$\blacktriangleleft$}}\raisebox{-.5ex}{\textbf{#1}}\makebox[\the\PRLlen]{\resizebox{\the\PRLlen}{1pt}{$\blacktriangleright$}}\bigskip}
+\newcommand*\PRLsep[1]{\settowidth{\PRLlen}{#1}\advance\PRLlen by -\textwidth\divide\PRLlen by -2\noindent\makebox[\the\PRLlen]{\resizebox{\the\PRLlen}{1pt}{$\blacktriangleleft$}}\raisebox{-.5ex}{\textbf{#1}}\makebox[\the\PRLlen]{\resizebox{\the\PRLlen}{1pt}{$\blacktriangleright$}}\smallskip}
 
 
 %----------------------------------------------------------------------------------------
@@ -144,7 +144,8 @@
 
 
 \newcommand{\caracterpasso}[5]{
-\begin{wrapfigure}{l}{0.5\textwidth} 
+\begin{wrapfigure}{l}{0.5\textwidth}
+\vspace{-15pt} 
 \begin{tcbcaracteristicapasso}[title=Caraterísticas, width= \linewidth]
  \begin{itemize}
 \item[#1] \hyperref[def:PassoCiclico]{\textbf{Passo cíclico}}.
@@ -154,6 +155,7 @@
 \item     \hyperref[def:DuracaoDoPasso]{\textbf{Duração}}: #5 tempos.
 \end{itemize}
 \end{tcbcaracteristicapasso}
+\vspace{-10pt}
 \end{wrapfigure}
 }
 
@@ -180,12 +182,14 @@
 
 \newcommand{\caracterpostura}[2]{
 \begin{wrapfigure}{l}{0.5\textwidth} 
+\vspace{-15pt}
 \begin{tcbcaracteristicapostura}[title=Caraterísticas, width= \linewidth]
  \begin{itemize}
-\item[#1] \hyperref[def:PosturaFinaliza]{\textbf{Postura de finalização}}.
-\item[#2] \hyperref[def:PosturaTransicao]{\textbf{Postura de transição}}.
+\item[#1] \hyperref[def:PosturaFinaliza]{\textbf{Posição de finalização}}.
+\item[#2] \hyperref[def:PosturaTransicao]{\textbf{Posição de transição}}.
 \end{itemize}
 \end{tcbcaracteristicapostura}
+\vspace{-10pt}
 \end{wrapfigure}
 }
 

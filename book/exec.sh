@@ -16,5 +16,5 @@
 
 mv -f main.pdf samba-gafiera.pdf
 
-tput bel #printf '\a' #tput bel
+ play -n synth 1 sine 880 vol 0.5 #printf '\a' #tput bel
 ./clean.sh
