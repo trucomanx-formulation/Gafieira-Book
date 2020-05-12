@@ -1,0 +1,13 @@
+Name: stickman3d
+Version: 0.0.1
+Date: 2020-05-14
+Author: Fernando Pujaico Rivera <fernando.pujaico.rivera@gmail.com>
+Maintainer: Fernando Pujaico Rivera <fernando.pujaico.rivera@gmail.com>
+Title: Dia Shapes - Stickman 3D
+Description: Dia shapes para desenho de stickman 3D.
+Categories: stickman
+Url: https://savannah.nongnu.org/users/trucomanx
+Depends: null
+License: GPLv2+
+SystemRequirements: dia
+BuildRequires: dia (>= 0.97.3), diff (>=3.3), patch (>=2.7.5), make (>=4.1)

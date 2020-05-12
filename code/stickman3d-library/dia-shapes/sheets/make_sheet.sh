@@ -10,7 +10,7 @@ fi
 SEARCHDIR=$2
 if [ -z $2 ]
   then
-    SEARCHDIR='../shapes';
+    SEARCHDIR='../shapes/stickman3d';
 fi
 
 DESCRIPTIONFILE=$3
