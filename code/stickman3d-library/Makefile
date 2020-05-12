@@ -41,7 +41,7 @@ help:
 
 
 $(SHEET_FILE): $(SHAPE_FILES) $(PNG_FILES)
-	./dia-shapes/sheets/make_sheet.sh $(SHEET_FILE) "dia-shapes/shapes" DESCRIPTION
+	./dia-shapes/sheets/make_sheet.sh $(SHEET_FILE) "dia-shapes/shapes/$(PACKAGE)" DESCRIPTION
 
 
 
@@ -100,5 +100,5 @@ clean:
 	$(RM) -r deb/*.deb
 	$(RM) -r dist/*.tar.gz
 	$(RM) -r dia-shapes/sheets/*.sheet 
-	$(RM) -r dia-shapes/shapes/stickman3d/*.shape
-	$(RM) -r dia-shapes/shapes/stickman3d/*.png
+	$(RM) -r dia-shapes/shapes/stickman3d/*/*.shape
+	$(RM) -r dia-shapes/shapes/stickman3d/*/*.png

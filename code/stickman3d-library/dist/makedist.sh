@@ -32,8 +32,8 @@ echo 'Dist filename:'$DISTFILENAME
 ################################################################################
 mkdir -p $INSTALLPATH/shapes/stickman3d/
 mkdir -p $INSTALLPATH/sheets/
-cp -f $SRCPATH/dia-shapes/shapes/stickman3d/*.png   $INSTALLPATH/shapes/stickman3d/
-cp -f $SRCPATH/dia-shapes/shapes/stickman3d/*.shape $INSTALLPATH/shapes/stickman3d/
+cp -f $SRCPATH/dia-shapes/shapes/stickman3d/*/*.png   $INSTALLPATH/shapes/stickman3d/
+cp -f $SRCPATH/dia-shapes/shapes/stickman3d/*/*.shape $INSTALLPATH/shapes/stickman3d/
 cp -f $SRCPATH/dia-shapes/sheets/*.sheet                   $INSTALLPATH/sheets/
 
 ################################################################################
