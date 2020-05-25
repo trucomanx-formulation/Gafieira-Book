@@ -1,0 +1,18 @@
+Para citar stickman3dfront em publicações use:
+
+	Fernando Pujaico Rivera.
+	stickman3dfront (beta): Desenho de Stickman em 3D.
+	URL https://savannah.nongnu.org/users/trucomanx
+
+Ou também pode ser usada a entrada BibTeX para usuários LaTeX:
+
+	@misc{BSLTL,
+		author    = {Pujaico Rivera, Fernando },
+		title     = {stickman3dfront (beta): Desenho de Stickman em 3D},
+		year      = {2019},
+		url       = {https://savannah.nongnu.org/users/trucomanx}
+	}
+
+Nos temos investido tempo e esforço em criar stickman3dfront, por favor
+citar esta quando for usada.
+
