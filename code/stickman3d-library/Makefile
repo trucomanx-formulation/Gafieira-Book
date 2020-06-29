@@ -3,7 +3,7 @@ PACKAGE := $(shell grep "^Name: " DESCRIPTION | cut -f2 -d" ")
 VERSION := $(shell grep "^Version: " DESCRIPTION | cut -f2 -d" ")
 
 RELEASE_DIR     := $(PACKAGE)-$(VERSION)
-SHEET_FILE      := 'dia-shapes/sheets/stickman3d.sheet'
+SHEET_FILE      := 'dia-shapes/sheets/$(PACKAGE).sheet'
 
 DIA:= dia
 
@@ -37,6 +37,8 @@ help:
 	$(DIA) --export="$@" "$<"
 	$(eval CADENA=$(shell grep "Patch:" $(basename $@).conf | cut -f2 -d":"))
 	sed '5i\  $(CADENA)' '$@' > tmp.tmp
+	$(eval FILEBASENAME=$(shell echo $(notdir $@)))
+	sed -i "s/<name>.*</<name>$(PACKAGE) - $(basename $(FILEBASENAME))</g" tmp.tmp
 	mv tmp.tmp '$@'
 
 
@@ -60,7 +62,7 @@ install:
 
 uninstall:
 	rm -r -f ~/.dia/shapes/$(PACKAGE)
-	rm -r -f ~/.dia/sheets/stickman3d.sheet
+	rm -r -f ~/.dia/sheets/$(PACKAGE).sheet
 
 run:
 	$(DIA) 
@@ -100,5 +102,5 @@ clean:
 	$(RM) -r deb/*.deb
 	$(RM) -r dist/*.tar.gz
 	$(RM) -r dia-shapes/sheets/*.sheet 
-	$(RM) -r dia-shapes/shapes/stickman3d/*/*.shape
-	$(RM) -r dia-shapes/shapes/stickman3d/*/*.png
+	$(RM) -r dia-shapes/shapes/$(PACKAGE)/*/*.shape
+	$(RM) -r dia-shapes/shapes/$(PACKAGE)/*/*.png
