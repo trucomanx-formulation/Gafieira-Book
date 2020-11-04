@@ -47,7 +47,7 @@
 %----------------------------------------------------------------------------------------
 %	GRAYSCALE EM TODAS AS FIGURAS
 %----------------------------------------------------------------------------------------
-\def\EnableGrayScale{1}
+%\def\EnableGrayScale{1}
 
 
 
@@ -69,9 +69,10 @@
 %----------------------------------------------------------------------------------------
 %	DATOS DEL LIBRO
 %----------------------------------------------------------------------------------------
-\newcommand{\mytitle}[0]{Samba de Gafieira}
-\newcommand{\mysubtitle}[0]{Hist{\'{o}}ria, Dan{\c{c}}a, Teoria e Pr{\'{a}}tica}
+\newcommand{\mytitle}[0]{Samba de gafieira}
+\newcommand{\mysubtitle}[0]{Hist{\'{o}}ria, dan{\c{c}}a, teoria e pr{\'{a}}tica}
 \newcommand{\myauthor}[0]{Fernando Pujaico Rivera}
+\newcommand{\ImprimirEdition}[0]{Primeira edi\c{c}\~{a}o}
 %----------------------------------------------------------------------------------------
 
 
@@ -131,8 +132,8 @@
     \definecolor{colorAttention}{RGB}{255,249,128}
 \else
     \definecolor{colorsystemdefault}{RGB}{0,0,0} % Define the color used for highlighting throughout the book
-    \definecolor{colorsystemdefaultdkred}{RGB}{32,32,32} % Define the color used for highlighting throughout the book
-    \definecolor{colorsystemdefaultdkblue}{RGB}{32,32,32} % Define the color used for highlighting throughout the book
+    \definecolor{colorsystemdefaultdkred}{RGB}{64,64,64} % Define the color used for highlighting throughout the book
+    \definecolor{colorsystemdefaultdkblue}{RGB}{64,64,64} % Define the color used for highlighting throughout the book
     \definecolor{colormylink}{RGB}{64,64,64} % Define the 
     \definecolor{colorPatrocinio}{rgb}{0.98,0.98,0.98}
     \definecolor{colorAttention}{RGB}{255,255,255}
@@ -162,10 +163,11 @@
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
-\input{\SourceRootPath/formato-head} % paquetes usados con macros para la escrita
-\input{\SourceRootPath/structure} % el estilo visual do livro
-\input{\SourceRootPath/formato-macros} % las macros compuestas usadas para la escrita
-\input{\SourceRootPath/formato-folhamemorizacao}
+\input{\SourceRootPath/structure/formato-head} % paquetes usados con macros para la escrita
+\input{\SourceRootPath/structure/structure} % el estilo visual do livro
+\input{\SourceRootPath/structure/formato-macros} % las macros compuestas usadas para la escrita
+\input{\SourceRootPath/structure/formato-folhamemorizacao}
+\input{\SourceRootPath/structure/mymacros} % My macros
 %-----------------------------------------------------------------------------------------
 %-----------------------------------------------------------------------------------------
 
@@ -180,11 +182,6 @@
 %----------------------------------------------------------------------------------------
 \makenomenclature
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\renewcommand*{\bibfont}{\footnotesize}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \begin{document}
@@ -192,40 +189,81 @@
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
-\input{\SourceRootPath/preliminares/titlepage}
+\input{\SourceRootPath/pages/titlepage/model3}
 
 %----------------------------------------------------------------------------------------
 %	COPYRIGHT PAGE
 %----------------------------------------------------------------------------------------
-\input{\SourceRootPath/preliminares/copyright}
+\input{\SourceRootPath/pages/copyright}
 
 %----------------------------------------------------------------------------------------
 %	DEDICATORIA
 %----------------------------------------------------------------------------------------
-\input{\SourceRootPath/preliminares/dedicatoria} 
+\input{\SourceRootPath/pages/dedicatoria} 
 
 %----------------------------------------------------------------------------------------
 %	Acknowledgements
 %----------------------------------------------------------------------------------------
-\input{\SourceRootPath/preliminares/acknowledgements} 
+\input{\SourceRootPath/pages/acknowledgements} 
 
 %----------------------------------------------------------------------------------------
 %	PATROCINIO PAGE
 %----------------------------------------------------------------------------------------
-\input{\SourceRootPath/preliminares/patrocinio}
+\input{\SourceRootPath/pages/patrocinio}
 
 %----------------------------------------------------------------------------------------
-%	My macros
+%	PROLOGO PAGE
 %----------------------------------------------------------------------------------------
-\input{\SourceRootPath/mymacros}
+\input{\SourceRootPath/pages/prologo}
 
 %----------------------------------------------------------------------------------------
 %	TABLE OF CONTENTS
 %----------------------------------------------------------------------------------------
-\chapterimage{chapter_head_1.pdf} % Table of contents heading image
-\pagestyle{empty} % No headers
-%\pagestyle{fancy} % Print headers again
+\clearpage
+\chapterimage{chapter_letras.pdf} % Table of contents heading image
+\pagestyle{fancy} %\pagestyle{empty} % No headers %\pagestyle{fancy} % Print headers again
+%\renewcommand{\contentsname}{Indice}
+%\phantomsection
+%\addcontentsline{toc}{chapter}{Sumário} %% Sale en la pagina part
 \tableofcontents % Print the table of contents itself
+
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	TABLE OF LISTAS
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+\chapterimage{chapter_letras.pdf} % Table of contents heading image
+\chapter*{Listas de dados}
+\addcontentsline{toc}{chapter}{Listas de dados} %% Sale en la pagina contents
+
+%----------------------------------------------------------------------------------------
+%    LISTA DE DEFINICIONES
+%----------------------------------------------------------------------------------------
+\phantomsection
+\addcontentsline{toc}{section}{Lista de definições} %% Sale en la pagina contents
+\tcblistof[\section*]{MisDefinicoes}{Lista de definições}
+%----------------------------------------------------------------------------------------
+%    LISTA DE INFORMACOES
+%----------------------------------------------------------------------------------------
+\phantomsection
+\addcontentsline{toc}{section}{Lista de informações} %% Sale en la pagina contents
+\tcblistof[\section*]{MisInformacoes}{Lista de informações}
+%----------------------------------------------------------------------------------------
+%    LISTA DE ELABORACIONES
+%----------------------------------------------------------------------------------------
+% temas sueltos que sao elaborado para anhadir riqueza a experiencia de leitura
+\phantomsection
+\addcontentsline{toc}{section}{Lista de elaborações} %% Sale en la pagina contents
+\tcblistof[\section*]{MisElaboraciones}{Lista de elaborações}
+%----------------------------------------------------------------------------------------
+%    LISTA DE FRASES
+%----------------------------------------------------------------------------------------
+\phantomsection
+\addcontentsline{toc}{section}{Lista de frases} %% Sale en la pagina contents
+\tcblistof[\section*]{MisFrases}{Lista de frases}
+
+
+%----------------------------------------------------------------------------------------
 \cleardoublepage % Forces the first chapter to start on an odd page so it's on the right
 \pagestyle{fancy} % Print headers again
 
@@ -327,7 +365,7 @@
 \part{Referências}
 
 
-\chapterimage{chapter_head_1.pdf}
+\chapterimage{chapter_livro.pdf}
 
 \chapter*{Bibliografia}
 \addcontentsline{toc}{chapter}{\textcolor{colorsystemdefault}{Bibliografia}} %% Sale en la pagina part
@@ -350,6 +388,6 @@
 %----------------------------------------------------------------------------------------
 %	COLOFÃO
 %----------------------------------------------------------------------------------------
-\input{\SourceRootPath/preliminares/colofao}
+\input{\SourceRootPath/pages/colofao}
 
 \end{document}

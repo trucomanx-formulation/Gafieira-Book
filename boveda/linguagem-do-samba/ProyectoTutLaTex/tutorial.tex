@@ -1,0 +1,61 @@
+%%
+\documentclass[a4paper,12pt,openright,twoside]{book}
+
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuges, brazil]{babel}    % hiphenação em portugues
+
+%% Minah definiciones
+\input{configuration/structure-color}
+\input{configuration/structure-geral}
+\input{configuration/structure-margens}
+\input{configuration/structure-head-foot}
+\input{configuration/structure-listings}
+
+%% Para a criação do Glossário
+\makenomenclature
+
+\newtheorem{theorem}{Theorema}
+\newtheorem{definition}{Definição}
+\newtheorem{informationbox}{Informação}
+
+\usepackage{tasks}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Inicia o texto
+\begin{document}
+
+
+%% Paginas iniciais (sem numeração)
+\frontmatter
+
+%% Página de rosto
+\include{pages/titlepage}
+%% Lista de conteúdo (sumário)
+\include{pages/sumario}
+%% Lista de figuras (gerada automaticamente)
+\include{pages/listafiguras}
+%% Lista de tabelas (gerada automaticamente)
+%\include{pages/listatabelas}
+%% Glossário (gerado automaticamente - veja entradas em cap1.tex)
+\include{pages/glosario}
+%% Lista de Simbolos (gerada manualmente)
+%\include{pages/simbolos}
+
+\mainmatter
+
+%% Cap. 1 - Introdução
+\include{caps/cap1/cap1}
+
+%% Referências bibliogáficas (geradas automaticamente)
+\addcontentsline{toc}{chapter}{Referencias bibliográficas}
+%\bibliographystyle{plainnat}  %% nome-ano
+\bibliographystyle{unsrt}    %% numero
+\bibliography{bibliography/bib1}
+
+\appendix
+%%Apêndice A 
+%\include{caps/apendiceA/apA}
+
+\end{document}
+

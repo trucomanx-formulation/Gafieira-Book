@@ -7,8 +7,9 @@ rm -rf $filename
 
 rm -f abc-*.*
 
-
+rm -f */*/*-epspdf-to.pdf
 rm -f */*/*converted-to.pdf
+rm -f */*-epspdf-to.pdf
 rm -f */*converted-to.pdf
 rm -f */*/*.backup
 rm -f */*/*.aux 
@@ -34,4 +35,11 @@ rm -f *.blg
 rm -f *.bbl 
 rm -f *.ilg
 rm -f *.backup
+
+#rm -f main.loe
+rm -f main.MisElaboraciones
+rm -f main.MisFrases
+rm -f main.MisInformacoes
+rm -f main.MisDefinicoes
+rm -f main.mw
 

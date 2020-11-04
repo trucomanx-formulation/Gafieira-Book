@@ -1,0 +1,31 @@
+\newpage
+
+\def \TextAtTopOfPage{\ImprimirEdition}
+\def \TextAtBottomOfPage{\imprimiryear}%% {Gerado no dia \today}
+
+\begingroup
+\begin{titlepage}
+    \newgeometry{left=2.5cm,top=2.5cm,bottom=2.5cm, right=2.5cm}
+    %\AddToShipoutPicture*{\put(0,0){\includegraphics[width=0.49\textwidth]{logo-bw-1}}} % Image background
+    \AddToShipoutPicture*{\put(20,0){\includegraphics[width=0.45\textwidth]{cruzado-bonecos-a-gray.eps}}} % Image background
+    %\AddToShipoutPictureBG*{\includegraphics[width=\paperwidth,height=\paperheight]{golden-ratio-3}}
+
+\noindent\begin{minipage}{\textwidth}
+\parbox[t]{1.0\linewidth}{\centering \fontsize{25pt}{0pt}\selectfont\vspace*{1.4cm}\TextAtTopOfPage\vspace*{0.2cm}}
+\end{minipage}
+    \begin{minipage}{\textwidth}
+        \vspace{4cm}
+        \noindent
+        \begin{center}
+            {\fontsize{60}{70}\selectfont \mytitle\\[0.5\baselineskip]}
+            {\fontsize{40}{50}\selectfont \mysubtitle}\\[2\baselineskip]
+        \end{center}
+        \vspace{35mm}
+        \begin{flushright}
+            {\fontsize{25pt}{0pt}\selectfont \myauthor}\\[1\baselineskip]
+            {\fontsize{25pt}{0pt}\selectfont \imprimirlocal}\\[1\baselineskip]
+            {\fontsize{25pt}{0pt}\selectfont \TextAtBottomOfPage}\\[0\baselineskip]
+        \end{flushright}
+    \end{minipage}
+\end{titlepage}
+\endgroup
