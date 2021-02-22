@@ -4,38 +4,41 @@
 \index{Musicalidade!Métrica no samba}
 \label{sec:percepcaosamba1}
 
-As músicas dos subgêneros do samba, que usamos para dançar, 
+As músicas dos subgêneros do samba, as quais usamos para dançar, 
 geralmente são escritas usando \hyperref[subsec:compassobinario]{\textbf{compassos binários}};
-pelo que, a procura da métrica das musicas destes subgêneros,
+por este motivo a procura da métrica das músicas nesses subgêneros 
 é mais simples, 
 pois iniciamos a busca tendo a quase certeza do tipo do compasso, 
 só precisaríamos \hyperref[subsec:perceberTF1]{\textbf{achar o tempo forte}} 
 usando as indicações descritas na seção \ref{subsec:perceberTF1}.
 
 Assim, para detetar o tempo forte e as \hyperref[sec:pos:Duracion]{\textbf{durações}} dos tempos nos compassos,
-devemos ter em conta que quando escutamos uma música, 
+devemos ter em conta que quando escutamos uma música 
 na qual é tipicamente dançado o samba, ou especificamente o samba de gafieira,
 podemos distinguir que a soma dos sons produzidos pelos instrumentos de percussão\footnote{Ou o
-acompanhamento em geral.}, 
+acompanhamento em geral.} 
 geram um padrão de repetição muito particular, 
 geralmente relacionado com as onomatopeias: ``tchic tchic tum'' ou ``tum tum'';
 onde em ambos  casos existe um  ``tum'' executado com maior 
 \hyperref[sec:pos:Intensidade]{\textbf{intensidade}} (potencia sonora),
-que está sendo executado-se no tempo forte.
+que está sendo executado no tempo forte.
 Se conseguimos detetar alguma das duas onomatopeias,
 então temos o problema resolvido, pois ambas ocupam exatamente dois tempos,
 e dado que para conseguir encaixar as onomatopeias tivemos que reconhecer o tempo forte no ``tum'',
-temos todos os elementos para descrever a métrica no tempo da música.
+temos todos os elementos para descrever a métrica dos compassos na música.
 
 \PRLsep{Analisando a música no samba}
 
 A Figura \ref{fig:abc-caquarela} representa os compassos 18, 19 e 20 da  
 composição musical ``Aquarela do Brasil'' escrita
 por Ary Barroso em 1939 \cite{AquarelaDoBrasil}; 
-a versão mostrada na figura teve arranjos por Irineu Krüger \cite{Irineu}. 
+a versão mostrada na figura teve arranjos por Irineu Krüger \cite{Irineu}.\\ 
+
+
 \begin{figure}[ht]
 \centering
-%\includegraphics[width=\textwidth]{chapters/cap-fundamentos/aquarela.png}
+\href{https://drive.google.com/file/d/1RcUcWJlukxaF7nmDTKDxUZDR8sLH9QpC/view?usp=sharing}{\includegraphics[width=0.99\textwidth]{chapters/cap-musicalidade-percepcion/abc-aquarela-1.eps}}
+\begin{comment}
 \begin{abc}[name=abc-caquarela]%,options={-O= -c -s 0.8}]
 % abcm2ps aquarela.abc  -O aquarela.ps
 % ps2epsi aquarela.ps aquarela.eps
@@ -44,7 +47,8 @@ X: 1 % start of header
 T: Brazil - Aquarela do Brasil
 C: Music: Ary Barroso, 1939
 C: Arranged by: Irineu Krüger
-K: C % scale: C major
+K: Dm % scale: C major
+Q:1/4=100
 M: 2/4 % formula do compasso
 %
 V:1 clef=treble name="Voice Choir" sname="Voice Choir"
@@ -54,25 +58,27 @@ V:4 clef=treble name="Strings" sname="Strings"
 V:5 clef=bass   name="D. Bass" sname=""D. Bass"
 %
 %
-[V:1] "18" C'3/2A/2C2  |"19" A3/2(G/2 G/2)E1E/2  |"20" z/2 C'1A/2 C'1C'1  |
+[V:1] "18" C'3/2A/2C'2  |"19" A3/2(G/2 G/2)E1D/2  |"20" z/2 C'1A/2 C'1C'1  |
 w:    Ó Bras-sil        sam-ba_ que dá       bam-bo-leio_ 
 w:    Ó Bras-sil        ver-de que dá_       pa-ra~o mun-do 
 %
 %
-[V:2] G1z/2G1z/2G1  | G1z/2G1z/2G1  | G1z/2G1z/2G1  |
+[V:2] [K:D] E1z/2E1z/2E1  | E1z/2E1z/2E1  | E1z/2E1z/2E1  |
 %
 %
-[V:3] z4  | z4  | z4  |
+[V:3] [K:D] z4  | z4  | z4  |
 %
 %
-[V:4] G1z/2G1z/2G1  | G1z/2G1z/2G1  | G1z/2G1z/2G1  |
+[V:4] [K:Dm] G1z/2G1z/2G1  | G1z/2G1z/2G1  | G1z/2G1z/2G1  |
 %
 %
 [V:5] C,2 G,,2  | C,1 z1 G,,2  | C,2 G,,2  |
 \end{abc}
-\caption{3 compassos da partitura da composição ``Aquarela do brasil''}
+\end{comment}
+\caption{3 compassos da partitura da composição ``Aquarela do brasil''.}
 \label{fig:abc-caquarela}
 \end{figure}
+
 Nesta versão, a música está escrita seguindo uma 
 \hyperref[subsec:homofonica]{\textbf{textura homofônica}} com:
 \begin{itemize}
@@ -83,8 +89,8 @@ que usam uma
 formula de compasso $2/4$, de modo que se tem compassos
 binários com tempos com uma \hyperref[sec:pos:Duracion]{\textbf{duração}} de uma semínima (\quarternote).
 
-\subsection{Percepção do: tchic-tchic tum}
-\begin{figure}
+
+\begin{figure}[hb!]
 \begin{elaboracion}{Jaime Arôxa e o ``tic tic tum''}
 \index{Musicalidade!Tic tic tum}
 \begin{wrapfigure}{r}{0.35\textwidth}
@@ -95,7 +101,7 @@ O renomeado professor de dança, coreografo e  dançarino, Jaime Arôxa \cite{Ja
 numa de suas múltiplas contribuições ao ensino da dança de salão no Brasil,
 criou ao redor do ano de 1991, 
 o uso de ``tic tic tum''
-\footnote{Popularmente pode se achar também ``tchic tchic tum'' que tem só um sentido temporal, 
+\footnote{Popularmente também pode se achar o termo ``tchic tchic tum'' que tem só um sentido temporal, 
 e não corporal como na didática proposta por Jaime.} 
 para o ensino de ritmo nas aulas de samba de gafieira \cite{EntrevistaJaimeAroxa1};
 numa tentativa de aproximar conceitos musicais a pessoas não iniciadas em música;
@@ -121,7 +127,11 @@ pois:
 
 Por outro lado, falando temporalmente, um ``tic tic tum'' descreve um ritmo com uma distribuição de tempos, 
 onde um ``tic'' dura a metade de tempo que um ``tum''. 
-Uma forma de representar isto na notação musical pode ser vista na seguinte pauta.
+Uma forma de representar isto na notação musical pode ser vista na seguinte pauta.\\
+
+\centering
+\href{https://drive.google.com/file/d/1CZaAP5lPzVX7oTT5EMpIKN-XbOUYUt3Y/view?usp=sharing}{\includegraphics[width=0.7\textwidth]{chapters/cap-musicalidade-percepcion/abc-tictictumaroxa-1.eps}}
+\begin{comment}
 \begin{abc}[name=abc-tictictumaroxa,width=0.60\linewidth]
 X: 1 % start of header
 K: C stafflines=0 % scale: C major
@@ -130,8 +140,13 @@ V:1 clef=perc stem=up %name="Pauta com clave de fá"   sname="Pauta com clave de
 [V:1] |:B2 B1 B1 | B2 B1 B1:|
 w: tum tic tic tum tic tic
 \end{abc}
+\end{comment}
 \end{elaboracion}
 \end{figure}
+
+
+\subsection{Percepção do: tchic-tchic tum}
+
 Analisando o fragmento de partitura da Figura \ref{fig:abc-caquarela} e escutando a música produzida, 
 podemos perceber que os instrumentos executados em conjunto geram um sonido identificável
 com a onomatopeia ``tchic tchic tum'', com uma duração de dois tempos.
@@ -228,7 +243,7 @@ porém esta diferença não é uma regra, pelo que se estamos procurando achar o
 o melhor é simplesmente tentar perceber qual está sendo tocado com maior \hyperref[sec:pos:Intensidade]{\textbf{intensidade}}.
 \begin{figure}[ht]
 \centering
-\begin{abc}[name=abc-contratempo1tumtum,width=0.75\linewidth]
+\begin{abc}[name=abc-contratempo1tumtum,width=0.65\linewidth]
 X: 1 % start of header
 K: C % scale: C major
 M:2/4
