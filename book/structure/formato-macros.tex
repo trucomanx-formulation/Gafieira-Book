@@ -313,7 +313,7 @@
 %----------------------------------------------------------------------------------------
 % FRASES E DITADOS
 %----------------------------------------------------------------------------------------
-% \begin{FraseFernandoPR}{Frase}
+% \begin{FraseFernandoPR}{titulo Frase}
 % meu texto
 % \end{FraseFernandoPR}
 
@@ -370,6 +370,70 @@ after={\par\vskip 12pt}
 \makeatletter
 \newcommand{\ttll@MisFrases}{-1000}
 \makeatother
+
+
+
+%----------------------------------------------------------------------------------------
+% FRASES E DITADOS
+%----------------------------------------------------------------------------------------
+% \begin{FraseOutros}{Titulo Frase}{Autor}
+% meu texto
+% \end{FraseOutros}
+
+%% Create a new counter that will follow tcolorbox's numbering
+\newcounter{FraseOutros}[chapter]
+\renewcommand*{\theFraseOutros}{\noexpand\thechapter.\noexpand\arabic{FraseOutros}}
+
+\newtcolorbox[list inside=FrasesDeOutros,list type=FrasesDeOutros,auto counter,number within=chapter]{FraseOutros}[2]{
+freelance,
+colback=white,
+frame code={},
+interior titled code={
+  \fill[rounded corners=8pt,colorsystemdefault!30]
+    (title.south west) --
+    (title.south) -- 
+    ([yshift=15pt]title.south) --
+    ([yshift=15pt,xshift=7cm]title.south) --
+    ([xshift=7cm]title.south) --
+    (title.south east) {[sharp corners] --
+    ([yshift=-6pt]title.south east) -- 
+    ([yshift=-6pt]title.south west) } -- cycle;
+  \draw[rounded corners=8pt,colorsystemdefault,line width=1pt]
+    (title.west|-frame.south west) --
+    (title.south west) --
+    (title.south) -- 
+    ([yshift=15pt]title.south) --
+    ([yshift=15pt,xshift=7cm]title.south) --
+    ([xshift=7cm]title.south) --
+    (title.south east) --
+    (title.east|-frame.south east) --
+    cycle;
+  \node at ([xshift=3.5cm,yshift=4pt,anchor=south]title.south) 
+    { \bfseries  Frase~\thetcbcounter\refstepcounter{FraseOutros}: #1};  
+  },
+title={#1},
+top=12pt,
+%fontupper=\sffamily\Large,
+oversize=0.0cm,
+before upper={\addtocounter{FraseOutros}{-1}\refstepcounter{FraseOutros}},
+after upper={\\{  \mbox{} \hfill #2}\index{Frases e Ditados}},
+before={\vskip 24pt\par\noindent},
+after={\par\vskip 12pt}
+}
+
+
+%% List of type %% para:  \tcblistof[\section*]{FrasesDeOutros}{Lista de frases}
+\titlecontents{FrasesDeOutros}[2.00cm] %% Indentation %% left
+{\addvspace{3pt}\sffamily\bfseries} %% Spacing and font options for sections %% above code
+{\contentslabel[\thecontentslabel]{1.45cm}} %% Section number %% numbered-entry-format
+{} %% numberless-entry-format
+{\ \titlerule*[.5pc]{.}\;\color{black}\thecontentspage} %% filler-page-format {\hfill\color{black}\thecontentspage} 
+[] %% separator
+
+\makeatletter
+\newcommand{\ttll@FrasesDeOutros}{-1000}
+\makeatother
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
