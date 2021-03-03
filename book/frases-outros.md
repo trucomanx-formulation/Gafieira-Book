@@ -18,3 +18,8 @@ Um dos maiores presentes da vida é saber quais problemas não precisam ser reso
 Ninguém é igual a ninguém. Mesmo o mesmo homem não é igual a si mesmo em dias diferentes 
 \cite[pp. 190]{sowell2020reality}.
 \end{FraseOutros}
+
+
+When you want to help people, you tell them the truth. When you want to help yourself, you tell them what they want to hear.
+Thomas Sowell (2011). “The Thomas Sowell Reader”, p.398, Basic Books
+
