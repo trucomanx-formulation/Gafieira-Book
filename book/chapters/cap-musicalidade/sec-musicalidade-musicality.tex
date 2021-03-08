@@ -7,15 +7,15 @@ Seguindo a Definição \ref{def:Musicalidade}, podemos inferir como entender a m
 \index{Musicalidade}
 \label{def:MusicalidadeNaDanca}
 Esta acontece, quando o dançarino tem um estado de ``sensibilidade'' ou ``conhecimento'' para contemplar ou entender a música 
-e assim quando este dança ``demostrar'' uma coerência entre a música e o que está dançando.
+e assim quando este dança ``demostrar'' uma coerência entre a música e o que se está dançando.
 \end{definition}
 
 Porém temos um choque de paradigmas, na definição, para atingir um mesmo objetivo que é ser musical.
 Podemos \hyperref[ref:emotionsentimental]{\textbf{sentir}} ou 
 \hyperref[subsec:tecnica-sentimentos]{\textbf{conhecer}}; o que é equivalente a dizer que:
 \begin{itemize} 
-\item podemos saber, por intuição e sensibilidade sem entender porquê, ou
-\item podemos saber, entendendo mediante o conhecimento adquirido pelo raciocínio e o estudo da música e sua percepção.
+\item podemos saber por intuição e sensibilidade sem entender o porquê, ou
+\item podemos saber entendendo mediante o conhecimento adquirido pelo raciocínio e o estudo da música e sua percepção.
 \end{itemize}
 
 
@@ -115,11 +115,11 @@ existem outros aspectos da música, ou de instrumentos isolados, que podemos seg
 \item o \hyperref[sec:fraseio]{\textbf{fraseio}}, 
 \item etc.
 \end{inparaitem} 
-Com todos esses fatores, uma pessoa com musicalidade, 
+Com todas essas possibilidades, uma pessoa com musicalidade 
 incorpora as caraterísticas que considera que são interessantes para 
 ser mostradas na sua dança; por exemplo, poderia dançar interpretando a letra da música.
 
-Neste ponto chegamos a uma pregunta; se eu danço usando a letra e faço exatamente o oposto,
+Neste ponto chegamos a uma pregunta; se eu danço usando a letra e faço exatamente o oposto que indica a letra,
 estou dançando com musicalidade?
 Para poder responder isto, confiantes na nossa afirmação,
 primeiro teríamos que nos fazer outra pergunta.
@@ -144,8 +144,8 @@ do seu próprio analises e conclusões.
 Pelo que poderíamos afirmar que no caso da criança falsamente rebelde, esta é dependente da autoridade.
 \end{example}
 
-É neste ponto que podemos invocar à ``teoria da informação'' para que nós possamos explicar,
-ou modelar, esta dependência entre nossos movimentos e a música.
+É neste ponto que podemos invocar à ``teoria da informação'' para poder explicar 
+ou modelar esta dependência entre nossos movimentos e a música.
 Nesta área do conhecimento existem duas definições, que são:
 \begin{itemize} 
 \item A informação mútua (binária), que mede a informação que tem em comum dois eventos ou variáveis,
@@ -155,21 +155,21 @@ e valores intermediários entre zero e 1.0 quando existe entre eles uma porção
 \item O coeficiente de correlação (Pearson), 
 que indica o grau de dependência a favor ou em contra entre dois eventos ou variáveis,
 sendo +1.0 quando os eventos crescem juntos, 
--1.0 quando um cresce enquanto u outro diminui na mesma proporção,
+-1.0 quando um cresce enquanto outro diminui na mesma proporção,
  zero quando os dois eventos não tem nada em comum, 
 e valores intermediários entre -1.0 e +1.0 para graus intermediários de correlação \cite{reza2012introduction}.
 \end{itemize} 
 
 Note-se que a informação mútua entre duas variáveis só tem sinal positiva; assim,
 se uma variável cresce na mesma proporção que outra diminui, 
-a informação mutua será 1.0 pois uma variável é completamente dependente da outra
+a informação mutua será 1.0 pois uma variável é dependente da outra.
 \begin{example}
 Dadas as variáveis  $X$ e $Y$, se $Y=-X+3$; então,
 a informação mutua entre X e Y é igual a $1.0$, e
 a correlação entre $X$ e $Y$ é igual a $-1.0$.
 \end{example}
 
-Das explicações anteriores podemos deduzir que: as relações entre a música e a dança, 
+Das explicações anteriores podemos deduzir que: as relações entre a música e a dança 
 são melhor descritas com a informação mutua  que com a correlação;
 pelo que podemos reformular a Definição \ref{def:MusicalidadeNaDanca} usando a informação mutua:
 \begin{definition}[Musicalidade na dança seguindo a teoria da informação] 
@@ -183,8 +183,8 @@ A musicalidade é um termo que indica o grau de informação mutua que existe en
 \end{definition}
 
 
-Se definimos a $M_u$ como uma variável que representa a informação da música, e 
-a $M_o$ como uma variável que representa a informação dos movimentos, 
+Se definimos como $M_u$ a uma variável que representa a informação da música, e 
+como $M_o$ a uma variável que representa a informação dos movimentos, 
 como mostrado na Figura \ref{fig:InfoMutuaMuMo}.
 \begin{figure}[!h]
   \centering
@@ -193,12 +193,11 @@ como mostrado na Figura \ref{fig:InfoMutuaMuMo}.
 \label{fig:InfoMutuaMuMo}
 \end{figure}
 
-Então seguindo a Definição \ref{def:MusicalidadeNaDancaIT},
-podemos afirmar que:
+Então seguindo a Definição \ref{def:MusicalidadeNaDancaIT} podemos afirmar que:
 \begin{itemize}
-\item $\mathbf{I(M_u;M_o):}$ é a informação mutua entre a música ($M_u$) e os movimentos ($M_o$),
-e representa a quantidade de musicalidade na dança.
-\item $\mathbf{H(M_u|M_o):}$ é a informação que tem a música que não tem os movimentos.
+\item $\mathbf{I(M_u;M_o):}$ é a informação mutua entre a música, $M_u$, e os movimentos, $M_o$.
+$I(M_u;M_o)$ representa a quantidade de musicalidade na dança. 
+\item $\mathbf{H(M_u|M_o):}$ é a informação que tem a música que não está nos movimentos.
 Por exemplo, quando dançamos e a música está simplesmente de fundo, 
 só sendo um elemento que emoldura os nossos movimentos sem afetar-lhos diretamente,
 então teremos um caso de música incidental\footnote{A música incidental é muito utilizada no cinema, 
@@ -255,8 +254,8 @@ Pessoalmente, eu me imagino:
 \begin{itemize}
 \item Na Figura \ref{fig:ex:infomutua:a} a um casal amigo meu dançando felizes.
 \item Na Figura \ref{fig:ex:infomutua:b} escuto uma melodia simples, um solo de flauta,
-fazendo em bucle uma frase de 4 compassos, 
-e nessa música uma moça contando mediante a dança a historia da sua vida.
+fazendo em bucle uma frase de 4 compassos. 
+Nessa música uma moça conta mediante a sua dança a historia da sua vida.
 \item Na Figura \ref{fig:ex:infomutua:c} escuto uma música complexíssima, 
 provavelmente polifônica, e um rapaz fazendo popping-dance,
 onde cada um do seus movimento está atrelado às vontades de um instrumento na música.
@@ -273,13 +272,13 @@ dependente, interdependente e independente \cite{butterworth2011dance}.
 
 \begin{description}
 \item[Dependente:] Este conceito de relação de dependência, entre música e dança, pode ter pelo menos 3 acepções.
-\begin{description}
-\item[Mickey mousing:]
-\item[visualização musical:]
-\item[Correlação direta:]
-\end{description}
+    \begin{description}
+    \item[Mickey mousing:]
+    \item[visualização musical:]
+    \item[Correlação direta:]
+    \end{description}
 \item[Interdependente:] Este é um termo usado para designar uma relação amigável,
-entre música e dança; é dizer quando a música da um contexto onde se emoldura a dança,
+entre música e dança; ou seja quando a música da um contexto onde se emoldura a dança,
 porém esta tem liberdade de improvisar e contar historias dentro de uma estrutura definida, 
 e usa a música como marco emocional e guia;
 também pode-se referir ao caso quando, entre música e dança, 
