@@ -15,7 +15,8 @@ Quando você conhece a verdade já não pode viver a mentira, só pode sobrevive
 \end{FraseFernandoPR}
 
 \begin{FraseFernandoPR}{Caráter}
-O caráter de uma pessoa se mede mediante a elegância com a que recolhe os pedaços do seu coração. %(antes de 2013)
+O caráter de uma pessoa pode ser medido mediante a elegância com a que recolhe os pedaços do seu coração. %(antes de 2013)
+%O caráter de uma pessoa se mede mediante a elegância com a que recolhe os pedaços do seu coração. %(antes de 2013)
 \end{FraseFernandoPR}
 
 
