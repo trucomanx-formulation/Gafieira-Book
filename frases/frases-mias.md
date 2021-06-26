@@ -21,5 +21,15 @@ O caráter de uma pessoa pode ser medido mediante a elegância com a que recolhe
 
 
 
+\begin{FraseFernandoPR}{Caráter}
+El secreto para hacer buenos negocios es conocer/diferenciar entre el precio de
+las cosas y su valor personal (para mi) y externo (para otros),
+por lo menos en un tema.
+Dedica tu tiempo para aprender la habilidad de diferenciar estas dos ideas,
+es importante para tí para tener cosas y para los demas para venderlas
+(2021)
+\end{FraseFernandoPR}
+
+
 
 
